@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1350px) {
+  header .container-fluid {
+    width: 85% !important;
+  }
+  .menu_container {
+    display: none !important;
+  }
+  header .container-fluid .logo_contianer {
+    width: 35% !important;
+  }
+  header .container-fluid .social_container {
+    width: 55% !important;
+  }
+}
+/* Larger Screens (1200px and below) */
+@media (max-width: 1200px) {
+  /* Add your responsive styles here for screens up to 1200px */
+}
+
+/* Larger Tablets and Smaller Laptops (1024px and below) */
+@media (max-width: 1024px) {
+  /* Add your responsive styles here for screens up to 1024px */
+}
+
+/* Laptop (992px and below) */
+@media (max-width: 992px) {
+  .hamburger div {
+    width: 2.6rem;
+  }
+  .hamburger span {
+    font-size: 0.9rem;
+  }
+}
+/* Tablets and Smaller Laptops (766px and below) */
+@media (max-width: 766px) {
+  header .container-fluid .row_ .logo_contianer .logo_ a img {
+    width: 7rem;
+  }
+  .hamburger div {
+    width: 2.4rem;
+  }
+  .hamburger span {
+    font-size: 0.8rem;
+  }
+  [data-pushbar-id] {
+    width: 80% !important;
+  }
+  .top_menu_information__ div,
+  .bottom_menu_information__ div {
+    width: 100% !important;
+    margin-right: 1rem;
+  }
+}
+
+/* Mobile Devices (576px and below) */
+@media (max-width: 576px) {
+  /* Add your responsive styles here for screens up to 576px */
+}
+
+/* Smallest Mobile Devices (450px and below) */
+@media (max-width: 450px) {
+  /* Add your responsive styles here for screens up to 450px */
+}
