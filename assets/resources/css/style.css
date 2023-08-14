@@ -1,6 +1,7 @@
 :root {
   --manrope-font: "Manrope", sans-serif;
   --roboto-font: "Roboto Mono", monospace;
+  --stratos: Stratos-Regular, sans-serif;
   --white-color: #ffffff;
   --primary-color: #0066cc;
   --secondary-color: #ffffff;
@@ -175,9 +176,17 @@ body {
   font-family: var(--manrope-font);
 }
 
+.common-description {
+  color: #c7c7c7;
+  font-family: var(--manrope-font);
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+/* Default styling for the common button */
 .common-button {
   display: inline-block;
-  width: 210px;
   padding: 15px 20px;
   border-radius: 12px;
   background-color: rgb(255, 255, 255);
@@ -195,9 +204,9 @@ body {
   box-shadow: rgba(0, 0, 0, 0.19) 1px 1px 3px 1px,
     rgba(238, 1, 255, 0.57) 0px 0px 15px 0px,
     rgba(0, 29, 255, 0.73) 0px 5px 53px 0px;
-  font-family: Stratos-Regular, sans-serif;
+  font-family: var(--stratos);
   color: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 1.5rem;
   line-height: 1.4;
   font-weight: 400;
   text-align: center;
@@ -413,16 +422,18 @@ html.pushbar_locked .pushbar_overlay {
 .push-container .mobile_container .menu___ {
   width: 100%;
   height: 41vh;
-  background-color: rgb(0 0 0 / 41%);
-  border: 0.1rem solid #768181;
+  background-color: rgba(0, 0, 0, 0.41);
+  border: 0.1rem solid rgb(118, 129, 129);
   position: relative;
 }
+
 .push-container .mobile_container .menu___ .mobile_menu_logo {
   position: absolute;
   width: 9rem;
   left: 45%;
-  transform: translate(0, 35px);
+  transform: translate(0px, 35px);
 }
+
 .push-container .container-fluid {
   height: 100%;
   display: flex;
@@ -730,7 +741,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgb(0 0 0 / 50%);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 
@@ -763,13 +774,73 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   margin-top: 50px;
 }
 
-.banner-content p {
-  color: var(--custom-purple-color);
-  opacity: 0.8;
-  font-family: var(--manrope-font);
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-  margin-bottom: 3rem;
-  text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 4px;
+.banner-content .server-description {
+  margin-bottom: 2rem;
+}
+
+.endless-adventures {
+  background: linear-gradient(180deg, rgb(4 4 4) 0%, rgb(0 0 0 / 98%) 100%);
+  position: relative;
+  padding-top: 120px;
+  background-size: cover;
+  padding-bottom: 120px;
+}
+.endless-adventures .endless-bg {
+  position: absolute;
+  bottom: 0;
+}
+.endless-adventures .row {
+  align-items: center;
+}
+
+.endless-adventures .row .endless_description_text {
+  margin-bottom: 2.3rem;
+}
+
+.endless-adventures img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-heading__ {
+  font-size: 3.5rem;
+  font-family: var(--stratos);
+  font-weight: 600;
+  color: var(--white-color);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section-heading__::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--custom-purple-color);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.5s ease-in-out 0s;
+}
+
+.section-heading__:hover::before {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+@keyframes headingAnimation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.section-heading__ {
+  animation: 1s ease-in-out 0s 1 normal forwards running headingAnimation;
 }

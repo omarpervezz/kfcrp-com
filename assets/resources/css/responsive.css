@@ -53,6 +53,21 @@
   .banner-content {
     padding: 20px;
   }
+  .common-description {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .common-button {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+  }
+  .endless-adventures {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .endless-adventures h2 {
+    font-size: 1.9rem;
+  }
 }
 
 /* Mobile Devices (576px and below) */
