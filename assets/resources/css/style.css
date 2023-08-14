@@ -356,7 +356,7 @@ html.pushbar_locked {
   will-change: opacity;
   transition: opacity 0.5s ease;
   opacity: 0;
-  background: #3c3442;
+  background-color: rgba(11, 3, 38, 0.9);
 }
 
 /* Styling for pushbar overlay when pushbar is locked */
@@ -419,7 +419,12 @@ html.pushbar_locked .pushbar_overlay {
 
 /* Styling for pushbars' appearance */
 [data-pushbar-id] {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(
+    11,
+    3,
+    38,
+    0.95
+  ); /* Adjust the color to match your header gradient */
   border-left: 1px solid hsla(0, 0%, 100%, 0.1);
   width: 40% !important;
   z-index: 1002;
