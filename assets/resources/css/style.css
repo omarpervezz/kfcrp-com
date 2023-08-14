@@ -762,7 +762,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 /* Styling for the banner section */
 .banner_ {
   position: relative; /* Add position relative to the banner section */
-  background-image: url("http://kfcrp.com/cdn.sanity.io/images/3pyisqe8/production/KFCRP_background.jpg?w=1900&auto=format");
+  background-image: url(../../img/backgroundImg/KFCRP_background.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
