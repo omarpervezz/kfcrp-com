@@ -88,7 +88,7 @@ class Pushbar {
 // pushbar initilize
 const pushbar = new Pushbar({
   blur: true,
-  overlay: true,
+  overlay: false,
 });
 //open a pushbar
 pushbar.open("mypushbar1");
