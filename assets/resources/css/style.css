@@ -772,8 +772,8 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   height: 100%;
   background-image: linear-gradient(
     180deg,
-    rgb(0 0 0 / 0%) 0%,
-    rgb(0 0 0 / 63%) 100%
+    rgb(0 0 0 / 13%) 0%,
+    rgb(0 0 0 / 24%) 100%
   );
   z-index: -1;
 }
