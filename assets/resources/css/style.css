@@ -493,6 +493,7 @@ header {
   z-index: 100;
   transition: all 0.2s ease-in-out 0s;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px); /* Add backdrop-filter property */
 }
 
 header .container-fluid {
@@ -787,7 +788,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 }
 .endless-adventures .endless-bg {
   position: absolute;
-  bottom: -2.7rem;
+  bottom: -3.7rem;
 }
 .endless-adventures .row {
   align-items: center;
