@@ -1,3 +1,21 @@
+// Add an event listener to the window that listens for the "scroll" event
+window.addEventListener("scroll", (event) => {
+  // Get the current vertical scroll position using window.scrollY
+  const scroll = window.scrollY;
+
+  // Select the header element using its "header" tag name
+  const header = document.querySelector("header");
+
+  // Check if the scroll position is greater than 20 pixels
+  if (scroll > 20) {
+    // If the condition is true, add the "backDrop" class to the header element
+    header.classList.add("backDrop");
+  } else {
+    // If the condition is false, remove the "backDrop" class from the header element
+    header.classList.remove("backDrop");
+  }
+});
+
 // Get the DOM element with the class "push__bar"
 const push__bar = document.querySelector(".push__bar");
 
@@ -18,3 +36,26 @@ function removeAnimation() {
   // Remove the "animate__backInRight" class to ensure it's not active
   push__bar.classList.remove("animate__backInRight");
 }
+
+// $(document).ready(function () {
+//   // Header Type = Fixed
+//   $(function () {
+//     $(window).scroll(function () {
+//       var scroll = $(window).scrollTop();
+//       var img, source;
+//       var header_ = $("header");
+
+//       img = $("header .logo_ .header_logo");
+
+//       if (scroll > 20) {
+//         $("header").addClass("nav_bg_adder animate__fadeInDownBig");
+
+//         var link__ = $(".nav_item");
+//         link__.addClass("black_");
+//         // change the src
+//       } else {
+//         $("header").removeClass("nav_bg_adder animate__fadeInDownBig");
+
+//       }
+//     });
+//   });

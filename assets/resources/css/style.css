@@ -159,9 +159,11 @@ ul li {
 a {
   text-decoration: none;
 }
+
 img {
   user-select: none;
 }
+
 html {
   max-width: 100%;
   font-size: 62.2%;
@@ -179,14 +181,13 @@ body {
 }
 
 .common-description {
-  color: #c7c7c7;
+  color: rgb(199, 199, 199);
   font-family: var(--manrope-font);
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.4rem;
 }
 
-/* Default styling for the common button */
 .common-button {
   display: inline-block;
   padding: 15px 20px;
@@ -253,7 +254,6 @@ body {
   transition: color 0.3s ease 0s;
 }
 
-/* Styling for the hamburger menu */
 .hamburger-menu {
   width: 25px;
   height: 14px;
@@ -261,32 +261,29 @@ body {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out 0s;
 }
 
-/* Styling for the bars in the hamburger menu */
 .bar {
   width: 100%;
   height: 2px;
-  background-color: #98a0bb;
+  background-color: rgb(152, 160, 187);
   border-radius: 7px;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out 0s, opacity 0.3s ease-in-out 0s;
 }
 
-/* Initial state of the bars */
 .bar:nth-child(1) {
-  transform: translateY(0);
+  transform: translateY(0px);
 }
 
 .bar:nth-child(2) {
-  transform: translateY(0);
+  transform: translateY(0px);
 }
 
 .bar:nth-child(3) {
-  transform: translateY(0);
+  transform: translateY(0px);
 }
 
-/* Hover effect for the hamburger menu */
 .hamburger-menu:hover .bar:nth-child(1) {
   transform: translateY(5px);
   opacity: 0.7;
@@ -411,7 +408,7 @@ html.pushbar_locked .pushbar_overlay {
 
 [data-pushbar-id] {
   background-color: rgba(11, 3, 38, 0.95);
-  background-image: url("../../img/backgroundImg/fivem3.png");
+  background-image: url("../../img/backgroundImg/fivem2.png");
   background-size: cover;
   background-position: center center;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -443,13 +440,11 @@ html.pushbar_locked .pushbar_overlay {
 .push-container .mobile_container .menu___ {
   width: 100%;
   height: 41vh;
-  background-color: rgba(0, 0, 0, 0.41);
-  border: 0.1rem solid rgb(118, 129, 129);
   position: relative;
   background: linear-gradient(
     99deg,
-    rgb(4 4 4 / 53%) 0%,
-    rgb(0 0 0 / 73%) 100%
+    rgba(4, 4, 4, 0.53) 0%,
+    rgba(0, 0, 0, 0.73) 100%
   );
 }
 
@@ -518,15 +513,16 @@ header {
   top: 0px;
   z-index: 100;
   transition: all 0.2s ease-in-out 0s;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px); /* Add backdrop-filter property */
   background: linear-gradient(
-    272deg,
-    rgb(4 4 4 / 46%) 0%,
-    rgb(0 0 0 / 61%) 100%
-  );
+      251deg,
+      rgb(4 4 4 / 18%) 0%,
+      rgb(0 0 0 / 19%) 100%
+    )
+    rgb(0 0 0 / 24%);
 }
-
+.backDrop {
+  backdrop-filter: blur(6px);
+}
 header .container-fluid {
   width: 90%;
   margin: auto;
@@ -640,13 +636,13 @@ header
   top: 5.8rem;
   left: 0px;
   background: linear-gradient(
-    251deg,
-    rgb(4 4 4 / 16%) 0%,
-    rgb(0 0 0 / 31%) 100%
-  );
+      251deg,
+      rgba(4, 4, 4, 0.16) 0%,
+      rgba(0, 0, 0, 0.31) 100%
+    )
+    rgba(0, 0, 0, 0.56);
   min-width: 273px;
   border-radius: 14px;
-  background-color: rgb(0 0 0 / 56%);
   z-index: 1;
   text-align: left;
   padding: 2rem 1.5rem;
@@ -759,11 +755,12 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   text-align: center;
   padding: 100px 0px;
   background-color: rgb(11, 3, 38);
-  background-image: url("../../img/backgroundImg/fivem1.jpg");
+  background-image: url("../../img/backgroundImg/fivem1.png");
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   z-index: 1;
 }
+
 .banner-overlay {
   position: absolute;
   top: 0px;
@@ -771,9 +768,8 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(
-    180deg,
-    rgb(0 0 0 / 13%) 0%,
-    rgb(0 0 0 / 24%) 100%
+    rgba(0, 0, 0, 0.13) 0%,
+    rgb(0 0 0 / 71%) 100%
   );
   z-index: -1;
 }
@@ -812,16 +808,18 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 }
 
 .endless-adventures {
-  background: linear-gradient(180deg, rgb(4 4 4) 0%, rgb(0 0 0 / 98%) 100%);
+  background: linear-gradient(rgb(4, 4, 4) 0%, rgba(0, 0, 0, 0.98) 100%) 0% 0% /
+    cover;
   position: relative;
   padding-top: 120px;
-  background-size: cover;
   padding-bottom: 120px;
 }
+
 .endless-adventures .endless-bg {
   position: absolute;
   bottom: -3.7rem;
 }
+
 .endless-adventures .row {
   align-items: center;
   z-index: 20;
