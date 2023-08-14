@@ -53,6 +53,9 @@
   .banner-content {
     padding: 20px;
   }
+  .section-heading__::before {
+    display: none;
+  }
   .common-description {
     font-size: 1.5rem;
     line-height: 2rem;
