@@ -75,10 +75,11 @@ class Pushbar {
   }
   close() {
     if (!this.activeId) return;
-    this.emitClosing(), this.activeElement.classList.remove("opened");
     this.emitClosing(),
-      this.activeElement.classList.remove("animate__backInRight");
-    this.activeElement.classList.add("animate__backOutRight");
+      this.activeElement.classList.remove("opened"),
+      this.activeElement.classList.remove("animate__backInRight"),
+      this.activeElement.classList.add("animate__backOutRight");
+
     const e = document.querySelector("html");
     e.classList.remove("pushbar_locked"),
       e.removeAttribute("pushbar"),
@@ -87,13 +88,8 @@ class Pushbar {
   }
 }
 
-/* pushbar */
 // pushbar initilize
 const pushbar = new Pushbar({
   blur: true,
   overlay: true,
 });
-//open a pushbar
-pushbar.open("mypushbar1");
-//close all pushbars
-pushbar.close();

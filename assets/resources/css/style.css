@@ -411,7 +411,7 @@ html.pushbar_locked .pushbar_overlay {
 
 [data-pushbar-id] {
   background-color: rgba(11, 3, 38, 0.95);
-  background-image: url("../../img/backgroundImg/bg5.jpg");
+  background-image: url("../../img/backgroundImg/fivem3.png");
   background-size: cover;
   background-position: center center;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -759,7 +759,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   text-align: center;
   padding: 100px 0px;
   background-color: rgb(11, 3, 38);
-  background-image: url("../../img/backgroundImg/bg8.jpg");
+  background-image: url("../../img/backgroundImg/fivem1.jpg");
   background-size: cover;
   background-position: center center;
   z-index: 1;
