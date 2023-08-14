@@ -925,3 +925,62 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   font-family: var(--manrope-font);
   font-weight: 500;
 }
+/* Style for the image container */
+.image-container-hover {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* Style for the image wrapper */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  will-change: transform; /* Optimize for performance */
+}
+
+/* Style for the image itself */
+.hover-effect {
+  display: block;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the back face during rotation */
+}
+
+/* Style for the overlay */
+.overlay__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(71, 67, 64, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.overlay__description p {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--custom-purple-color);
+  font-family: var(--manrope-font);
+  font-style: normal;
+  font-weight: 400;
+}
+/* Show overlay on hover */
+.image-container-hover:hover .overlay__description {
+  opacity: 1;
+}
+
+/* Enhanced animated scale hover effect for the image */
+.image-container-hover:hover .image-wrapper {
+  transform: scale3d(1.1, 1.1, 1); /* Scale up on hover */
+}
