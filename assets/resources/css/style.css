@@ -787,10 +787,11 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 }
 .endless-adventures .endless-bg {
   position: absolute;
-  bottom: 0;
+  bottom: -2.7rem;
 }
 .endless-adventures .row {
   align-items: center;
+  z-index: 20;
 }
 
 .endless-adventures .row .endless_description_text {
