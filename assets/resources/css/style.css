@@ -444,6 +444,11 @@ html.pushbar_locked .pushbar_overlay {
   background-color: rgba(0, 0, 0, 0.41);
   border: 0.1rem solid rgb(118, 129, 129);
   position: relative;
+  background: linear-gradient(
+    99deg,
+    rgb(4 4 4 / 53%) 0%,
+    rgb(0 0 0 / 73%) 100%
+  );
 }
 
 .push-container .mobile_container .menu___ .mobile_menu_logo {
@@ -513,6 +518,11 @@ header {
   transition: all 0.2s ease-in-out 0s;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px); /* Add backdrop-filter property */
+  background: linear-gradient(
+    272deg,
+    rgb(4 4 4 / 46%) 0%,
+    rgb(0 0 0 / 61%) 100%
+  );
 }
 
 header .container-fluid {
@@ -627,16 +637,14 @@ header
   position: absolute;
   top: 5.8rem;
   left: 0px;
-  background-image: linear-gradient(
-    rgba(11, 3, 38, 0.14),
-    rgba(11, 3, 38, 0.46)
+  background: linear-gradient(
+    251deg,
+    rgb(4 4 4 / 16%) 0%,
+    rgb(0 0 0 / 31%) 100%
   );
-  min-width: 260px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.72);
+  min-width: 273px;
+  border-radius: 14px;
+  background-color: rgb(0 0 0 / 56%);
   z-index: 1;
   text-align: left;
   padding: 2rem 1.5rem;
