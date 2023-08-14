@@ -53,6 +53,9 @@
   .banner-content {
     padding: 20px;
   }
+  .section-heading__ {
+    font-size: 1.9rem;
+  }
   .section-heading__::before {
     display: none;
   }
@@ -67,9 +70,6 @@
   .endless-adventures {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-  .endless-adventures h2 {
-    font-size: 1.9rem;
   }
 }
 
