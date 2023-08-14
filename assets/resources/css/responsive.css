@@ -50,6 +50,9 @@
     width: 100% !important;
     margin-right: 1rem;
   }
+  .banner-content {
+    padding: 20px;
+  }
 }
 
 /* Mobile Devices (576px and below) */

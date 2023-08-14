@@ -44,7 +44,7 @@
               class="d-flex justify-content-end align-items-center menu_container"
             >
               <div class="nav_menu">
-                <ul class="d-flex desk_menu">
+                <ul class="d-flex desktop_menu">
                   <li><a href="#" class="nav_item">Home</a></li>
                   <li><a href="#" class="nav_item">About</a></li>
                   <li><a href="#" class="nav_item">Blogs</a></li>
@@ -102,7 +102,11 @@
 
             <!-- User Information and Hamburger Menu -->
             <div class="d-flex align-items-center">
-              <div class="hamburger" data-pushbar-target="mypushbar1">
+              <div
+                class="hamburger"
+                data-pushbar-target="mypushbar1"
+                onclick="addAnimation()"
+              >
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -118,7 +122,7 @@
     <div
       data-pushbar-id="mypushbar1"
       data-pushbar-direction="right"
-      class="push-container push__bar"
+      class="push-container push__bar animate__animated"
     >
       <div class="container-fluid text-center">
         <div
@@ -137,7 +141,7 @@
             <li><a href="#">Server Rules</a></li>
           </ul>
           <ul>
-            <li>
+            <li class="hover_item">
               <a href="#"
                 ><span>Discord</span>&nbsp;&nbsp;<svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +154,7 @@
                   ></path></svg
               ></a>
             </li>
-            <li>
+            <li class="hover_item">
               <a href="#"
                 ><span>Ban Appeal</span>&nbsp;&nbsp;<svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +167,7 @@
                   ></path></svg
               ></a>
             </li>
-            <li>
+            <li class="hover_item">
               <a href="#"
                 ><span>Store</span>&nbsp;&nbsp;<svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -182,12 +186,50 @@
           </ul>
         </div>
       </div>
-      <button id="close" type="button" data-pushbar-close>
+      <button
+        id="close"
+        type="button"
+        data-pushbar-close
+        onclick="removeAnimation()"
+      >
         <i class="fas fa-solid fa-xmark"></i>
       </button>
     </div>
     <!-- Mobile Menu End -->
 
+    <!-- The main content section of the webpage -->
+    <main>
+      <!-- Banner section -->
+      <section class="banner_">
+        <!-- Content of the banner section -->
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-6">
+              <div class="banner-content text-center">
+                <div class="image-container">
+                  <img
+                    src="./assets/img/512_2.png"
+                    alt="Unleash Your Inner Character"
+                    class="img-fluid animated-image"
+                  />
+                </div>
+                <p class="server-description">
+                  Unleash Your Inner Character on Our FiveM Server. Immerse
+                  Yourself in a Unique Role-Playing Experience. Join Our Growing
+                  Community for Endless Adventures.
+                </p>
+                <a href="#" class="common-button button-join-kfcr"
+                  >JOIN KFCRP TODAY!</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banner section -->
+    </main>
+    <!-- The main content section of the webpage -->
     <!-- Essential JavaScript Plugin scripts -->
     <!-- Include jQuery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
