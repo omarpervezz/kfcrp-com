@@ -8,11 +8,11 @@ window.addEventListener("scroll", (event) => {
 
   // Check if the scroll position is greater than 20 pixels
   if (scroll > 20) {
-    // If the condition is true, add the "backDrop" class to the header element
-    header.classList.add("backDrop");
+    // If the condition is true, add the "backDrop & animate__fadeInDownBig" class to the header element
+    header.classList.add("backDrop", "animate__fadeInDownBig");
   } else {
-    // If the condition is false, remove the "backDrop" class from the header element
-    header.classList.remove("backDrop");
+    // If the condition is false, remove the "backDrop & animate__fadeInDownBig" class from the header element
+    header.classList.remove("backDrop", "animate__fadeInDownBig");
   }
 });
 
@@ -36,26 +36,3 @@ function removeAnimation() {
   // Remove the "animate__backInRight" class to ensure it's not active
   push__bar.classList.remove("animate__backInRight");
 }
-
-// $(document).ready(function () {
-//   // Header Type = Fixed
-//   $(function () {
-//     $(window).scroll(function () {
-//       var scroll = $(window).scrollTop();
-//       var img, source;
-//       var header_ = $("header");
-
-//       img = $("header .logo_ .header_logo");
-
-//       if (scroll > 20) {
-//         $("header").addClass("nav_bg_adder animate__fadeInDownBig");
-
-//         var link__ = $(".nav_item");
-//         link__.addClass("black_");
-//         // change the src
-//       } else {
-//         $("header").removeClass("nav_bg_adder animate__fadeInDownBig");
-
-//       }
-//     });
-//   });

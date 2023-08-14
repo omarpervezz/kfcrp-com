@@ -411,7 +411,6 @@ html.pushbar_locked .pushbar_overlay {
   background-image: url("../../img/backgroundImg/fivem2.png");
   background-size: cover;
   background-position: center center;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1002;
   width: 60% !important;
 }
