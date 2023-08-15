@@ -1029,8 +1029,13 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 }
 /* Testimonial CSS */
 .testimonial__sec {
-  background: linear-gradient(rgb(4, 4, 4) 0%, rgba(0, 0, 0, 0.98) 100%) 0% 0% /
-    cover;
+  background-color: rgb(11, 3, 38);
+  background-image: linear-gradient(
+    rgb(24, 4, 61),
+    rgb(11, 3, 38) 11%,
+    rgb(11, 3, 38) 67%,
+    rgb(0, 0, 0)
+  );
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
