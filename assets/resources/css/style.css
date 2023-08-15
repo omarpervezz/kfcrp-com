@@ -179,14 +179,13 @@ body {
   background: rgb(10, 12, 10);
   font-family: var(--manrope-font);
 }
-/* Common CSS */
+
 section {
   padding-top: 9rem;
   padding-bottom: 9rem;
 }
-/* Styling for common section headings */
-.section-heading__ {
-  /* Set the font size, font family, font weight, color, margin, position, and line height */
+
+.section_heading__ {
   font-size: 4rem;
   font-family: var(--stratos);
   font-weight: 600;
@@ -194,14 +193,10 @@ section {
   margin-bottom: 1.5rem;
   position: relative;
   line-height: 4.3rem;
-
-  /* Apply animation to the heading using keyframes */
-  animation: headingAnimation 1s ease-in-out 0s 1 normal forwards running;
+  animation: 1s ease-in-out 0s 1 normal forwards running headingAnimation;
 }
 
-/* Pseudo-element used for the animated underline on hover */
-.section-heading__::before {
-  /* Create an invisible line above the heading */
+.section_heading__::before {
   content: "";
   position: absolute;
   top: 100%;
@@ -214,39 +209,32 @@ section {
   transition: transform 0.5s ease-in-out 0s;
 }
 
-/* Hover effect to reveal the underline */
-.section-heading__:hover::before {
+.section_heading__:hover::before {
   transform: scaleX(1);
   transform-origin: left center;
 }
 
-/* Keyframes for the heading animation */
 @keyframes headingAnimation {
-  /* Initial state: heading is slightly above with opacity 0 */
   0% {
     transform: translateY(-20px);
     opacity: 0;
   }
 
-  /* Final state: heading is at its original position with full opacity */
   100% {
     transform: translateY(0px);
     opacity: 1;
   }
 }
 
-/* Styling for common descriptions */
 .common-description {
-  color: rgb(199 199 199 / 89%);
+  color: rgba(199, 199, 199, 0.89);
   font-family: var(--manrope-font);
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 2.8rem;
 }
 
-/* Styling for common buttons */
 .common-button {
-  /* Set display, padding, border radius, and gradient background */
   display: inline-block;
   padding: 15px 20px;
   border-radius: 12px;
@@ -262,8 +250,6 @@ section {
       rgba(205, 219, 248, 0) 51%
     ),
     linear-gradient(rgb(108, 82, 238), rgb(108, 82, 238));
-
-  /* Apply box shadow and set font properties */
   box-shadow: rgba(0, 0, 0, 0.19) 1px 1px 3px 1px,
     rgba(238, 1, 255, 0.57) 0px 0px 15px 0px,
     rgba(0, 29, 255, 0.73) 0px 5px 53px 0px;
@@ -280,9 +266,7 @@ section {
     filter 2000ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 
-/* Hover effect for common buttons */
 .common-button:hover {
-  /* Set border style, width, color, box shadow, filter, and transform */
   border-style: none;
   border-width: 1px;
   border-color: rgba(255, 255, 255, 0.26);
@@ -576,14 +560,16 @@ header {
   transition: all 0.2s ease-in-out 0s;
   background: linear-gradient(
       251deg,
-      rgb(4 4 4 / 41%) 0%,
-      rgb(0 0 0 / 39%) 100%
+      rgba(4, 4, 4, 0.41) 0%,
+      rgba(0, 0, 0, 0.39) 100%
     )
-    rgb(0 0 0 / 55%);
+    rgba(0, 0, 0, 0.55);
 }
+
 .backDrop {
   backdrop-filter: blur(6px);
 }
+
 header .container-fluid {
   width: 90%;
   margin: auto;
@@ -830,7 +816,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   height: 100%;
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.13) 0%,
-    rgb(0 0 0 / 71%) 100%
+    rgba(0, 0, 0, 0.71) 100%
   );
   z-index: -1;
 }
@@ -898,89 +884,197 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 }
 
 .staff_team {
-  background-color: #0b0326;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#18043d),
-    color-stop(11%, #0b0326),
-    color-stop(67%, #0b0326),
-    to(#000)
-  );
+  background-color: rgb(11, 3, 38);
   background-image: linear-gradient(
-    180deg,
-    #18043d,
-    #0b0326 11%,
-    #0b0326 67%,
-    #000
+    rgb(24, 4, 61),
+    rgb(11, 3, 38) 11%,
+    rgb(11, 3, 38) 67%,
+    rgb(0, 0, 0)
   );
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
 }
+
 .staff_team .section-subheading {
   color: var(--custom-purple-color);
   font-size: 1.35rem;
 }
+
 .staff_team .highlight {
-  color: #9e0b9e;
+  color: rgb(158, 11, 158);
   font-family: var(--manrope-font);
   font-weight: 500;
 }
-/* Style for the image container */
+
+.staff_team .row:nth-child(1) .col-lg-3 {
+  margin-left: 2.4rem;
+}
+
+.staff_team .row:nth-child(2) .col-lg-3 {
+  width: 20%;
+  margin-left: 2.7rem;
+}
+
 .image-container-hover {
   position: relative;
   overflow: hidden;
   display: inline-block;
 }
 
-/* Style for the image wrapper */
 .image-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s;
   perspective: 1000px;
   transform-style: preserve-3d;
-  will-change: transform; /* Optimize for performance */
+  will-change: transform;
 }
 
-/* Style for the image itself */
 .hover-effect {
   display: block;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hide the back face during rotation */
+  backface-visibility: hidden;
 }
 
-/* Style for the overlay */
 .overlay__description {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(71, 67, 64, 0.9);
+  background-color: rgba(12, 6, 2, 0.77);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out 0s;
 }
+
 .overlay__description p {
   width: 80%;
-  margin: auto;
   text-align: center;
-  font-size: 1.1rem;
-  color: var(--custom-purple-color);
+  font-size: 1rem;
+  color: rgb(212, 212, 212);
   font-family: var(--manrope-font);
   font-style: normal;
   font-weight: 400;
 }
-/* Show overlay on hover */
+
+.overlay__description .stream_profile {
+  color: var(--white-color);
+  margin-top: 0.7rem;
+  font-family: var(--manrope-font);
+  font-weight: 200;
+  font-style: var(--font-style);
+}
+
+.overlay__description .stream_profile {
+  position: relative;
+}
+
+.overlay__description .stream_profile::before {
+  content: attr(data-steam);
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(0, 0, 0);
+  padding: 2px 6px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 400;
+  border: 0.1rem solid rgb(255, 255, 255);
+}
+
+.overlay__description .stream_profile:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
 .image-container-hover:hover .overlay__description {
   opacity: 1;
 }
 
-/* Enhanced animated scale hover effect for the image */
 .image-container-hover:hover .image-wrapper {
-  transform: scale3d(1.1, 1.1, 1); /* Scale up on hover */
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+.img_information_container .name_text,
+.img_information_container .title_text {
+  font-family: var(--manrope-font);
+  font-size: 1.3rem;
+  font-style: var(--font-style);
+}
+
+.img_information_container .name_text {
+  font-weight: 700;
+  color: rgb(215, 216, 217);
+}
+
+.img_information_container .title_text {
+  font-weight: 400;
+  color: rgb(255, 46, 46);
+  margin-top: 0.3rem;
+}
+
+.img_information_container .green_text {
+  color: rgb(83, 230, 21);
+}
+/* Testimonial CSS */
+.testimonial__sec {
+  background: linear-gradient(rgb(4, 4, 4) 0%, rgba(0, 0, 0, 0.98) 100%) 0% 0% /
+    cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.testimonial__sec .testimonial {
+  height: 273px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.testimonial__sec .testimonial .common-description {
+  font-size: 1.5rem;
+  text-overflow: ellipsis;
+}
+
+.owl-carousel {
+  background-color: rgb(11, 3, 38);
+  background-image: linear-gradient(
+    rgb(24, 4, 61),
+    rgb(11, 3, 38) 11%,
+    rgb(11, 3, 38) 67%,
+    rgb(0, 0, 0)
+  );
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.owl-carousel:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.owl-carousel .common-button {
+  padding: 1.5rem 5.5rem;
+}
+.testimonial__sec .owl-theme .owl-controls .owl-buttons div {
+  margin: 1rem 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
 }

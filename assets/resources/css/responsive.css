@@ -30,6 +30,9 @@
   .hamburger span {
     font-size: 0.9rem;
   }
+  .staff_team .row .col-lg-3 {
+    width: 34%;
+  }
 }
 /* Tablets and Smaller Laptops (766px and below) */
 @media (max-width: 766px) {
@@ -53,10 +56,10 @@
   .banner-content {
     padding: 20px;
   }
-  .section-heading__ {
+  .section_heading__ {
     font-size: 1.9rem;
   }
-  .section-heading__::before {
+  .section_heading__::before {
     display: none;
   }
   .common-description {
@@ -71,11 +74,28 @@
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  .staff_team div.row .col-lg-3 {
+    width: 52% !important;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  .staff_team div.row:nth-child(2) .col-lg-3 {
+    width: 52% !important;
+    margin-left: 0;
+  }
+  .testimonial__sec .testimonial .common-description {
+    font-size: 1.2rem;
+  }
+  .owl-controls .owl-buttons div {
+    margin: 0.7rem 1rem !important;
+  }
+  .owl-carousel .common-button {
+    padding: 1rem 3.3rem;
+  }
 }
 
 /* Mobile Devices (576px and below) */
 @media (max-width: 576px) {
-  /* Add your responsive styles here for screens up to 576px */
 }
 
 /* Smallest Mobile Devices (450px and below) */
