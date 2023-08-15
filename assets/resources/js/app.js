@@ -67,7 +67,7 @@ function testimonialController(prev, next) {
     const prevContent = prevStyle.content;
     prev[i].style.setProperty("--prev-before-content", prevContent);
     prev[i].classList.add("common-button", "btn-prev", "d-flex");
-    prev[i].textContent = "Prev";
+    prev[i].innerHTML = `<img src="./assets/img/left.svg" alt="left">`;
   }
 
   for (let i = 0; i < next.length; i++) {
@@ -75,6 +75,6 @@ function testimonialController(prev, next) {
     const nextContent = nextStyle.content;
     next[i].style.setProperty("--next-before-content", nextContent);
     next[i].classList.add("common-button", "btn-next", "d-flex");
-    next[i].textContent = "Next";
+    next[i].innerHTML = `<img src="./assets/img/right.svg" alt="right">`;
   }
 }
