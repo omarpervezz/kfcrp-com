@@ -7,7 +7,6 @@
 /* About Header CSS */
 .about_header {
   position: relative;
-  margin-bottom: 3rem;
   padding: 150px 0px;
   background-image: url("../../img/backgroundImg/about-bg.jpg");
   background-repeat: no-repeat;
@@ -51,24 +50,25 @@
   right: 0;
 }
 
-.about_heading a,
-ul.fancy_list li a {
+.highlighted_link {
   color: #53e615 !important;
   text-decoration: underline;
+  font-weight: bold;
 }
 
-.about_heading a:hover,
-ul.fancy_list li:hover a {
+.highlighted_link:hover {
   color: #007bff !important;
 }
 /* About Content CSS */
 .about_content {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background: linear-gradient(rgb(4, 4, 4) 0%, rgba(0, 0, 0, 0.98) 100%) 0% 0% /
+    cover;
 }
 .about_content .section_heading__ {
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
   font-size: 3.2rem;
   color: var(--white-color);
   opacity: 0.9 !important;
@@ -84,7 +84,7 @@ ul.fancy_list li:hover a {
   font-style: italic;
   font-weight: bold;
   color: rgb(0 255 168 / 90%);
-  background-color: black;
+
   text-decoration: underline;
   opacity: 0.9;
   display: inline-block;
