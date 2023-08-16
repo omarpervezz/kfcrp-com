@@ -1029,17 +1029,14 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 }
 /* Testimonial CSS */
 .testimonial__sec {
-  background-color: rgb(11 3 38);
+  background-color: rgb(11, 3, 38);
   background-image: linear-gradient(
-      rgb(24 4 61 / 0%),
-      rgb(11 3 38 / 13%) 11%,
-      rgb(0 0 0 / 82%) 67%,
-      rgb(0 0 0 / 0%)
-    ),
-    url(../../img/backgroundImg/GTA5-7.jpg);
+    rgb(24, 4, 61),
+    rgb(11, 3, 38) 11%,
+    rgb(11, 3, 38) 67%,
+    rgb(0, 0, 0)
+  );
   background-size: cover;
-  background-position: bottom right;
-  background-attachment: fixed;
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
@@ -1058,10 +1055,12 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 }
 
 .owl-carousel {
-  background: linear-gradient(
-    99deg,
-    rgba(4, 4, 4, 0.53) 0%,
-    rgba(0, 0, 0, 0.73) 100%
+  background-color: rgb(11, 3, 38);
+  background-image: linear-gradient(
+    rgb(24, 4, 61),
+    rgb(11, 3, 38) 11%,
+    rgb(11, 3, 38) 67%,
+    rgb(0, 0, 0)
   );
   border-radius: 4px;
   overflow: hidden;
