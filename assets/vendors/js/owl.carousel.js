@@ -1022,3 +1022,46 @@
     afterLazyLoad: !1,
   };
 })(jQuery, window, document);
+
+/* testimonials slider */
+$(function () {
+  $("#testimonial-slider").owlCarousel({
+    items: 1,
+    itemsDesktop: [1000, 2],
+    itemsDesktopSmall: [979, 2],
+    itemsTablet: [768, 1],
+    pagination: false,
+    navigation: true,
+    navigationText: ["", ""],
+    autoPlay: false,
+  });
+  const owl_buttons_container = document.querySelector(".owl-buttons");
+  owl_buttons_container.classList.add("d-flex", "justify-content-center");
+  const prev = document.querySelectorAll(
+    "#testimonial-slider .owl-buttons .owl-prev"
+  );
+
+  const next = document.querySelectorAll(
+    "#testimonial-slider .owl-buttons .owl-next"
+  );
+  testimonialController(prev, next);
+});
+
+// testimonial controller
+function testimonialController(prev, next) {
+  for (let i = 0; i < prev.length; i++) {
+    const prevStyle = window.getComputedStyle(prev[i], "::before");
+    const prevContent = prevStyle.content;
+    prev[i].style.setProperty("--prev-before-content", prevContent);
+    prev[i].classList.add("common-button", "btn-prev", "d-flex");
+    prev[i].innerHTML = `<img src="./assets/img/left.svg" alt="left">`;
+  }
+
+  for (let i = 0; i < next.length; i++) {
+    const nextStyle = window.getComputedStyle(next[i], "::before");
+    const nextContent = nextStyle.content;
+    next[i].style.setProperty("--next-before-content", nextContent);
+    next[i].classList.add("common-button", "btn-next", "d-flex");
+    next[i].innerHTML = `<img src="./assets/img/right.svg" alt="right">`;
+  }
+}

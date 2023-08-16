@@ -57,7 +57,7 @@
     padding: 20px;
   }
   .section_heading__ {
-    font-size: 1.9rem;
+    font-size: 2.7rem !important;
   }
   .section_heading__::before {
     display: none;
@@ -91,6 +91,9 @@
   }
   .owl-carousel .common-button {
     padding: 1rem 3.3rem;
+  }
+  footer .col-md-3 > div {
+    width: 100%;
   }
 }
 

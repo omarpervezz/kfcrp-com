@@ -1,9 +1,9 @@
 {
-  "editor.autoClosingBrackets": "never",
-  "editor.suggestOnTriggerCharacters": true,
-  "editor.hover.enabled": true,
-  "editor.parameterHints.enabled": true,
-  "editor.suggest.snippetsPreventQuickSuggestions": true,
+  // "editor.autoClosingBrackets": "never",
+  // "editor.suggestOnTriggerCharacters": true,
+  // "editor.hover.enabled": true,
+  // "editor.parameterHints.enabled": true,
+  // "editor.suggest.snippetsPreventQuickSuggestions": true,
   "html.suggest.html5": false,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
