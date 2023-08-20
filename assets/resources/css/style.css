@@ -1338,7 +1338,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   margin-bottom: 2rem;
 }
 /* Style for the footer section */
-footer {
+.footer {
   background: linear-gradient(rgb(4, 4, 4) 0%, rgba(0, 0, 0, 0.98) 100%) 0% 0% /
     cover;
   padding-top: 8rem;
@@ -1346,7 +1346,7 @@ footer {
   border-top: 1px solid hsla(0, 0%, 100%, 0.1);
 }
 
-footer h5 {
+.footer h5 {
   color: #ffffff;
   font-size: 1.7rem;
   margin-bottom: 1.8rem;
@@ -1354,11 +1354,11 @@ footer h5 {
   font-weight: 400;
   font-style: normal;
 }
-footer img {
+.footer img {
   width: 8rem;
 }
-footer p,
-footer ul {
+.footer p,
+.footer ul {
   color: #adb5bd;
   font-size: 1.5rem;
   font-family: var(--manrope-font);
@@ -1367,15 +1367,15 @@ footer ul {
   opacity: 0.7;
 }
 
-footer .about_description {
+.footer .about_description {
   margin-top: 1.3rem;
   transition: color 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s,
     opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
 }
-footer .about_description:hover {
+.footer .about_description:hover {
   color: var(--white-color);
 }
-footer a {
+.footer a {
   color: #adb5bd;
   font-size: 1.4rem;
   font-family: var(--manrope-font);
@@ -1385,25 +1385,25 @@ footer a {
   transition: color 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s,
     opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
 }
-footer a svg {
+.footer a svg {
   fill: #adb5bd;
   transition: color 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s,
     opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
 }
-footer a:hover {
+.footer a:hover {
   color: var(--white-color);
 }
-footer a:hover svg {
+.footer a:hover svg {
   fill: var(--white-color);
 }
-footer ul li {
+.footer ul li {
   padding-left: 1.5rem;
   position: relative;
   list-style-type: none;
   margin-bottom: 0.5rem;
 }
 
-footer ul li i {
+.footer ul li i {
   position: absolute;
   left: 0;
   top: 50%;
@@ -1411,7 +1411,7 @@ footer ul li i {
   width: 20px;
   text-align: center;
 }
-footer .copyright__ {
+.footer .copyright__ {
   font-size: 1.2rem;
   margin-top: 5rem;
 }

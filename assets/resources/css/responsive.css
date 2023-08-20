@@ -96,7 +96,7 @@
     margin-bottom: 5rem !important;
   }
 
-  footer .col-md-3 > div {
+  .footer .col-md-3 > div {
     width: 100%;
   }
 }

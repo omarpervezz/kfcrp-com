@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="assets/resources/css/style.css" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/resources/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.css"
+    />
+    <link rel="stylesheet" href="assets/resources/css/about.css" />
   </head>
   <body>
     <!-- Start Header Section -->
@@ -216,10 +221,10 @@
     <!-- Mobile Menu End -->
 
     <!-- The main content section of the webpage -->
-    <main>
+    <main id="homepage">
       <!-- Banner section -->
 
-      <section class="banner_">
+      <section class="section banner_">
         <div class="banner-overlay"></div>
         <!-- Content of the banner section -->
         <div class="container">
@@ -253,7 +258,7 @@
 
       <!-- Banner section -->
       <!-- endless-adventures -->
-      <section class="endless-adventures">
+      <section class="section endless-adventures">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0">
@@ -291,8 +296,8 @@
       </section>
       <!-- endless-adventures -->
       <!-- Section for Staff Team -->
-      <section class="staff_team">
-        <div class="container">
+      <section class="section staff_team">
+        <div class="container pt-5">
           <div class="row justify-content-center">
             <div class="col-md-8 text-center">
               <div class="aniview" data-av-animation="animate__slideInUp">
@@ -485,7 +490,7 @@
       </section>
       <!-- Section for Staff Team -->
       <!-- endless-adventures -->
-      <section class="endless-adventures">
+      <section class="section endless-adventures">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
@@ -532,7 +537,7 @@
       <!-- endless-adventures -->
 
       <!--testimonial start-->
-      <section class="testimonial__sec">
+      <section class="section testimonial__sec">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8 text-center">
@@ -1008,7 +1013,7 @@
 
       <!--testimonial end-->
       <!-- endless-adventures -->
-      <section class="endless-adventures">
+      <section class="section endless-adventures">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0">
@@ -1044,7 +1049,7 @@
       </section>
       <!-- endless-adventures -->
       <!-- sponser -->
-      <section class="sponser">
+      <section class="section sponser">
         <div class="container aniview" data-av-animation="animate__slideInUp">
           <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 col-md-6">
@@ -1069,116 +1074,117 @@
             </div>
           </div>
         </div>
+        <!-- Footer -->
+        <section class="footer">
+          <div class="container-fluid">
+            <div class="row gy-4">
+              <div
+                class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <img
+                    src="./assets/img/2222.png"
+                    alt="footer logo"
+                    class="img-fluid"
+                  />
+                  <p class="about_description">
+                    A one-of-a-kind FiveM roleplay server offering an immersive
+                    and engaging experience with unique features that set us
+                    apart from other roleplay servers.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h5>Contact Us</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fas fa-phone-alt"></i>&nbsp;&nbsp; +447769759211
+                    </li>
+                    <li>
+                      <i class="fas fa-envelope"></i>&nbsp;&nbsp;
+                      eastd1@hphasesw.com
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h5>Our Services</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="https://discord.com/invite/kfcrp" target="_blank"
+                        ><span>Discord</span>&nbsp;<svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="inline-block fill-white mb-1 ml-1"
+                          width="10"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                          ></path></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://store.kfcrp.com/" target="_blank"
+                        ><span>Ban Appeal</span>&nbsp;<svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="inline-block fill-white mb-1 ml-1"
+                          width="10"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                          ></path></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://store.kfcrp.com/" target="_blank"
+                        ><span>Store</span>&nbsp;&nbsp;<svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="inline-block fill-white mb-1 ml-1"
+                          width="10"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                          ></path></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-12 mt-3">
+                <p class="common-description copyright__">
+                  Copyright © 2023 - KFCRP.com @ Cfx.re | FIVEM Community
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Footer -->
       </section>
     </main>
     <!-- The main content section of the webpage -->
-    <!-- Footer -->
-    <footer>
-      <div class="container-fluid">
-        <div class="row gy-4">
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <img
-                src="./assets/img/2222.png"
-                alt="footer logo"
-                class="img-fluid"
-              />
-              <p class="about_description">
-                A one-of-a-kind FiveM roleplay server offering an immersive and
-                engaging experience with unique features that set us apart from
-                other roleplay servers.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <h5>Contact Us</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fas fa-phone-alt"></i>&nbsp;&nbsp; +447769759211
-                </li>
-                <li>
-                  <i class="fas fa-envelope"></i>&nbsp;&nbsp;
-                  eastd1@hphasesw.com
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <h5>Our Services</h5>
-              <ul class="list-unstyled">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <h5>Quick Links</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://discord.com/invite/kfcrp" target="_blank"
-                    ><span>Discord</span>&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://store.kfcrp.com/" target="_blank"
-                    ><span>Ban Appeal</span>&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://store.kfcrp.com/" target="_blank"
-                    ><span>Store</span>&nbsp;&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-12 mt-3">
-            <p class="common-description copyright__">
-              Copyright © 2023 - KFCRP.com @ Cfx.re | FIVEM Community
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer -->
+
     <!-- fixed social buttons -->
     <div id="fixed-social">
       <div>
@@ -1219,5 +1225,61 @@
     <script src="assets/vendors/js/owl.carousel.js"></script>
     <!-- Include app.js for custom JavaScript functionality -->
     <script src="assets/resources/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/vendors/jquery.easings.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/vendors/scrolloverflow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#homepage").fullpage({
+          scrollingSpeed: 1000,
+          autoScrolling: true,
+          fitToSection: true,
+          fitToSectionDelay: 2000,
+          anchors: ["home", "about-us", "what-we-do", "our-work"],
+          sectionsColor: ["#f2f2f2", "#1BBC9B", "#7E8F7C", "#C63D0F"],
+          verticalCentered: false,
+          navigation: true,
+          navigationPosition: "right",
+          navigationTooltips: [
+            "Eureka Mediatech",
+            "About Us",
+            "What we do",
+            "Our Work",
+          ],
+          responsiveWidth: 900,
+          onLeave: function (index, nextIndex, direction) {
+            if (direction == "up") {
+              $(".section").removeClass("down");
+              $(".section").removeClass("next");
+              $(".section").removeClass("prev");
+              $("#homepage .section:nth-child(" + nextIndex + ")").addClass(
+                "up"
+              );
+              $("#homepage .section:nth-child(" + nextIndex + ")")
+                .next()
+                .addClass("next up");
+              $("#homepage .section:nth-child(" + nextIndex + ")")
+                .prev()
+                .addClass("prev up");
+            } else {
+              $(".section").removeClass("up");
+              $(".section").removeClass("next");
+              $(".section").removeClass("prev");
+              $("#homepage .section:nth-child(" + nextIndex + ")").addClass(
+                "down"
+              );
+              $("#homepage .section:nth-child(" + nextIndex + ")")
+                .next()
+                .addClass("next down");
+              $("#homepage .section:nth-child(" + nextIndex + ")")
+                .prev()
+                .addClass("prev down");
+            }
+            console.log(direction + nextIndex);
+          },
+        });
+      });
+    </script>
   </body>
 </html>
