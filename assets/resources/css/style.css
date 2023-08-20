@@ -301,7 +301,9 @@ section {
 .common_header {
   position: relative;
   padding: 150px 0px;
-  background-image: url("../../img/backgroundImg/about-bg.jpg");
+  background: linear-gradient(rgb(9 52 78 / 58%), rgb(8 40 59 / 57%)),
+    url(../../img/backgroundImg/about-bg.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -311,44 +313,8 @@ section {
 .common_header .common_heading {
   color: rgb(255, 255, 255);
   padding: 6rem 5rem;
-  position: relative;
-  background-color: rgb(11 3 38 / 23%);
-  background-image: linear-gradient(
-    rgb(24 4 61 / 67%),
-    rgb(11 3 38 / 78%) 11%,
-    rgb(11 3 38 / 60%) 67%,
-    rgb(0 0 0 / 16%)
-  );
 }
-.common_heading::before,
-.common_heading::after {
-  content: "";
-  width: 0.2rem;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  background: hsla(221, 45%, 73%, 1);
 
-  background: linear-gradient(
-    90deg,
-    hsla(221, 45%, 73%, 1) 0%,
-    hsla(220, 78%, 29%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(221, 45%, 73%, 1) 0%,
-    hsla(220, 78%, 29%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(221, 45%, 73%, 1) 0%,
-    hsla(220, 78%, 29%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
-}
 .common_heading::before {
   left: 0;
 }
@@ -385,7 +351,7 @@ ol.fancy_list li::before {
 .common_blog_heading_ {
   margin-bottom: 2rem;
   margin-top: 5rem;
-  font-size: 3.2rem;
+  font-size: 3.4rem;
   color: var(--white-color);
   opacity: 0.9 !important;
   animation: initial;
@@ -427,6 +393,7 @@ ol.fancy_list li::before {
   position: relative;
   color: var(--custom-purple-color);
   opacity: 0.8;
+  font-size: 1.8rem;
 }
 .fancy_list + p {
   margin-top: 2rem;
@@ -530,7 +497,7 @@ ol.fancy_list li::before {
   font-style: var(--font-style);
   font-size: var(--custom-size);
   line-height: 2rem;
-  opacity: 0.7;
+
   transition: color 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
   color: var(--custom-purple-color);
 }
@@ -861,7 +828,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li .others {
   font-size: 1.5rem;
   color: var(--custom-purple-color);
   cursor: pointer;
-  opacity: 0.7;
+
   display: inline-block;
   transition: color 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
 }
@@ -877,7 +844,7 @@ header
   i {
   font-size: 1.3rem;
   color: var(--custom-purple-color);
-  opacity: 0.7;
+
   transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
 }
 
@@ -904,7 +871,6 @@ header
   i {
   transform: rotate(539deg);
   color: var(--white-color);
-  opacity: 1;
 }
 
 header

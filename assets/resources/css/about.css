@@ -4,10 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* About Header CSS */
-.about_header_section {
-  background-image: url("../../img/backgroundImg/about-bg.jpg");
-}
+
 .about_header_section .common_blog_heading_ {
   font-size: 4rem;
 }
