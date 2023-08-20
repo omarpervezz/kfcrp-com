@@ -1,1183 +1,1215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Server Rules | KFCRP Roleplay | FiveM RP | Grand Theft Auto RP
-    </title>
-    <!-- Link to Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/512_2.png" />
-    <!-- Include Font Awesome CSS for icons -->
-    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
-    <!-- Include Normalize.css to ensure consistent styling across different browsers -->
-    <link rel="stylesheet" href="assets/vendors/css/normalize.css" />
-    <!-- Link to Animate.css for adding animation effects to elements -->
-    <link rel="stylesheet" href="assets/vendors/css/animate.min.css" />
-    <!-- Link to Pushbar.css for styling the mobile menu -->
-    <link rel="stylesheet" href="assets/vendors/css/pushbar.css" />
-    <!-- Incorporate Bootstrap CSS for a modern and responsive design -->
-    <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css" />
-    <!-- Integrate custom CSS for personalized styling and UI enhancements -->
-    <link rel="stylesheet" href="assets/resources/css/style.css" />
-    <!-- Link to the stylesheet for the "about.html" page -->
-    <link rel="stylesheet" href="assets/resources/css/about.css" />
-    <!-- Link to the stylesheet for the "about.html" page -->
-    <link rel="stylesheet" href="assets/resources/css/server.css" />
-    <!-- Link to the stylesheet for the responsive page -->
-    <link rel="stylesheet" href="assets/resources/css/responsive.css" />
-  </head>
-  <body>
-    <!-- Start Header Section -->
-    <header class="animate__animated">
-      <div class="container-fluid">
-        <nav>
-          <div class="row_">
-            <!-- Logo Container -->
-            <div class="logo_contianer">
-              <div class="logo_">
-                <a href="index.html" class="d-flex align-items-center">
-                  <img
-                    src="./assets/img/2222.png"
-                    alt="logo"
-                    class="img-fluid header_logo"
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>
+         Server Rules | KFCRP Roleplay | FiveM RP | Grand Theft Auto RP
+      </title>
+      <!-- Link to Favicon -->
+      <link rel="icon" type="image/png" href="assets/img/512_2.png" />
+      <!-- Include Font Awesome CSS for icons -->
+      <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+      <!-- Include Normalize.css to ensure consistent styling across different browsers -->
+      <link rel="stylesheet" href="assets/vendors/css/normalize.css" />
+      <!-- Link to Animate.css for adding animation effects to elements -->
+      <link rel="stylesheet" href="assets/vendors/css/animate.min.css" />
+      <!-- Link to Pushbar.css for styling the mobile menu -->
+      <link rel="stylesheet" href="assets/vendors/css/pushbar.css" />
+      <!-- Incorporate Bootstrap CSS for a modern and responsive design -->
+      <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css" />
+      <!-- Integrate custom CSS for personalized styling and UI enhancements -->
+      <link rel="stylesheet" href="assets/resources/css/style.css" />
+      <!-- Link to the stylesheet for the "about.html" page -->
+      <link rel="stylesheet" href="assets/resources/css/about.css" />
+      <!-- Link to the stylesheet for the "about.html" page -->
+      <link rel="stylesheet" href="assets/resources/css/server.css" />
+      <!-- Link to the stylesheet for the responsive page -->
+      <link rel="stylesheet" href="assets/resources/css/responsive.css" />
+   </head>
+   <body>
+      <!-- Start Header Section -->
+      <header class="animate__animated">
+         <div class="container-fluid">
+            <nav>
+               <div class="row_">
+                  <!-- Logo Container -->
+                  <div class="logo_contianer">
+                     <div class="logo_">
+                        <a href="index.html" class="d-flex align-items-center">
+                        <img
+                           src="./assets/img/2222.png"
+                           alt="logo"
+                           class="img-fluid header_logo"
+                           />
+                        </a>
+                     </div>
+                  </div>
+                  <!-- Menu Container -->
+                  <div
+                     class="d-flex justify-content-end align-items-center menu_container"
+                     >
+                     <div class="nav_menu">
+                        <ul class="d-flex desktop_menu">
+                           <li><a href="index.html" class="nav_item">Home</a></li>
+                           <li><a href="about.html" class="nav_item">About</a></li>
+                           <li><a href="blogs.html" class="nav_item">Blogs</a></li>
+                           <li><a href="guides.html" class="nav_item">Guides</a></li>
+                           <li class="d-flex align-items-center drop_down__">
+                              <span class="others">
+                              Other <i class="fa-solid fa-chevron-down"></i>
+                              </span>
+                              <!-- Sub Menu -->
+                              <div class="dropdown-content d-flex flex-column">
+                                 <a href="getting-started.html"
+                                    ><span>Getting Started</span></a
+                                    >
+                                 <a href="voice-settup.html"><span>Voice Setup</span></a>
+                                 <a href="keybinds-commands.html"
+                                    ><span>Keybinds & Commands</span></a
+                                    >
+                                 <a href="server-rules.html"><span>Server Rules</span></a>
+                                 <a href="https://discord.com/invite/kfcrp" target="_blank"
+                                    >
+                                    <span>Discord</span>&nbsp;&nbsp;
+                                    <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       class="inline-block fill-white mb-1 ml-1"
+                                       width="10"
+                                       viewBox="0 0 512 512"
+                                       >
+                                       <path
+                                          d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                          ></path>
+                                    </svg
+                                       >
+                                 </a>
+                                 <a href="http://ban.kfcrp.com/" target="_blank"
+                                    >
+                                    <span>Ban Appeal</span>&nbsp;&nbsp;
+                                    <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       class="inline-block fill-white mb-1 ml-1"
+                                       width="10"
+                                       viewBox="0 0 512 512"
+                                       >
+                                       <path
+                                          d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                          ></path>
+                                    </svg
+                                       >
+                                 </a>
+                                 <a href="https://store.kfcrp.com/" target="_blank"
+                                    >
+                                    <span>Store</span>&nbsp;&nbsp;
+                                    <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       class="inline-block fill-white mb-1 ml-1"
+                                       width="10"
+                                       viewBox="0 0 512 512"
+                                       >
+                                       <path
+                                          d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                          ></path>
+                                    </svg
+                                       >
+                                 </a>
+                                 <a href="sign-in.html"><span>Login</span></a>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Hamburger Menu -->
+                  <div class="d-flex align-items-center">
+                     <div
+                        class="hamburger-menu"
+                        data-pushbar-target="mypushbar1"
+                        onclick="addAnimation()"
+                        >
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!-- End Header Section -->
+      <!-- Mobile Menu Start -->
+      <div
+         data-pushbar-id="mypushbar1"
+         data-pushbar-direction="right"
+         class="push-container push__bar animate__animated"
+         >
+         <div class="mobile_container">
+            <div class="overlay__"></div>
+            <div class="menu___">
+               <img
+                  src="./assets/img/2222.png"
+                  alt="logo"
+                  class="img-fluid mobile_menu_logo"
                   />
-                </a>
-              </div>
+               <div class="container-fluid text-center">
+                  <div
+                     class="d-flex flex-row justify-content-between mobile__navigation__"
+                     >
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="getting-started.html">Getting Started</a></li>
+                        <li><a href="voice-settup.html">Voice Setup</a></li>
+                        <li>
+                           <a href="keybinds-commands.html">Keybinds & Commands</a>
+                        </li>
+                        <li><a href="server.">Server Rules</a></li>
+                     </ul>
+                     <ul>
+                        <li class="hover_item">
+                           <a href="https://discord.com/invite/kfcrp" target="_blank"
+                              >
+                              <span>Discord</span>&nbsp;&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li class="hover_item">
+                           <a href="https://store.kfcrp.com/" target="_blank"
+                              >
+                              <span>Ban Appeal</span>&nbsp;&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li class="hover_item">
+                           <a href="https://store.kfcrp.com/" target="_blank"
+                              >
+                              <span>Store</span>&nbsp;&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li>
+                           <a href="sign-in.html"><span>Login</span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-            <!-- Menu Container -->
-            <div
-              class="d-flex justify-content-end align-items-center menu_container"
+         </div>
+         <button
+            id="close"
+            type="button"
+            data-pushbar-close
+            onclick="removeAnimation()"
             >
-              <div class="nav_menu">
-                <ul class="d-flex desktop_menu">
-                  <li><a href="index.html" class="nav_item">Home</a></li>
-                  <li><a href="about.html" class="nav_item">About</a></li>
-                  <li><a href="blogs.html" class="nav_item">Blogs</a></li>
-                  <li><a href="guides.html" class="nav_item">Guides</a></li>
-                  <li class="d-flex align-items-center drop_down__">
-                    <span class="others">
-                      Other <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-                    <!-- Sub Menu -->
-                    <div class="dropdown-content d-flex flex-column">
-                      <a href="getting-started.html"
-                        ><span>Getting Started</span></a
-                      >
-                      <a href="voice-settup.html"><span>Voice Setup</span></a>
-                      <a href="keybinds-commands.html"
-                        ><span>Keybinds & Commands</span></a
-                      >
-                      <a href="server-rules.html"><span>Server Rules</span></a>
-                      <a href="https://discord.com/invite/kfcrp" target="_blank"
-                        ><span>Discord</span>&nbsp;&nbsp;<svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="inline-block fill-white mb-1 ml-1"
-                          width="10"
-                          viewBox="0 0 512 512"
-                        >
-                          <path
-                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                          ></path></svg
-                      ></a>
-                      <a href="http://ban.kfcrp.com/" target="_blank"
-                        ><span>Ban Appeal</span>&nbsp;&nbsp;<svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="inline-block fill-white mb-1 ml-1"
-                          width="10"
-                          viewBox="0 0 512 512"
-                        >
-                          <path
-                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                          ></path></svg
-                      ></a>
-                      <a href="https://store.kfcrp.com/" target="_blank"
-                        ><span>Store</span>&nbsp;&nbsp;<svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="inline-block fill-white mb-1 ml-1"
-                          width="10"
-                          viewBox="0 0 512 512"
-                        >
-                          <path
-                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                          ></path></svg
-                      ></a>
-
-                      <a href="sign-in.html"><span>Login</span></a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- Hamburger Menu -->
-            <div class="d-flex align-items-center">
-              <div
-                class="hamburger-menu"
-                data-pushbar-target="mypushbar1"
-                onclick="addAnimation()"
-              >
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
-            </div>
-          </div>
-        </nav>
+         <i class="fas fa-solid fa-xmark"></i>
+         </button>
       </div>
-    </header>
-    <!-- End Header Section -->
-    <!-- Mobile Menu Start -->
-    <div
-      data-pushbar-id="mypushbar1"
-      data-pushbar-direction="right"
-      class="push-container push__bar animate__animated"
-    >
-      <div class="mobile_container">
-        <div class="overlay__"></div>
-        <div class="menu___">
-          <img
-            src="./assets/img/2222.png"
-            alt="logo"
-            class="img-fluid mobile_menu_logo"
-          />
-          <div class="container-fluid text-center">
-            <div
-              class="d-flex flex-row justify-content-between mobile__navigation__"
-            >
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="guides.html">Guides</a></li>
-              </ul>
-              <ul>
-                <li><a href="getting-started.html">Getting Started</a></li>
-                <li><a href="voice-settup.html">Voice Setup</a></li>
-                <li>
-                  <a href="keybinds-commands.html">Keybinds & Commands</a>
-                </li>
-                <li><a href="server.">Server Rules</a></li>
-              </ul>
-              <ul>
-                <li class="hover_item">
-                  <a href="https://discord.com/invite/kfcrp" target="_blank"
-                    ><span>Discord</span>&nbsp;&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li class="hover_item">
-                  <a href="https://store.kfcrp.com/" target="_blank"
-                    ><span>Ban Appeal</span>&nbsp;&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li class="hover_item">
-                  <a href="https://store.kfcrp.com/" target="_blank"
-                    ><span>Store</span>&nbsp;&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li>
-                  <a href="sign-in.html"><span>Login</span></a>
-                </li>
-              </ul>
+      <!-- Mobile Menu End -->
+      <!-- The main content section of the webpage -->
+      <main>
+         <!-- About Header-->
+         <section class="common_header server_header_container">
+            <div class="container position-relative px-4 px-lg-5">
+               <div class="row gx-4 gx-lg-5 justify-content-center text-center">
+                  <div class="col-md-12 col-lg-12 col-xl-12">
+                     <div class="common_heading">
+                        <h2 class="section_heading__ common_blog_heading_">
+                           Server Rules
+                        </h2>
+                        <p class="common-description">
+                           <em
+                              >This guide was written for the KFCRP Roleplay FiveM server.
+                           To sign up for KFCRP Roleplay, click
+                           <a href="getting-started.html" class="highlighted_link"
+                              >here</a
+                              ></em
+                              >
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <button
-        id="close"
-        type="button"
-        data-pushbar-close
-        onclick="removeAnimation()"
-      >
-        <i class="fas fa-solid fa-xmark"></i>
-      </button>
-    </div>
-    <!-- Mobile Menu End -->
-    <!-- The main content section of the webpage -->
-    <main>
-      <!-- About Header-->
-      <section class="common_header server_header_container">
-        <div class="container position-relative px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5 justify-content-center text-center">
-            <div class="col-md-12 col-lg-12 col-xl-12">
-              <div class="common_heading">
-                <h2 class="section_heading__ common_blog_heading_">
-                  Server Rules
-                </h2>
-                <p class="common-description">
-                  <em
-                    >This guide was written for the KFCRP Roleplay FiveM server.
-                    To sign up for KFCRP Roleplay, click
-                    <a href="getting-started.html" class="highlighted_link"
-                      >here</a
-                    ></em
+         </section>
+         <!-- About Header-->
+         <section class="common_content server_content">
+            <article class="mb-4">
+               <div class="warning">
+                  <p>The Rules are straight forward</p>
+                  <p>
+                     Any Ignorance of the rules will result in administrative action.
+                  </p>
+               </div>
+               <div class="container px-4 px-lg-5">
+                  <div class="row gx-4 gx-lg-5 justify-content-center">
+                     <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section_heading__ common_blog_heading_">GENERAL</h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              We are a UK server. You must speak and understand English at
+                              all times.
+                           </li>
+                           <li>
+                              You must have a working microphone with no background noise
+                              and crystal clear output. Voice changers are acceptable, but
+                              they must be understandable and not overly loud, too quiet,
+                              or extremely high or low pitched.
+                           </li>
+                           <li>No RDM (Random Deathmatch)</li>
+                           <ul class="fancy_list mt-4 mb-5">
+                              <li>
+                                 You MUST threaten to kill for a REASON & VICTIM must act
+                                 FIRST
+                              </li>
+                              <li>
+                                 You must initiate roleplay by threatening life before
+                                 killing someone
+                              </li>
+                              <li>
+                                 No REVENGE RDM -- If you believe you were RDM'd, CALL AN
+                                 ADMIN!
+                                 <strong class="fw-bold warning__text">Do /Report</strong>
+                              </li>
+                              <li>
+                                 Revenge RDM is just as bad as regular RDM and will be
+                                 punished equally.
+                              </li>
+                           </ul>
+                           <li>Do not be toxic or breed toxicity of any kind.</li>
+                           <li>
+                              The use of glitches, exploits, or hacks is prohibited. If
+                              you find a glitch or exploit, please notify the admin team
+                              through a bug report on Discord.
+                           </li>
+                           <li>
+                              Abide by the Twitch Terms of Service (ToS), Twitch Community
+                              Guidelines, and Discord Terms of Service while in the city
+                              and Discord.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           BAN PROCESS
+                        </h2>
+                        <p class="commom-description">
+                           Ban duration is at the discretion of the staff members, but
+                           generally speaking the process for a ban is as follows:
+                        </p>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>First offence = 1 week ban</li>
+                           <li>Second offence = 1 month ban</li>
+                           <li>Third offence = Permanent ban</li>
+                        </ol>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>
+                              More severe offenses can result in a permanent ban. Examples
+                              of these may include hacking, exploiting, toxic behavior,
+                              abusive/malicious behavior, and mass VDM or RDM.
+                           </li>
+                           <li>
+                              Upon receiving a ban, our discord bot will DM you with your
+                              ban reason and the length of the ban. You will need to have
+                              DMs enabled on Discord in order to receive this.
+                              Alternatively, you can inquire about your ban at
+                              <a
+                                 href="http://ban.kfcrp.com/"
+                                 target="_blank"
+                                 class="highlighted_link"
+                                 >ban.kfcrp.com.</a
+                                 >
+                              It is your responsibility to open a ban appeal at
+                              <a
+                                 href="http://ban.kfcrp.com/"
+                                 target="_blank"
+                                 class="highlighted_link"
+                                 >ban.kfcrp.com</a
+                                 >
+                              at the end of your ban if it is not automatically removed by
+                              our Discord bot.
+                           </li>
+                        </ul>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           RESPECT AND VALUE OF LIFE
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              No KOS (kill on sight) unless it is an agreed-upon between
+                              gangs in your respected territory (see Gang Guidelines
+                              below) or both parties have made a mutual introduction and
+                              understand why combat is occurring. Do not RDM (random death
+                              match) or VDM (vehicle deathmatch). You must have a logical
+                              reason for killing someone.
+                           </li>
+                           <li>
+                              You must value your character's life and the lives of other
+                              characters at all times. Therefore, your character's
+                              personality and mannerisms should portray fear when faced
+                              with a life threat. For example, if you have a gun pointed
+                              at the back of your head, and you don't have a weapon
+                              drawn?, put your hands up.
+                           </li>
+                           <li>
+                              Do not harass or disrespect other members or management.
+                              Instead, show respect to other players and keep the
+                              real-life drama out of roleplay. Do not use derogatory
+                              remarks regarding race, national origin, gender, religion,
+                              disabilities, or sexual preference. Do not base a
+                              character's roleplay around being heavily toxic, aggressive,
+                              or discriminatory.
+                           </li>
+                           <li>
+                              You have the right to bear arms inside your home, business,
+                              or place of employment. Therefore, you may use deadly force
+                              inside your home, business, or place of work if your
+                              character's life is at risk. Home and business owners may
+                              choose to disallow this at their discretion. Police may
+                              ignore hostage-takers demands while at any police precinct.
+                           </li>
+                           <li>Do not rob, kill or take hostage any NHS members.</li>
+                           <li>Hits and bounties on other players are not allowed.</li>
+                           <li>
+                              No Shooting Surrendering Players: Any player who shoots or
+                              kills another player when they are clearly surrendering,
+                              either by having their hands up or through clear in-game
+                              communication, will be subject to COMS or in severe cases a
+                              BAN from the server. This rule is in place to ensure a fair
+                              and enjoyable roleplay experience for all members of the
+                              community. Violating this rule demonstrates a lack of
+                              respect for fellow players and disrupts the immersive
+                              environment that we strive to maintain. Repeat offenders
+                              will face longer bans or permanent removal from the server
+                              at the discretion of server staff.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           OUT-OF-CHARACTER AND SAFE ZONES
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              Do not have out-of-character discussions in-game unless
+                              located next to an admin.
+                           </li>
+                           <li>
+                              All locations associated with city events are considered
+                              safe zones during the entirety of the event. Hospital & any
+                              other GREEN ZONE (subject to change).
+                           </li>
+                           <li>
+                              You may not wield weapons, and you may not commit a crime of
+                              any kind inside a safe zone.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           ROLEPLAY GUIDELINES
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              Do not attempt to change how someone roleplays their
+                              character by forcing your roleplay styles on them. Likewise,
+                              please do not attempt to silence someone or talk over them
+                              while they are roleplaying. Roleplay is a two-way street,
+                              and we are here to create stories with each other, not
+                              listen to ourselves speak.
+                           </li>
+                           <li>
+                              Always engage in the roleplay that is taking place around
+                              you. Players who ignore other players should understand what
+                              goes around comes around.
+                           </li>
+                           <li>
+                              Do not kidnap, rob, or assault NHS or medical staff for any
+                              reason.
+                           </li>
+                           <li>
+                              Do not kidnap, rob, or assault reporters while reporting on
+                              the scene of a crime/event. Reporters must have video or
+                              audio equipment in hand and visible to be eligible for this
+                              exemption. (DO NOT ABUSE)
+                           </li>
+                           <li>
+                              Do not kidnap, rob, or assault mechanics who are out on a
+                              tow. Mechanics can defend their shops against threats and
+                              respond with aggressive force if held at gunpoint at their
+                              place of employment.
+                           </li>
+                           <li>TRY not to kidnap, rob, or assault new players.</li>
+                           <li>
+                              Hostages cannot be friends, associates or imaginary. NPCs
+                              (locals) can only be used as a hostage when there are 15 or
+                              less players in the city.
+                           </li>
+                           <li>
+                              Do not use plain speech when downed unless NHS inquires
+                              about your injuries. Instead, act as if your character has
+                              heavy wounds through your character's personality and
+                              mannerisms.
+                           </li>
+                           <li>
+                              If your character revives by any method other than a medical
+                              staff member or admin, you may not remember who or what
+                              killed you or any events that led up to your character's
+                              death.
+                           </li>
+                           <li>
+                              Do not return to the place of your death for at least 10
+                              minutes.
+                           </li>
+                           <li>
+                              Do not seek revenge unless it is shared with you by another
+                              character through roleplay.
+                           </li>
+                           <li>
+                              Medical staff, police and reporters are not allowed to
+                              participate in criminal activity while on or off duty.
+                           </li>
+                           <li>
+                              If you trigger an NHS alert, it is required to wait until
+                              NHS arrives on the scene if they have confirmed they are en
+                              route.
+                           </li>
+                           <li>
+                              If you are an NHS, do not revive downed players on-scene (IF
+                              THE GUNFIGHT IS ACTIVE). Instead, it would be best if you
+                              transported downed players to a hospital for treatment.
+                           </li>
+                           <li>
+                              Do not impersonate law enforcement officers or medical
+                              staff. It is strictly prohibited. Please do not wear any
+                              clothing items that belong to police or medical staff unless
+                              your job permits it.
+                           </li>
+                           <li>
+                              Do not perform r4pe, erotic, mutilation, or any other
+                              extreme roleplay variation.
+                           </li>
+                           <li>
+                              Players can be identified by their face, outfit, or
+                              individual clothing items up to 24 hours after a crime or
+                              other event. Stripping off clothing items after a crime or
+                              other interaction can still warrant a detainment by Police
+                              for questioning if they have probably cause or reasonable
+                              suspicion that you were involved in a crime or other event.
+                              We recommend changing your entire outfit before and after a
+                              crime and refraining from wearing gang colors during a crime
+                              as that would implicate the entire group.
+                           </li>
+                           <li>
+                              Do not create fictitious business story-lines at the scene
+                              of a crime to mask very obvious criminal activities that are
+                              being performed. Everyone knows what you are doing, and
+                              failure to act your part as a criminal will be considered
+                              FailRP or Powergaming. Examples of this includes but is not
+                              limited to, AC Repair Personnel, Bank Vault Maintenance
+                              Techs, etc. The government and the justice system will never
+                              write official business plan documents for ventures like
+                              this.
+                           </li>
+                           <li>
+                              kfcrp staff has the right to evict the owner of any walk-in
+                              business if the business is not actively utilized for RP
+                              purposes and/or used to host city published events. Owning a
+                              walk-in business with an interior simply to use it for a
+                              stash is withholding RP from the rest of the city.
+                           </li>
+                        </ol>
+                        <div class="warning ww_22">
+                           <p>
+                              New Life Rule (NLR) [THIS RULE IS FOR
+                              <strong class="fw-bold">10MINUTES IRL TIME]</strong>
+                           </p>
+                        </div>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>You forget everything.</li>
+                           <li>
+                              You cannot return to the place you died at (FOR 10 MINUTES).
+                           </li>
+                           <li>
+                              You cannot revenge kill anyone from a past life situation.
+                           </li>
+                           <li>
+                              You cannot wait around the vicinity of where you died. You
+                              must go somewhere else.
+                           </li>
+                        </ul>
+                        <div class="warning ww_22">
+                           <p class="text-underlined">
+                              DO NOT MENTION RULES DURING AN ACTIVE RP SITUATION IF YOU
+                              FEEL LIKE A RULE WAS BROKEN USE /REPORT DON'T BREAK
+                              CHARACTER
+                           </p>
+                        </div>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           GANG GUIDELINES
+                        </h2>
+                        <p class="common-description">
+                           To refer to Gangs Guidelines and Rules
+                           <a href="gang.html" class="highlighted_link">click here</a>
+                        </p>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           POWERGAMING
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              Do not force another player to kill off their character
+                              permanently.
+                           </li>
+                           <li>
+                              Do not force another player to empty their bank account,
+                              stashes, trunks, or any other personal storage container.
+                           </li>
+                           <li>
+                              Do not chain rob a player if you are part of a group of
+                              players. Only one player of the group may loot the victim.
+                           </li>
+                           <li>
+                              Do not use third-party programs to gain an advantage over
+                              other players.
+                           </li>
+                           <li>
+                              Do not have more than five (10) players in a standard gang.
+                              Group size limits ensure interactions remain fair and
+                              balanced. Police may only have up to 14 units in a roaming
+                              group or on scene, including Air 1.
+                           </li>
+                           <li>
+                              Do not stake out safe zones and rob players as they exit.
+                              (<span class="highlighted_text">SAFEZONE CAMPING</span>)
+                           </li>
+                           <li>
+                              Do not run into safe zones to avoid interaction with other
+                              players.
+                           </li>
+                           <li>
+                              Do not force other players to revive at a doctor for
+                              <strong class="warning__text"> any reason. </strong>
+                           </li>
+                           <li>Do not be corrupt if you are an officer of the law.</li>
+                           <li>
+                              Do not combat log by logging out of the server in any way to
+                              avoid jail or a roleplay situation. However, if it is an
+                              emergency or your game crashes, let the other players know
+                              in Discord and log back in as soon as possible to finish the
+                              roleplay scenario.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           METAGAMING
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              Do not use any out-of-character information to benefit your
+                              character.
+                           </li>
+                           <li>
+                              The use of third-party communication programs is
+                              <strong class="warning__text">NOT allowed.</strong> That
+                              said, please try to utilize in-game communication methods
+                              such as radios, phone calls, and text as much as possible.
+                              Communicating in-game helps develop backstories and provides
+                              more immersion to everyone else.
+                           </li>
+                           <li>
+                              Do not stream snipe. You may not be in another player's live
+                              stream while logged in to the server.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           CHARACTER CUSTOMIZATION
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              Do not make parts of your body invisible or intentionally
+                              glitched
+                           </li>
+                           <li>
+                              Character names add a level of immersion and must avoid
+                              being disruptive. Examples of common inappropriate or
+                              disruptive RP names include but are not limited to: a. Names
+                              that reference known people, characters, brands, places, or
+                              icons b. Names that reference slang terms, offensive
+                              language, or are just unoriginal. c. Names that consist of
+                              multiple words
+                           </li>
+                           <li>
+                              Do not stream snipe. You may not be in another player's live
+                              stream while logged in to the server.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           ASSOCIATIONS
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              Association with previously banned players can result in a
+                              ban and deletion of your account data depending on the
+                              circumstances and toxicity of the association.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           DISCIPLINARY ACTION
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              Do not make parts of your body invisible or intentionally
+                              glitched
+                           </li>
+                           <li>
+                              You can appeal bans at
+                              <a
+                                 href="http://ban.kfcrp.com/"
+                                 target="_blank"
+                                 class="highlighted_link"
+                                 >ban.kfcrp.com.</a
+                                 >
+                              If you are banned from the appeals Discord, the admin team
+                              has deemed your ban permanent, and you may not join the city
+                              again.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           ABUSE REPORTS
+                        </h2>
+                        <p class="common-description">
+                           To report another player, please use the
+                           <strong class="fw-bold">#create-ticket</strong>
+                           channel on Discord. Press the tilde (~) key in-game to
+                           determine a player's server ID.
+                        </p>
+                        <h2 class="section_heading__ common_blog_heading_">BUGS</h2>
+                        <p class="common-description">
+                           In-game currency and item refunds are not distributed for
+                           bugs. However, our admin team will sometimes reward players
+                           who report bugs. Please use the ticket system in Discord to
+                           create a bug report.
+                        </p>
+                        <h2 class="section_heading__ common_blog_heading_">DISCORD</h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              Discord is considered OOC (Out of Character). Therefore,
+                              topics discussed there should never be used in-game.
+                           </li>
+                           <li>
+                              Do not send friend invites or DMs to other players who have
+                              not solicited them.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           OTHER RULES
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              <span class="anticheat_text">ANTICHEAT</span>: To get
+                              UNBANNED after being banned by the Anticheat, you
+                              <span class="warning__text">MUST</span> have a clip. Also
+                              purposely shooting gas tanks to get banned will result in
+                              your remaining banned.
+                           </li>
+                           <li>
+                              No trading or selling Donator Cars, Tebex purchased items or
+                              Gang Whitelist.
+                           </li>
+                           <li>
+                              Once initiation starts, it's active for
+                              <strong class="fw-bold text-underlined">2 minutes,</strong>
+                              afterwards you must reinitiate.
+                           </li>
+                           <li>
+                              No <strong class="fw-bold">HOT REPAIRING</strong> (E.G:
+                              Repairing in the middle of a police chase
+                              <strong class="fw-bold">WHILST MOVING).</strong>
+                           </li>
+                           <li>
+                              When a gang member is being arrested,
+                              <strong class="fw-bold warning__text">
+                              ONLY THE SAME GANG WEARING THE SAME GANG ATTIRE can
+                              intervene.
+                              </strong>
+                           </li>
+                           <li>
+                              You <span class="warning__text">CANNOT</span> break out gang
+                              members other than your own from the POLICE/PD.
+                           </li>
+                           <li>
+                              PD can arrest/detain you if you are freely running around
+                              with your weapon of any class visible.
+                           </li>
+                           <li>
+                              <strong class="fw-bold">Hitting</strong> someone with a
+                              <span class="text-underlined">snowball</span> is classed as
+                              <strong class="fw-bold">initiation.</strong>
+                           </li>
+                           <li>
+                              Do NOT abuse the /th/carry/escort command to fit extra
+                              people in your vehicle.
+                           </li>
+                           <li>Only ONE person can be in the trunk of a car.</li>
+                           <li>
+                              You <span class="warning__text">CANNOT</span> force a
+                              hostage to withdraw money from their bank.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           INITIATION RULES
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              <strong class="fw-bold">Aiming</strong> at someone is
+                              <span class="warning__text">INITIATION.</span>
+                              <span class="text-underlined">
+                              (This includes police they can shoot if they feel a threat
+                              to life in any way.)
+                              </span>
+                           </li>
+                           <li>
+                              Verbally saying "(gang name) K" creates active initiation
+                              with that gang --
+                              <strong class="fw-bold"> VICTIM MUST ACT FIRST </strong> --
+                           </li>
+                           <li>
+                              No breaking FearRP. You
+                              <strong class="fw-bold"> must comply</strong> and fear for
+                              your life if you are
+                              <strong class="fw-bold">alone</strong> against
+                              <strong>3 or more people</strong> (IT MUST BE 3 GUNS TO
+                              THEIR HEAD AT ALL TIMES).
+                           </li>
+                           <li>You are NOT allowed to force someone to E-RP.</li>
+                           <li>
+                              If you don't have a weapon out and a gun pointing at your
+                              head, <strong class="fw-bold">YOU MUST COMPLY.</strong>
+                           </li>
+                           <li>
+                              You can counterattack any group IF you have
+                              <strong class="fw-bold"> 2 OR MORE</strong>
+                              people.
+                           </li>
+                           <li>
+                              A TASER is <span class="warning__text"> NOT </span> equal to
+                              a weapon.
+                              <span class="warning__text">YOU MUST COMPLY</span> if you
+                              have a taser out vs a gun.
+                           </li>
+                           <li>
+                              <span class="highlighted__box">
+                              EX: - 1v2 = Can attack - 1v3 = MUST FEAR - 2vsANY = Can
+                              attack</span
+                                 >
+                           </li>
+                           <li>
+                              Shooting tires is INITIATION
+                              <strong class="fw-bold">(Victim MUST act first).</strong>
+                           </li>
+                           <li>
+                              Lockpicking someone's car is INITIATION
+                              <strong class="fw-bold">(Victim MUST act first).</strong>
+                           </li>
+                           <li>
+                              Stealing someone's vehicle is INITIATION
+                              <strong class="fw-bold">(Victim MUST act first).</strong>
+                           </li>
+                           <li>
+                              Tazing is INITIATION
+                              <strong class="fw-bold">(Victim MUST act first).</strong>
+                           </li>
+                           <li>2 Slaps = INITIATION.</li>
+                           <li>
+                              Hitting someone with your vehicle 2 times or more is
+                              INITIATION.
+                           </li>
+                           <li>
+                              You <span class="warning__text">CANNOT</span> announce that
+                              you're with someone AFTER initial initiation.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           <span class="gang__text">GANG</span> INITIATION RULES
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              Gang initiation only applies
+                              <strong class="fw-bold"
+                                 >within the area of initiation.</strong
+                                 >
+                           </li>
+                           <li>
+                              If your gang member is in an active scene with the police,
+                              you
+                              <srong class="fw-bold text-underlined">MUST RP</srong>
+                              to
+                              get them out. Meaning you
+                              <span class="warning__text"> CANNOT </span> just open fire.
+                           </li>
+                           <li>
+                              If a cop does use
+                              <strong class="fw-bold">Semi-lethal to Lethal Force</strong>
+                              you can then open fire and begin a shootout with the police.
+                           </li>
+                           <li>
+                              (The area of initiation is
+                              <strong class="fw-bold">
+                              ONE BLOCK WITHIN THE SURROUNDING BLOCK).
+                              </strong>
+                           </li>
+                           <li>
+                              Gang initiation lasts
+                              <strong class="fw-bold">2 MINUTES.</strong>
+                           </li>
+                           <li>
+                              Allied gangs do not apply with these initiations unless they
+                              are <span class="text-underlined">present</span> and
+                              <strong class="fw-bold"> ANNOUNCE </strong> that they are
+                              with your initiation.
+                           </li>
+                        </ol>
+                        <div class="warning warning___d">
+                           <p>
+                              NOTE:
+                              <span class="text-underlined">
+                              YOUR GANG MUST BE IN ATLEAST TWO PIECES OF GANG CLOTHING
+                              FOR YOU TO BE COUNTED AS A "GANG MEMBER" - Shoes and
+                              Watches are NOT gang clothing and if only one person is
+                              wearing it then its not classed as your uniform.
+                              </span>
+                           </p>
+                        </div>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           ROBBERIES
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              Only
+                              <strong class="fw-bold">3 outside shooters </strong> for
+                              BANK ROBBERIES.
+                           </li>
+                           <li>
+                              Only
+                              <strong class="fw-bold"> 2 outside shooters</strong> for
+                              JEWELRY HEISTS.
+                           </li>
+                           <li>
+                              You CANNOT have outside shooters for
+                              <strong class="fw-bold"
+                                 >gas station/Liquor store/legion museum heists.</strong
+                                 >
+                           </li>
+                           <li>
+                              Only <strong class="fw-bold">ONE</strong> robbery may take
+                              place at a time.
+                           </li>
+                           <ul class="fancy_list ml-0 mt-4 mb-2">
+                              <li>
+                                 Example: Fleeca bank robbery is active, you must wait
+                                 until its done to start another heist.
+                              </li>
+                           </ul>
+                           <li>
+                              The maximum amount to rob another person for CASH is
+                              <strong class="fw-bold"> £100,000. </strong>
+                           </li>
+                           <li>
+                              You must wait
+                              <strong class="fw-bold">at least 30 minutes</strong> before
+                              robbing the same person.
+                           </li>
+                           <li>
+                              You must announce you have an outside shooter (and how many)
+                              to police.
+                           </li>
+                           <li>You must fear your own life as a hostage.</li>
+                           <li>Must be 3 or more cops online to take one hostage.</li>
+                           <li>
+                              You may keep a hostage for a maximum of
+                              <strong class="fw-bold">15 minutes</strong>.
+                           </li>
+                           <li>
+                              You cannot leave a hostage alone whilst a bag is on their
+                              head.
+                           </li>
+                           <li>No fake hostages.</li>
+                           <li>You cannot kill a compliant hostage.</li>
+                           <li>
+                              You cannot scam more than
+                              <strong class="fw-bold">
+                              £100,000. If it's more than this amount and you say
+                              "locked," you have to pay no matter the circumstances.
+                              (FAILING TO PAY WILL RESULT IN A BAN, WAGERS INCLUDED, YOU
+                              MUST HAVE A CLIP OF THE DEAL)
+                              </strong>
+                           </li>
+                           <li>
+                              You must wait
+                              <strong class="fw-bold"> 30 minutes </strong> before
+                              starting another heist.
+                           </li>
+                           <li>
+                              You are not allowed to
+                              <strong class="fw-bold">respawn</strong> in
+                              <strong class="fw-bold">active PD scenes. </strong> You must
+                              wait until you are searched or when all PD is dead and the
+                              <strong class="fw-bold">
+                              scene is over. (They do not have to say "don't see the
+                              light")
+                              </strong>
+                           </li>
+                           <li>
+                              You must initiate with 3 guns pointing at the head before
+                              you can tie hands or put a bag over someone's head.
+                           </li>
+                           <li>
+                              You can rob someone for their inventory, but they must have
+                              their hands up and 3 guns pointing at the head. If you're
+                              not wearing 2 pieces of the same gang clothing, you must
+                              announce you are together
+                              <strong class="fw-bold"> BEFORE </strong> you initiate.
+                           </li>
+                           <li>
+                              Only money can be robbed from someone during /TH or tied
+                              hands situations.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           DRUG LOCATIONS | TAXING
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>
+                              Gangs/Crews can only tax at
+                              <strong class="fw-bold">ONE drug location</strong> at a
+                              time.
+                           </li>
+                           <li>
+                              Must be at least 2 or more members present of a gang/crew to
+                              tax at a drug location.
+                           </li>
+                           <li>
+                              The maximum you are allowed to tax at a drug location is:
+                              <strong class="fw-bold"> 10 POUCHES. </strong>
+                           </li>
+                           <li>
+                              Do not kill someone for not paying taxes. You
+                              <strong class="fw-bold"> must </strong> give them a chance
+                              to leave first.
+                           </li>
+                           <li>
+                              You MUST reinitiate after entering/leaving a drug location.
+                           </li>
+                           <li>
+                              Do not run into a drug location to get out of an RP
+                              situation.
+                           </li>
+                           <li>
+                              You <strong class="warning__text">CANNOT</strong> 100k or
+                              die inside a drug location. You must tax them and give them
+                              time to either pay or leave.
+                           </li>
+                           <li>
+                              You <strong class="warning__text">CANNOT</strong> take a
+                              hostage inside drug locations
+                              <strong class="fw-bold">REGARDLESS</strong> if their hands
+                              are up.
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           AGE REQUIREMENT
+                        </h2>
+                        <p class="common-description fw-bold">
+                           You must be 16 or over to play on KFCRP, If you are below this
+                           age you must get permissions from your parents and/or legal
+                           guardian.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </article>
+         </section>
+      </main>
+      <!-- The main content section of the webpage -->
+      <!-- Footer -->
+      <footer>
+         <div class="container-fluid">
+            <div class="row gy-4">
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
                   >
-                </p>
-              </div>
+                  <div>
+                     <img
+                        src="./assets/img/2222.png"
+                        alt="footer logo"
+                        class="img-fluid"
+                        />
+                     <p class="about_description">
+                        A one-of-a-kind FiveM roleplay server offering an immersive and
+                        engaging experience with unique features that set us apart from
+                        other roleplay servers.
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+                  >
+                  <div>
+                     <h5>Contact Us</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <i class="fas fa-phone-alt"></i>&nbsp;&nbsp; +447769759211
+                        </li>
+                        <li>
+                           <i class="fas fa-envelope"></i>&nbsp;&nbsp;
+                           eastd1@hphasesw.com
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+                  >
+                  <div>
+                     <h5>Our Services</h5>
+                     <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+                  >
+                  <div>
+                     <h5>Quick Links</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <a href="https://discord.com/invite/kfcrp" target="_blank"
+                              >
+                              <span>Discord</span>&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://store.kfcrp.com/" target="_blank"
+                              >
+                              <span>Ban Appeal</span>&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://store.kfcrp.com/" target="_blank"
+                              >
+                              <span>Store</span>&nbsp;&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Header-->
-      <section class="common_content server_content">
-        <article class="mb-4">
-          <div class="warning">
-            <p>The Rules are straight forward</p>
-            <p>
-              Any Ignorance of the rules will result in administrative action.
-            </p>
-          </div>
-          <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-              <div class="col-md-10 col-lg-8 col-xl-7">
-                <h2 class="section_heading__ common_blog_heading_">GENERAL</h2>
-
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    We are a UK server. You must speak and understand English at
-                    all times.
-                  </li>
-                  <li>
-                    You must have a working microphone with no background noise
-                    and crystal clear output. Voice changers are acceptable, but
-                    they must be understandable and not overly loud, too quiet,
-                    or extremely high or low pitched.
-                  </li>
-                  <li>No RDM (Random Deathmatch)</li>
-                  <ul class="fancy_list mt-4 mb-5">
-                    <li>
-                      You MUST threaten to kill for a REASON & VICTIM must act
-                      FIRST
-                    </li>
-                    <li>
-                      You must initiate roleplay by threatening life before
-                      killing someone
-                    </li>
-                    <li>
-                      No REVENGE RDM -- If you believe you were RDM'd, CALL AN
-                      ADMIN!
-                      <strong class="fw-bold warning__text">Do /Report</strong>
-                    </li>
-                    <li>
-                      Revenge RDM is just as bad as regular RDM and will be
-                      punished equally.
-                    </li>
-                  </ul>
-                  <li>Do not be toxic or breed toxicity of any kind.</li>
-                  <li>
-                    The use of glitches, exploits, or hacks is prohibited. If
-                    you find a glitch or exploit, please notify the admin team
-                    through a bug report on Discord.
-                  </li>
-                  <li>
-                    Abide by the Twitch Terms of Service (ToS), Twitch Community
-                    Guidelines, and Discord Terms of Service while in the city
-                    and Discord.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  BAN PROCESS
-                </h2>
-                <p class="commom-description">
-                  Ban duration is at the discretion of the staff members, but
-                  generally speaking the process for a ban is as follows:
-                </p>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>First offence = 1 week ban</li>
-                  <li>Second offence = 1 month ban</li>
-                  <li>Third offence = Permanent ban</li>
-                </ol>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>
-                    More severe offenses can result in a permanent ban. Examples
-                    of these may include hacking, exploiting, toxic behavior,
-                    abusive/malicious behavior, and mass VDM or RDM.
-                  </li>
-                  <li>
-                    Upon receiving a ban, our discord bot will DM you with your
-                    ban reason and the length of the ban. You will need to have
-                    DMs enabled on Discord in order to receive this.
-                    Alternatively, you can inquire about your ban at
-                    <a
-                      href="http://ban.kfcrp.com/"
-                      target="_blank"
-                      class="highlighted_link"
-                      >ban.kfcrp.com.</a
-                    >
-                    It is your responsibility to open a ban appeal at
-                    <a
-                      href="http://ban.kfcrp.com/"
-                      target="_blank"
-                      class="highlighted_link"
-                      >ban.kfcrp.com</a
-                    >
-                    at the end of your ban if it is not automatically removed by
-                    our Discord bot.
-                  </li>
-                </ul>
-                <h2 class="section_heading__ common_blog_heading_">
-                  RESPECT AND VALUE OF LIFE
-                </h2>
-
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    No KOS (kill on sight) unless it is an agreed-upon between
-                    gangs in your respected territory (see Gang Guidelines
-                    below) or both parties have made a mutual introduction and
-                    understand why combat is occurring. Do not RDM (random death
-                    match) or VDM (vehicle deathmatch). You must have a logical
-                    reason for killing someone.
-                  </li>
-                  <li>
-                    You must value your character's life and the lives of other
-                    characters at all times. Therefore, your character's
-                    personality and mannerisms should portray fear when faced
-                    with a life threat. For example, if you have a gun pointed
-                    at the back of your head, and you don't have a weapon
-                    drawn?, put your hands up.
-                  </li>
-                  <li>
-                    Do not harass or disrespect other members or management.
-                    Instead, show respect to other players and keep the
-                    real-life drama out of roleplay. Do not use derogatory
-                    remarks regarding race, national origin, gender, religion,
-                    disabilities, or sexual preference. Do not base a
-                    character's roleplay around being heavily toxic, aggressive,
-                    or discriminatory.
-                  </li>
-                  <li>
-                    You have the right to bear arms inside your home, business,
-                    or place of employment. Therefore, you may use deadly force
-                    inside your home, business, or place of work if your
-                    character's life is at risk. Home and business owners may
-                    choose to disallow this at their discretion. Police may
-                    ignore hostage-takers demands while at any police precinct.
-                  </li>
-                  <li>Do not rob, kill or take hostage any NHS members.</li>
-                  <li>Hits and bounties on other players are not allowed.</li>
-                  <li>
-                    No Shooting Surrendering Players: Any player who shoots or
-                    kills another player when they are clearly surrendering,
-                    either by having their hands up or through clear in-game
-                    communication, will be subject to COMS or in severe cases a
-                    BAN from the server. This rule is in place to ensure a fair
-                    and enjoyable roleplay experience for all members of the
-                    community. Violating this rule demonstrates a lack of
-                    respect for fellow players and disrupts the immersive
-                    environment that we strive to maintain. Repeat offenders
-                    will face longer bans or permanent removal from the server
-                    at the discretion of server staff.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  OUT-OF-CHARACTER AND SAFE ZONES
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    Do not have out-of-character discussions in-game unless
-                    located next to an admin.
-                  </li>
-                  <li>
-                    All locations associated with city events are considered
-                    safe zones during the entirety of the event. Hospital & any
-                    other GREEN ZONE (subject to change).
-                  </li>
-                  <li>
-                    You may not wield weapons, and you may not commit a crime of
-                    any kind inside a safe zone.
-                  </li>
-                </ol>
-
-                <h2 class="section_heading__ common_blog_heading_">
-                  ROLEPLAY GUIDELINES
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    Do not attempt to change how someone roleplays their
-                    character by forcing your roleplay styles on them. Likewise,
-                    please do not attempt to silence someone or talk over them
-                    while they are roleplaying. Roleplay is a two-way street,
-                    and we are here to create stories with each other, not
-                    listen to ourselves speak.
-                  </li>
-                  <li>
-                    Always engage in the roleplay that is taking place around
-                    you. Players who ignore other players should understand what
-                    goes around comes around.
-                  </li>
-                  <li>
-                    Do not kidnap, rob, or assault NHS or medical staff for any
-                    reason.
-                  </li>
-                  <li>
-                    Do not kidnap, rob, or assault reporters while reporting on
-                    the scene of a crime/event. Reporters must have video or
-                    audio equipment in hand and visible to be eligible for this
-                    exemption. (DO NOT ABUSE)
-                  </li>
-                  <li>
-                    Do not kidnap, rob, or assault mechanics who are out on a
-                    tow. Mechanics can defend their shops against threats and
-                    respond with aggressive force if held at gunpoint at their
-                    place of employment.
-                  </li>
-                  <li>TRY not to kidnap, rob, or assault new players.</li>
-                  <li>
-                    Hostages cannot be friends, associates or imaginary. NPCs
-                    (locals) can only be used as a hostage when there are 15 or
-                    less players in the city.
-                  </li>
-                  <li>
-                    Do not use plain speech when downed unless NHS inquires
-                    about your injuries. Instead, act as if your character has
-                    heavy wounds through your character's personality and
-                    mannerisms.
-                  </li>
-                  <li>
-                    If your character revives by any method other than a medical
-                    staff member or admin, you may not remember who or what
-                    killed you or any events that led up to your character's
-                    death.
-                  </li>
-                  <li>
-                    Do not return to the place of your death for at least 10
-                    minutes.
-                  </li>
-                  <li>
-                    Do not seek revenge unless it is shared with you by another
-                    character through roleplay.
-                  </li>
-                  <li>
-                    Medical staff, police and reporters are not allowed to
-                    participate in criminal activity while on or off duty.
-                  </li>
-                  <li>
-                    If you trigger an NHS alert, it is required to wait until
-                    NHS arrives on the scene if they have confirmed they are en
-                    route.
-                  </li>
-                  <li>
-                    If you are an NHS, do not revive downed players on-scene (IF
-                    THE GUNFIGHT IS ACTIVE). Instead, it would be best if you
-                    transported downed players to a hospital for treatment.
-                  </li>
-                  <li>
-                    Do not impersonate law enforcement officers or medical
-                    staff. It is strictly prohibited. Please do not wear any
-                    clothing items that belong to police or medical staff unless
-                    your job permits it.
-                  </li>
-                  <li>
-                    Do not perform r4pe, erotic, mutilation, or any other
-                    extreme roleplay variation.
-                  </li>
-                  <li>
-                    Players can be identified by their face, outfit, or
-                    individual clothing items up to 24 hours after a crime or
-                    other event. Stripping off clothing items after a crime or
-                    other interaction can still warrant a detainment by Police
-                    for questioning if they have probably cause or reasonable
-                    suspicion that you were involved in a crime or other event.
-                    We recommend changing your entire outfit before and after a
-                    crime and refraining from wearing gang colors during a crime
-                    as that would implicate the entire group.
-                  </li>
-                  <li>
-                    Do not create fictitious business story-lines at the scene
-                    of a crime to mask very obvious criminal activities that are
-                    being performed. Everyone knows what you are doing, and
-                    failure to act your part as a criminal will be considered
-                    FailRP or Powergaming. Examples of this includes but is not
-                    limited to, AC Repair Personnel, Bank Vault Maintenance
-                    Techs, etc. The government and the justice system will never
-                    write official business plan documents for ventures like
-                    this.
-                  </li>
-                  <li>
-                    kfcrp staff has the right to evict the owner of any walk-in
-                    business if the business is not actively utilized for RP
-                    purposes and/or used to host city published events. Owning a
-                    walk-in business with an interior simply to use it for a
-                    stash is withholding RP from the rest of the city.
-                  </li>
-                </ol>
-                <div class="warning ww_22">
-                  <p>
-                    New Life Rule (NLR) [THIS RULE IS FOR
-                    <strong class="fw-bold">10MINUTES IRL TIME]</strong>
+            <div class="row text-center">
+               <div class="col-12 mt-3">
+                  <p class="common-description copyright__">
+                     Copyright © 2023 - KFCRP.com @ Cfx.re | FIVEM Community
                   </p>
-                </div>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>You forget everything.</li>
-                  <li>
-                    You cannot return to the place you died at (FOR 10 MINUTES).
-                  </li>
-                  <li>
-                    You cannot revenge kill anyone from a past life situation.
-                  </li>
-                  <li>
-                    You cannot wait around the vicinity of where you died. You
-                    must go somewhere else.
-                  </li>
-                </ul>
-                <div class="warning ww_22">
-                  <p class="text-underlined">
-                    DO NOT MENTION RULES DURING AN ACTIVE RP SITUATION IF YOU
-                    FEEL LIKE A RULE WAS BROKEN USE /REPORT DON'T BREAK
-                    CHARACTER
-                  </p>
-                </div>
-                <h2 class="section_heading__ common_blog_heading_">
-                  GANG GUIDELINES
-                </h2>
-                <p class="common-description">
-                  To refer to Gangs Guidelines and Rules
-                  <a href="gang.html" class="highlighted_link">click here</a>
-                </p>
-                <h2 class="section_heading__ common_blog_heading_">
-                  POWERGAMING
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    Do not force another player to kill off their character
-                    permanently.
-                  </li>
-                  <li>
-                    Do not force another player to empty their bank account,
-                    stashes, trunks, or any other personal storage container.
-                  </li>
-                  <li>
-                    Do not chain rob a player if you are part of a group of
-                    players. Only one player of the group may loot the victim.
-                  </li>
-                  <li>
-                    Do not use third-party programs to gain an advantage over
-                    other players.
-                  </li>
-                  <li>
-                    Do not have more than five (10) players in a standard gang.
-                    Group size limits ensure interactions remain fair and
-                    balanced. Police may only have up to 14 units in a roaming
-                    group or on scene, including Air 1.
-                  </li>
-                  <li>
-                    Do not stake out safe zones and rob players as they exit.
-                    (<span class="highlighted_text">SAFEZONE CAMPING</span>)
-                  </li>
-                  <li>
-                    Do not run into safe zones to avoid interaction with other
-                    players.
-                  </li>
-                  <li>
-                    Do not force other players to revive at a doctor for
-                    <strong class="warning__text"> any reason. </strong>
-                  </li>
-                  <li>Do not be corrupt if you are an officer of the law.</li>
-                  <li>
-                    Do not combat log by logging out of the server in any way to
-                    avoid jail or a roleplay situation. However, if it is an
-                    emergency or your game crashes, let the other players know
-                    in Discord and log back in as soon as possible to finish the
-                    roleplay scenario.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  METAGAMING
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    Do not use any out-of-character information to benefit your
-                    character.
-                  </li>
-                  <li>
-                    The use of third-party communication programs is
-                    <strong class="warning__text">NOT allowed.</strong> That
-                    said, please try to utilize in-game communication methods
-                    such as radios, phone calls, and text as much as possible.
-                    Communicating in-game helps develop backstories and provides
-                    more immersion to everyone else.
-                  </li>
-                  <li>
-                    Do not stream snipe. You may not be in another player's live
-                    stream while logged in to the server.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  CHARACTER CUSTOMIZATION
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    Do not make parts of your body invisible or intentionally
-                    glitched
-                  </li>
-                  <li>
-                    Character names add a level of immersion and must avoid
-                    being disruptive. Examples of common inappropriate or
-                    disruptive RP names include but are not limited to: a. Names
-                    that reference known people, characters, brands, places, or
-                    icons b. Names that reference slang terms, offensive
-                    language, or are just unoriginal. c. Names that consist of
-                    multiple words
-                  </li>
-                  <li>
-                    Do not stream snipe. You may not be in another player's live
-                    stream while logged in to the server.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  ASSOCIATIONS
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    Association with previously banned players can result in a
-                    ban and deletion of your account data depending on the
-                    circumstances and toxicity of the association.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  DISCIPLINARY ACTION
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    Do not make parts of your body invisible or intentionally
-                    glitched
-                  </li>
-                  <li>
-                    You can appeal bans at
-                    <a
-                      href="http://ban.kfcrp.com/"
-                      target="_blank"
-                      class="highlighted_link"
-                      >ban.kfcrp.com.</a
-                    >
-                    If you are banned from the appeals Discord, the admin team
-                    has deemed your ban permanent, and you may not join the city
-                    again.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  ABUSE REPORTS
-                </h2>
-                <p class="common-description">
-                  To report another player, please use the
-                  <strong class="fw-bold">#create-ticket</strong>
-                  channel on Discord. Press the tilde (~) key in-game to
-                  determine a player's server ID.
-                </p>
-                <h2 class="section_heading__ common_blog_heading_">BUGS</h2>
-                <p class="common-description">
-                  In-game currency and item refunds are not distributed for
-                  bugs. However, our admin team will sometimes reward players
-                  who report bugs. Please use the ticket system in Discord to
-                  create a bug report.
-                </p>
-                <h2 class="section_heading__ common_blog_heading_">DISCORD</h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    Discord is considered OOC (Out of Character). Therefore,
-                    topics discussed there should never be used in-game.
-                  </li>
-                  <li>
-                    Do not send friend invites or DMs to other players who have
-                    not solicited them.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  OTHER RULES
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    <span class="anticheat_text">ANTICHEAT</span>: To get
-                    UNBANNED after being banned by the Anticheat, you
-                    <span class="warning__text">MUST</span> have a clip. Also
-                    purposely shooting gas tanks to get banned will result in
-                    your remaining banned.
-                  </li>
-                  <li>
-                    No trading or selling Donator Cars, Tebex purchased items or
-                    Gang Whitelist.
-                  </li>
-                  <li>
-                    Once initiation starts, it's active for
-                    <strong class="fw-bold text-underlined">2 minutes,</strong>
-                    afterwards you must reinitiate.
-                  </li>
-                  <li>
-                    No <strong class="fw-bold">HOT REPAIRING</strong> (E.G:
-                    Repairing in the middle of a police chase
-                    <strong class="fw-bold">WHILST MOVING).</strong>
-                  </li>
-                  <li>
-                    When a gang member is being arrested,
-                    <strong class="fw-bold warning__text">
-                      ONLY THE SAME GANG WEARING THE SAME GANG ATTIRE can
-                      intervene.
-                    </strong>
-                  </li>
-                  <li>
-                    You <span class="warning__text">CANNOT</span> break out gang
-                    members other than your own from the POLICE/PD.
-                  </li>
-                  <li>
-                    PD can arrest/detain you if you are freely running around
-                    with your weapon of any class visible.
-                  </li>
-                  <li>
-                    <strong class="fw-bold">Hitting</strong> someone with a
-                    <span class="text-underlined">snowball</span> is classed as
-                    <strong class="fw-bold">initiation.</strong>
-                  </li>
-                  <li>
-                    Do NOT abuse the /th/carry/escort command to fit extra
-                    people in your vehicle.
-                  </li>
-                  <li>Only ONE person can be in the trunk of a car.</li>
-                  <li>
-                    You <span class="warning__text">CANNOT</span> force a
-                    hostage to withdraw money from their bank.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  INITIATION RULES
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    <strong class="fw-bold">Aiming</strong> at someone is
-                    <span class="warning__text">INITIATION.</span>
-                    <span class="text-underlined">
-                      (This includes police they can shoot if they feel a threat
-                      to life in any way.)
-                    </span>
-                  </li>
-                  <li>
-                    Verbally saying "(gang name) K" creates active initiation
-                    with that gang --
-                    <strong class="fw-bold"> VICTIM MUST ACT FIRST </strong> --
-                  </li>
-                  <li>
-                    No breaking FearRP. You
-                    <strong class="fw-bold"> must comply</strong> and fear for
-                    your life if you are
-                    <strong class="fw-bold">alone</strong> against
-                    <strong>3 or more people</strong> (IT MUST BE 3 GUNS TO
-                    THEIR HEAD AT ALL TIMES).
-                  </li>
-                  <li>You are NOT allowed to force someone to E-RP.</li>
-                  <li>
-                    If you don't have a weapon out and a gun pointing at your
-                    head, <strong class="fw-bold">YOU MUST COMPLY.</strong>
-                  </li>
-                  <li>
-                    You can counterattack any group IF you have
-                    <strong class="fw-bold"> 2 OR MORE</strong>
-                    people.
-                  </li>
-                  <li>
-                    A TASER is <span class="warning__text"> NOT </span> equal to
-                    a weapon.
-                    <span class="warning__text">YOU MUST COMPLY</span> if you
-                    have a taser out vs a gun.
-                  </li>
-                  <li>
-                    <span class="highlighted__box">
-                      EX: - 1v2 = Can attack - 1v3 = MUST FEAR - 2vsANY = Can
-                      attack</span
-                    >
-                  </li>
-                  <li>
-                    Shooting tires is INITIATION
-                    <strong class="fw-bold">(Victim MUST act first).</strong>
-                  </li>
-                  <li>
-                    Lockpicking someone's car is INITIATION
-                    <strong class="fw-bold">(Victim MUST act first).</strong>
-                  </li>
-                  <li>
-                    Stealing someone's vehicle is INITIATION
-                    <strong class="fw-bold">(Victim MUST act first).</strong>
-                  </li>
-                  <li>
-                    Tazing is INITIATION
-                    <strong class="fw-bold">(Victim MUST act first).</strong>
-                  </li>
-                  <li>2 Slaps = INITIATION.</li>
-                  <li>
-                    Hitting someone with your vehicle 2 times or more is
-                    INITIATION.
-                  </li>
-                  <li>
-                    You <span class="warning__text">CANNOT</span> announce that
-                    you're with someone AFTER initial initiation.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  <span class="gang__text">GANG</span> INITIATION RULES
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    Gang initiation only applies
-                    <strong class="fw-bold"
-                      >within the area of initiation.</strong
-                    >
-                  </li>
-                  <li>
-                    If your gang member is in an active scene with the police,
-                    you
-                    <srong class="fw-bold text-underlined">MUST RP</srong> to
-                    get them out. Meaning you
-                    <span class="warning__text"> CANNOT </span> just open fire.
-                  </li>
-                  <li>
-                    If a cop does use
-                    <strong class="fw-bold">Semi-lethal to Lethal Force</strong>
-                    you can then open fire and begin a shootout with the police.
-                  </li>
-                  <li>
-                    (The area of initiation is
-                    <strong class="fw-bold">
-                      ONE BLOCK WITHIN THE SURROUNDING BLOCK).
-                    </strong>
-                  </li>
-                  <li>
-                    Gang initiation lasts
-                    <strong class="fw-bold">2 MINUTES.</strong>
-                  </li>
-                  <li>
-                    Allied gangs do not apply with these initiations unless they
-                    are <span class="text-underlined">present</span> and
-                    <strong class="fw-bold"> ANNOUNCE </strong> that they are
-                    with your initiation.
-                  </li>
-                </ol>
-                <div class="warning warning___d">
-                  <p>
-                    NOTE:
-                    <span class="text-underlined">
-                      YOUR GANG MUST BE IN ATLEAST TWO PIECES OF GANG CLOTHING
-                      FOR YOU TO BE COUNTED AS A "GANG MEMBER" - Shoes and
-                      Watches are NOT gang clothing and if only one person is
-                      wearing it then its not classed as your uniform.
-                    </span>
-                  </p>
-                </div>
-                <h2 class="section_heading__ common_blog_heading_">
-                  ROBBERIES
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    Only
-                    <strong class="fw-bold">3 outside shooters </strong> for
-                    BANK ROBBERIES.
-                  </li>
-                  <li>
-                    Only
-                    <strong class="fw-bold"> 2 outside shooters</strong> for
-                    JEWELRY HEISTS.
-                  </li>
-                  <li>
-                    You CANNOT have outside shooters for
-                    <strong class="fw-bold"
-                      >gas station/Liquor store/legion museum heists.</strong
-                    >
-                  </li>
-                  <li>
-                    Only <strong class="fw-bold">ONE</strong> robbery may take
-                    place at a time.
-                  </li>
-                  <ul class="fancy_list ml-0 mt-4 mb-2">
-                    <li>
-                      Example: Fleeca bank robbery is active, you must wait
-                      until its done to start another heist.
-                    </li>
-                  </ul>
-                  <li>
-                    The maximum amount to rob another person for CASH is
-                    <strong class="fw-bold"> £100,000. </strong>
-                  </li>
-                  <li>
-                    You must wait
-                    <strong class="fw-bold">at least 30 minutes</strong> before
-                    robbing the same person.
-                  </li>
-                  <li>
-                    You must announce you have an outside shooter (and how many)
-                    to police.
-                  </li>
-                  <li>You must fear your own life as a hostage.</li>
-                  <li>Must be 3 or more cops online to take one hostage.</li>
-                  <li>
-                    You may keep a hostage for a maximum of
-                    <strong class="fw-bold">15 minutes</strong>.
-                  </li>
-                  <li>
-                    You cannot leave a hostage alone whilst a bag is on their
-                    head.
-                  </li>
-                  <li>No fake hostages.</li>
-                  <li>You cannot kill a compliant hostage.</li>
-                  <li>
-                    You cannot scam more than
-                    <strong class="fw-bold">
-                      £100,000. If it's more than this amount and you say
-                      "locked," you have to pay no matter the circumstances.
-                      (FAILING TO PAY WILL RESULT IN A BAN, WAGERS INCLUDED, YOU
-                      MUST HAVE A CLIP OF THE DEAL)
-                    </strong>
-                  </li>
-                  <li>
-                    You must wait
-                    <strong class="fw-bold"> 30 minutes </strong> before
-                    starting another heist.
-                  </li>
-                  <li>
-                    You are not allowed to
-                    <strong class="fw-bold">respawn</strong> in
-                    <strong class="fw-bold">active PD scenes. </strong> You must
-                    wait until you are searched or when all PD is dead and the
-                    <strong class="fw-bold">
-                      scene is over. (They do not have to say "don't see the
-                      light")
-                    </strong>
-                  </li>
-                  <li>
-                    You must initiate with 3 guns pointing at the head before
-                    you can tie hands or put a bag over someone's head.
-                  </li>
-                  <li>
-                    You can rob someone for their inventory, but they must have
-                    their hands up and 3 guns pointing at the head. If you're
-                    not wearing 2 pieces of the same gang clothing, you must
-                    announce you are together
-                    <strong class="fw-bold"> BEFORE </strong> you initiate.
-                  </li>
-                  <li>
-                    Only money can be robbed from someone during /TH or tied
-                    hands situations.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  DRUG LOCATIONS | TAXING
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>
-                    Gangs/Crews can only tax at
-                    <strong class="fw-bold">ONE drug location</strong> at a
-                    time.
-                  </li>
-                  <li>
-                    Must be at least 2 or more members present of a gang/crew to
-                    tax at a drug location.
-                  </li>
-                  <li>
-                    The maximum you are allowed to tax at a drug location is:
-                    <strong class="fw-bold"> 10 POUCHES. </strong>
-                  </li>
-                  <li>
-                    Do not kill someone for not paying taxes. You
-                    <strong class="fw-bold"> must </strong> give them a chance
-                    to leave first.
-                  </li>
-                  <li>
-                    You MUST reinitiate after entering/leaving a drug location.
-                  </li>
-                  <li>
-                    Do not run into a drug location to get out of an RP
-                    situation.
-                  </li>
-                  <li>
-                    You <strong class="warning__text">CANNOT</strong> 100k or
-                    die inside a drug location. You must tax them and give them
-                    time to either pay or leave.
-                  </li>
-                  <li>
-                    You <strong class="warning__text">CANNOT</strong> take a
-                    hostage inside drug locations
-                    <strong class="fw-bold">REGARDLESS</strong> if their hands
-                    are up.
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  AGE REQUIREMENT
-                </h2>
-                <p class="common-description fw-bold">
-                  You must be 16 or over to play on KFCRP, If you are below this
-                  age you must get permissions from your parents and/or legal
-                  guardian.
-                </p>
-              </div>
+               </div>
             </div>
-          </div>
-        </article>
-      </section>
-    </main>
-    <!-- The main content section of the webpage -->
-    <!-- Footer -->
-    <footer>
-      <div class="container-fluid">
-        <div class="row gy-4">
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <img
-                src="./assets/img/2222.png"
-                alt="footer logo"
-                class="img-fluid"
-              />
-              <p class="about_description">
-                A one-of-a-kind FiveM roleplay server offering an immersive and
-                engaging experience with unique features that set us apart from
-                other roleplay servers.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <h5>Contact Us</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fas fa-phone-alt"></i>&nbsp;&nbsp; +447769759211
-                </li>
-                <li>
-                  <i class="fas fa-envelope"></i>&nbsp;&nbsp;
-                  eastd1@hphasesw.com
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <h5>Our Services</h5>
-              <ul class="list-unstyled">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <h5>Quick Links</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://discord.com/invite/kfcrp" target="_blank"
-                    ><span>Discord</span>&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://store.kfcrp.com/" target="_blank"
-                    ><span>Ban Appeal</span>&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://store.kfcrp.com/" target="_blank"
-                    ><span>Store</span>&nbsp;&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-12 mt-3">
-            <p class="common-description copyright__">
-              Copyright © 2023 - KFCRP.com @ Cfx.re | FIVEM Community
-            </p>
-          </div>
-        </div>
+         </div>
+      </footer>
+      <!-- Footer -->
+      <!-- fixed social buttons -->
+      <div id="fixed-social">
+         <div>
+            <a
+               href="https://discord.com/invite/kfcrp"
+               target="_blank"
+               class="fixed-facebook"
+               ><i class="fa-brands fa-discord"></i
+               ></a>
+         </div>
+         <div>
+            <a
+               href="https://www.instagram.com/kfcrp/"
+               target="_blank"
+               class="fixed-instagrem"
+               ><i class="fa-brands fa-instagram"></i>
+            </a>
+         </div>
       </div>
-    </footer>
-    <!-- Footer -->
-    <!-- fixed social buttons -->
-    <div id="fixed-social">
-      <div>
-        <a
-          href="https://discord.com/invite/kfcrp"
-          target="_blank"
-          class="fixed-facebook"
-          ><i class="fa-brands fa-discord"></i
-        ></a>
-      </div>
-      <div>
-        <a
-          href="https://www.instagram.com/kfcrp/"
-          target="_blank"
-          class="fixed-instagrem"
-          ><i class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-    <!-- fixed social buttons -->
-    <!-- Essential JavaScript Plugin scripts -->
-    <!-- Include jQuery from Google CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Include HTML5shiv to enable HTML5 elements in older browsers -->
-    <script src="assets/vendors/js/html5shiv.min.js"></script>
-    <!-- Include Respond.js to enable media query support in older IE versions -->
-    <script src="assets/vendors/js/respond.min.js"></script>
-    <!-- Include Modernizr for feature detection and browser capabilities -->
-    <script src="assets/vendors/js/modernizr.min.js"></script>
-    <!-- Include Selectivizr for CSS3 pseudo-class and attribute selector support in older IE versions -->
-    <script src="assets/vendors/js/selectivizr-min.js"></script>
-    <!-- Include Bootstrap JavaScript from your downloaded folder -->
-    <script src="assets/vendors/js/bootstrap.min.js"></script>
-    <!-- Include Pushbar.js for mobile menu functionality -->
-    <script src="assets/vendors/js/pushbar.js"></script>
-    <!-- Include app.js for custom JavaScript functionality -->
-    <script src="assets/resources/js/app.js"></script>
-  </body>
+      <!-- fixed social buttons -->
+      <!-- Essential JavaScript Plugin scripts -->
+      <!-- Include jQuery from Google CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Include HTML5shiv to enable HTML5 elements in older browsers -->
+      <script src="assets/vendors/js/html5shiv.min.js"></script>
+      <!-- Include Respond.js to enable media query support in older IE versions -->
+      <script src="assets/vendors/js/respond.min.js"></script>
+      <!-- Include Modernizr for feature detection and browser capabilities -->
+      <script src="assets/vendors/js/modernizr.min.js"></script>
+      <!-- Include Selectivizr for CSS3 pseudo-class and attribute selector support in older IE versions -->
+      <script src="assets/vendors/js/selectivizr-min.js"></script>
+      <!-- Include Bootstrap JavaScript from your downloaded folder -->
+      <script src="assets/vendors/js/bootstrap.min.js"></script>
+      <!-- Include Pushbar.js for mobile menu functionality -->
+      <script src="assets/vendors/js/pushbar.js"></script>
+      <!-- Include app.js for custom JavaScript functionality -->
+      <script src="assets/resources/js/app.js"></script>
+   </body>
 </html>

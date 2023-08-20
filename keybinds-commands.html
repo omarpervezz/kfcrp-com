@@ -1,885 +1,918 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Keybinds & Commands | KFC Roleplay | FiveM RP | Grand Theft Auto RP
-    </title>
-    <!-- Link to Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/512_2.png" />
-    <!-- Include Font Awesome CSS for icons -->
-    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
-    <!-- Include Normalize.css to ensure consistent styling across different browsers -->
-    <link rel="stylesheet" href="assets/vendors/css/normalize.css" />
-    <!-- Link to Animate.css for adding animation effects to elements -->
-    <link rel="stylesheet" href="assets/vendors/css/animate.min.css" />
-    <!-- Link to Pushbar.css for styling the mobile menu -->
-    <link rel="stylesheet" href="assets/vendors/css/pushbar.css" />
-    <!-- Incorporate Bootstrap CSS for a modern and responsive design -->
-    <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css" />
-    <!-- Integrate custom CSS for personalized styling and UI enhancements -->
-    <link rel="stylesheet" href="assets/resources/css/style.css" />
-    <!-- Link to the stylesheet for the "about.html" page -->
-    <link rel="stylesheet" href="assets/resources/css/about.css" />
-    <!-- Link to the stylesheet for the "keybinds-commands.html" page -->
-    <link rel="stylesheet" href="assets/resources/css/keybinds-commands.css" />
-    <!-- Link to the stylesheet for the responsive page -->
-    <link rel="stylesheet" href="assets/resources/css/responsive.css" />
-  </head>
-  <body>
-    <!-- Start Header Section -->
-    <header class="animate__animated">
-      <div class="container-fluid">
-        <nav>
-          <div class="row_">
-            <!-- Logo Container -->
-            <div class="logo_contianer">
-              <div class="logo_">
-                <a href="index.html" class="d-flex align-items-center">
-                  <img
-                    src="./assets/img/2222.png"
-                    alt="logo"
-                    class="img-fluid header_logo"
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>
+         Keybinds & Commands | KFC Roleplay | FiveM RP | Grand Theft Auto RP
+      </title>
+      <!-- Link to Favicon -->
+      <link rel="icon" type="image/png" href="assets/img/512_2.png" />
+      <!-- Include Font Awesome CSS for icons -->
+      <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+      <!-- Include Normalize.css to ensure consistent styling across different browsers -->
+      <link rel="stylesheet" href="assets/vendors/css/normalize.css" />
+      <!-- Link to Animate.css for adding animation effects to elements -->
+      <link rel="stylesheet" href="assets/vendors/css/animate.min.css" />
+      <!-- Link to Pushbar.css for styling the mobile menu -->
+      <link rel="stylesheet" href="assets/vendors/css/pushbar.css" />
+      <!-- Incorporate Bootstrap CSS for a modern and responsive design -->
+      <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css" />
+      <!-- Integrate custom CSS for personalized styling and UI enhancements -->
+      <link rel="stylesheet" href="assets/resources/css/style.css" />
+      <!-- Link to the stylesheet for the "about.html" page -->
+      <link rel="stylesheet" href="assets/resources/css/about.css" />
+      <!-- Link to the stylesheet for the "keybinds-commands.html" page -->
+      <link rel="stylesheet" href="assets/resources/css/keybinds-commands.css" />
+      <!-- Link to the stylesheet for the responsive page -->
+      <link rel="stylesheet" href="assets/resources/css/responsive.css" />
+   </head>
+   <body>
+      <!-- Start Header Section -->
+      <header class="animate__animated">
+         <div class="container-fluid">
+            <nav>
+               <div class="row_">
+                  <!-- Logo Container -->
+                  <div class="logo_contianer">
+                     <div class="logo_">
+                        <a href="index.html" class="d-flex align-items-center">
+                        <img
+                           src="./assets/img/2222.png"
+                           alt="logo"
+                           class="img-fluid header_logo"
+                           />
+                        </a>
+                     </div>
+                  </div>
+                  <!-- Menu Container -->
+                  <div
+                     class="d-flex justify-content-end align-items-center menu_container"
+                     >
+                     <div class="nav_menu">
+                        <ul class="d-flex desktop_menu">
+                           <li><a href="index.html" class="nav_item">Home</a></li>
+                           <li><a href="about.html" class="nav_item">About</a></li>
+                           <li><a href="blogs.html" class="nav_item">Blogs</a></li>
+                           <li><a href="guides.html" class="nav_item">Guides</a></li>
+                           <li class="d-flex align-items-center drop_down__">
+                              <span class="others">
+                              Other <i class="fa-solid fa-chevron-down"></i>
+                              </span>
+                              <!-- Sub Menu -->
+                              <div class="dropdown-content d-flex flex-column">
+                                 <a href="getting-started.html"
+                                    ><span>Getting Started</span></a
+                                    >
+                                 <a href="voice-settup.html"><span>Voice Setup</span></a>
+                                 <a href="keybinds-commands.html"
+                                    ><span>Keybinds & Commands</span></a
+                                    >
+                                 <a href="server-rules.html"><span>Server Rules</span></a>
+                                 <a href="https://discord.com/invite/kfcrp" target="_blank"
+                                    >
+                                    <span>Discord</span>&nbsp;&nbsp;
+                                    <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       class="inline-block fill-white mb-1 ml-1"
+                                       width="10"
+                                       viewBox="0 0 512 512"
+                                       >
+                                       <path
+                                          d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                          ></path>
+                                    </svg
+                                       >
+                                 </a>
+                                 <a href="http://ban.kfcrp.com/" target="_blank"
+                                    >
+                                    <span>Ban Appeal</span>&nbsp;&nbsp;
+                                    <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       class="inline-block fill-white mb-1 ml-1"
+                                       width="10"
+                                       viewBox="0 0 512 512"
+                                       >
+                                       <path
+                                          d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                          ></path>
+                                    </svg
+                                       >
+                                 </a>
+                                 <a href="https://store.kfcrp.com/" target="_blank"
+                                    >
+                                    <span>Store</span>&nbsp;&nbsp;
+                                    <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       class="inline-block fill-white mb-1 ml-1"
+                                       width="10"
+                                       viewBox="0 0 512 512"
+                                       >
+                                       <path
+                                          d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                          ></path>
+                                    </svg
+                                       >
+                                 </a>
+                                 <a href="sign-in.html"><span>Login</span></a>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Hamburger Menu -->
+                  <div class="d-flex align-items-center">
+                     <div
+                        class="hamburger-menu"
+                        data-pushbar-target="mypushbar1"
+                        onclick="addAnimation()"
+                        >
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!-- End Header Section -->
+      <!-- Mobile Menu Start -->
+      <div
+         data-pushbar-id="mypushbar1"
+         data-pushbar-direction="right"
+         class="push-container push__bar animate__animated"
+         >
+         <div class="mobile_container">
+            <div class="overlay__"></div>
+            <div class="menu___">
+               <img
+                  src="./assets/img/2222.png"
+                  alt="logo"
+                  class="img-fluid mobile_menu_logo"
                   />
-                </a>
-              </div>
+               <div class="container-fluid text-center">
+                  <div
+                     class="d-flex flex-row justify-content-between mobile__navigation__"
+                     >
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="getting-started.html">Getting Started</a></li>
+                        <li><a href="voice-settup.html">Voice Setup</a></li>
+                        <li>
+                           <a href="keybinds-commands.html">Keybinds & Commands</a>
+                        </li>
+                        <li><a href="server.">Server Rules</a></li>
+                     </ul>
+                     <ul>
+                        <li class="hover_item">
+                           <a href="https://discord.com/invite/kfcrp" target="_blank"
+                              >
+                              <span>Discord</span>&nbsp;&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li class="hover_item">
+                           <a href="https://store.kfcrp.com/" target="_blank"
+                              >
+                              <span>Ban Appeal</span>&nbsp;&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li class="hover_item">
+                           <a href="https://store.kfcrp.com/" target="_blank"
+                              >
+                              <span>Store</span>&nbsp;&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li>
+                           <a href="sign-in.html"><span>Login</span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-            <!-- Menu Container -->
-            <div
-              class="d-flex justify-content-end align-items-center menu_container"
+         </div>
+         <button
+            id="close"
+            type="button"
+            data-pushbar-close
+            onclick="removeAnimation()"
             >
-              <div class="nav_menu">
-                <ul class="d-flex desktop_menu">
-                  <li><a href="index.html" class="nav_item">Home</a></li>
-                  <li><a href="about.html" class="nav_item">About</a></li>
-                  <li><a href="blogs.html" class="nav_item">Blogs</a></li>
-                  <li><a href="guides.html" class="nav_item">Guides</a></li>
-                  <li class="d-flex align-items-center drop_down__">
-                    <span class="others">
-                      Other <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-                    <!-- Sub Menu -->
-                    <div class="dropdown-content d-flex flex-column">
-                      <a href="getting-started.html"
-                        ><span>Getting Started</span></a
-                      >
-                      <a href="voice-settup.html"><span>Voice Setup</span></a>
-                      <a href="keybinds-commands.html"
-                        ><span>Keybinds & Commands</span></a
-                      >
-                      <a href="server-rules.html"><span>Server Rules</span></a>
-                      <a href="https://discord.com/invite/kfcrp" target="_blank"
-                        ><span>Discord</span>&nbsp;&nbsp;<svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="inline-block fill-white mb-1 ml-1"
-                          width="10"
-                          viewBox="0 0 512 512"
-                        >
-                          <path
-                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                          ></path></svg
-                      ></a>
-                      <a href="http://ban.kfcrp.com/" target="_blank"
-                        ><span>Ban Appeal</span>&nbsp;&nbsp;<svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="inline-block fill-white mb-1 ml-1"
-                          width="10"
-                          viewBox="0 0 512 512"
-                        >
-                          <path
-                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                          ></path></svg
-                      ></a>
-                      <a href="https://store.kfcrp.com/" target="_blank"
-                        ><span>Store</span>&nbsp;&nbsp;<svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="inline-block fill-white mb-1 ml-1"
-                          width="10"
-                          viewBox="0 0 512 512"
-                        >
-                          <path
-                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                          ></path></svg
-                      ></a>
-
-                      <a href="sign-in.html"><span>Login</span></a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- Hamburger Menu -->
-            <div class="d-flex align-items-center">
-              <div
-                class="hamburger-menu"
-                data-pushbar-target="mypushbar1"
-                onclick="addAnimation()"
-              >
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
-            </div>
-          </div>
-        </nav>
+         <i class="fas fa-solid fa-xmark"></i>
+         </button>
       </div>
-    </header>
-    <!-- End Header Section -->
-    <!-- Mobile Menu Start -->
-    <div
-      data-pushbar-id="mypushbar1"
-      data-pushbar-direction="right"
-      class="push-container push__bar animate__animated"
-    >
-      <div class="mobile_container">
-        <div class="overlay__"></div>
-        <div class="menu___">
-          <img
-            src="./assets/img/2222.png"
-            alt="logo"
-            class="img-fluid mobile_menu_logo"
-          />
-          <div class="container-fluid text-center">
-            <div
-              class="d-flex flex-row justify-content-between mobile__navigation__"
-            >
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="guides.html">Guides</a></li>
-              </ul>
-              <ul>
-                <li><a href="getting-started.html">Getting Started</a></li>
-                <li><a href="voice-settup.html">Voice Setup</a></li>
-                <li>
-                  <a href="keybinds-commands.html">Keybinds & Commands</a>
-                </li>
-                <li><a href="server.">Server Rules</a></li>
-              </ul>
-              <ul>
-                <li class="hover_item">
-                  <a href="https://discord.com/invite/kfcrp" target="_blank"
-                    ><span>Discord</span>&nbsp;&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li class="hover_item">
-                  <a href="https://store.kfcrp.com/" target="_blank"
-                    ><span>Ban Appeal</span>&nbsp;&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li class="hover_item">
-                  <a href="https://store.kfcrp.com/" target="_blank"
-                    ><span>Store</span>&nbsp;&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li>
-                  <a href="sign-in.html"><span>Login</span></a>
-                </li>
-              </ul>
+      <!-- Mobile Menu End -->
+      <!-- The main content section of the webpage -->
+      <main>
+         <!-- About Header-->
+         <section class="common_header keybinds_header_container__">
+            <div class="container position-relative px-4 px-lg-5">
+               <div class="row gx-4 gx-lg-5 justify-content-center text-center">
+                  <div class="col-md-12 col-lg-12 col-xl-12">
+                     <div class="common_heading blogs_header_content">
+                        <h2 class="section_heading__ common_blog_heading_">
+                           Keybinds & Commands
+                        </h2>
+                        <p class="common-description">
+                           This guide was written for the KFCRP Roleplay FiveM server. To
+                           sign up for KFCRP Roleplay,
+                           <a href="getting-started.html" class="highlighted_link"
+                              >click here.</a
+                              >
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <button
-        id="close"
-        type="button"
-        data-pushbar-close
-        onclick="removeAnimation()"
-      >
-        <i class="fas fa-solid fa-xmark"></i>
-      </button>
-    </div>
-    <!-- Mobile Menu End -->
-    <!-- The main content section of the webpage -->
-    <main>
-      <!-- About Header-->
-      <section class="common_header keybinds_header_container__">
-        <div class="container position-relative px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5 justify-content-center text-center">
-            <div class="col-md-12 col-lg-12 col-xl-12">
-              <div class="common_heading blogs_header_content">
-                <h2 class="section_heading__ common_blog_heading_">
-                  Keybinds & Commands
-                </h2>
-                <p class="common-description">
-                  This guide was written for the KFCRP Roleplay FiveM server. To
-                  sign up for KFCRP Roleplay,
-                  <a href="getting-started.html" class="highlighted_link"
-                    >click here.</a
+         </section>
+         <!-- About Header-->
+         <section class="common_content keybinds_commands_content_container">
+            <article class="mb-4">
+               <div class="container px-4 px-lg-5">
+                  <div class="row gx-4 gx-lg-5 justify-content-center">
+                     <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section_heading__ common_blog_heading_">
+                           How to create a custom keybind:
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>Press F8</li>
+                           <li>
+                              Type:
+                              <strong class="fw-bold">bind KEYBOARD F3 "e dance"</strong>
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           How to remove a custom keybind:
+                        </h2>
+                        <ol class="fancy_list mt-4 mb-5">
+                           <li>Press F8</li>
+                           <li>
+                              Type: <strong class="fw-bold">unbind keyboard f3</strong>
+                           </li>
+                        </ol>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           Main Interaction Keys
+                        </h2>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>Z : Quick Menu</li>
+                           <li>
+                              ALT : Third Eye: Hover over items then left click to
+                              interact.
+                           </li>
+                        </ul>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           Key binds
+                        </h2>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>
+                              1-5: Hotkey Assignments (Press F2 and drag items to set)
+                           </li>
+                           <li>Tab: Inventory</li>
+                           <li>B: Point / Speed Limiter</li>
+                           <li>X: Hands Up</li>
+                           <li>Z: Quick Action Menu (Stop button inside)</li>
+                           <li>H: Hotwire a car while inside</li>
+                           <li>7: Set GPS to active alert (Police, EMS, etc.)</li>
+                           <li>ALT-7: Remove active waypoint from map.</li>
+                           <li>
+                              ALT-8: Send GPS ping for backup request to those on duty.
+                              (Police & EMS)
+                           </li>
+                           <li>
+                              U: Lock / unlock vehicle (Inside or next to vehicle; must be
+                              owner)
+                           </li>
+                           <li>K: Open clothing radial menu and use seatbelt</li>
+                           <li>
+                              J: Browse Trunk when outside of vehicle or Glovebox when
+                              inside vehicle
+                           </li>
+                           <li>LEFT CONTROL-C: Crouch</li>
+                           <li>SHIFT-C: Crawl</li>
+                           <li>Z: Stop Animation / Abort</li>
+                           <li>F1: Phone</li>
+                           <li>F2: Inventory</li>
+                           <li>F3: Animations (Z to stop)</li>
+                           <li>F5: List Owned Vehicles</li>
+                           <li>
+                              F6: Job Menu (Visit ‘Job Center’ to obtain a job first)
+                           </li>
+                           <li>F7: Invoices</li>
+                           <li>F10: Scoreboard</li>
+                           <li>N: Push to Talk</li>
+                           <li>~: Toggle Player IDs</li>
+                           <li>G: Police Radar and Plate Reader and Seatbelt</li>
+                           <li>LEFT CTRL + ~: Toggle Minimap on Foot</li>
+                           <li>LEFT ALT + ~: Toggle Voice Tags</li>
+                           <li>Hold LEFT CTRL: Vehicle HUD</li>
+                           <li>
+                              LEFT CTRL + LEFT ARROW: Open/Close Driver or Left Passenger
+                              Door
+                           </li>
+                           <li>
+                              LEFT CTRL + RIGHT ARROW: Open/Close Right Passenger Door
+                           </li>
+                           <li>LEFT CTRL + UP ARROW: Roll Up Window</li>
+                           <li>LEFT CTRL + DOWN ARROW: Roll Down Window</li>
+                           <li>LEFT CTRL + BACKSPACE: Seat Shuffle</li>
+                           <li>LEFT CTRL + H: Open/Close Hood (inside vehicle)</li>
+                           <li>LEFT CTRL + E: Toggle Engine or Sit</li>
+                           <li>LEFT ARROW: Toggle Left Indicator</li>
+                           <li>RIGHT ARROW: Toggle Right Indicator</li>
+                           <li>Engine Always On: Hold F when exiting vehicle</li>
+                           <li>Leave Door Open: Hold Shift+F when exiting vehicle</li>
+                           <li>LEFT SHIFT + E: Tackle nearby player</li>
+                        </ul>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           Chat Commands (Press T)
+                        </h2>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>
+                              /drag [ID] : Start/Stop dragging a player, specified by
+                              their ID
+                           </li>
+                           <li>/hood : Open hood while in a vehicle</li>
+                           <li>
+                              /trunk : Open trunk (and view contents if outside vehicle)
+                           </li>
+                           <li>
+                              /glovebox : Open glovebox and view contents if inside
+                              vehicle
+                           </li>
+                           <li>
+                              /gb : Open glovebox and view contents if inside vehicle
+                           </li>
+                           <li>/engine : Toggle engine</li>
+                           <li>/do [Message] : RP Information</li>
+                           <li>/me [Message] : Personal action</li>
+                           <li>/setgps [X] [Y] : Set GPS Waypoint</li>
+                           <li>/getpos : Get World Coordinates</li>
+                           <li>/id : Returns your server ID</li>
+                           <li>
+                              /onduty: Show the amount of players on duty for your job.
+                           </li>
+                           <li>/seatshuffle : Move to drivers seat if passenger</li>
+                           <li>/mic : Microphone (E to activate, Backspace to exit)</li>
+                           <li>/cam : News Camera</li>
+                           <li>/bmic : Mic Boom</li>
+                           <li>/pet: Pet Menu</li>
+                           <li>/win or /window : Roll windows up or down</li>
+                           <ul class="fancy_list ml-0 mt-4 mb-5">
+                              <li>/window all up</li>
+                              <li>/window 1 up</li>
+                              <li>/window up</li>
+                           </ul>
+                           <li>/door : Open or close doors</li>
+                           <ul class="fancy_list ml-0 mt-4 mb-5">
+                              <li>0 is hood, 1-4 passenger doors, 5 is trunk</li>
+                              <li>/door all open</li>
+                              <li>/door 1 open</li>
+                              <li>/door open</li>
+                           </ul>
+                           <li>/rollup : Rolls up the closest window.</li>
+                           <li>/rolldown : Rolls down the closest window.</li>
+                           <li>/cuff : Cuffs the closest player (Police Only)</li>
+                           <li>/escort : Escorts the closest player (Police Only)</li>
+                           <li>
+                              /gsr : Check suspect for Gunshot Residue (Police Only)
+                           </li>
+                           <li>/givekey [ID] [PLATE] : Give keys for vehicle</li>
+                           <li>
+                              /givecash [ID] [AMOUNT] : Give cash to player from pockets
+                           </li>
+                           <li>
+                              /rack : Rack/unrack large weapons from a vehicle trunk
+                           </li>
+                           <li>
+                              /checkloan: While seated in vehicle, this will tell you how
+                              money you owe on your vehicle (if any), and how much time
+                              you have to repay it
+                           </li>
+                           <li>/payloan [AMOUNT] : Repays x amount off car loan</li>
+                           <li>/mcard : Miranda Rights</li>
+                           <li>/vcard : Vital Signs Cards</li>
+                           <li>/health : Check your injuries</li>
+                           <li>/healthother : Check the closest players health</li>
+                           <li>
+                              /mendother : Use a medical brace on the closest player
+                           </li>
+                           <li>/ems, /medic : Send your GPS coordinates to all EMS</li>
+                           <li>
+                              /911 : Send your GPS coordinates to all EMS and Police
+                           </li>
+                           <li>
+                              /mechanic : Send your GPS coordinates to all Mechanics
+                           </li>
+                           <li>/taxi : Send your GPS coordinates to all Taxi drivers</li>
+                           <li>
+                              /ping [ID] : Send your GPS coordinates to another player
+                           </li>
+                           <li>
+                              /roster : View the a roster list for your current job.
+                              (Police, EMS, and Mechanic only)
+                           </li>
+                           <li>/helmet [on or off] : Take helmet off or put back on.</li>
+                           <li>/hat [on or off] : Take hat off or put back on.</li>
+                           <li>/lighteffects : Change the color of your headlights.</li>
+                           <li>
+                              /selldrugs or /sd : Initiate drug deal with the closest NPC.
+                           </li>
+                           <li>/report [ID] [REASON] : Report a player for abuse</li>
+                           <li>
+                              /idcards : View your wallet and/or present your ID cards to
+                              the closest player.
+                           </li>
+                           <li>
+                              /wallet : View your wallet and/or present your ID cards to
+                              the closest player.
+                           </li>
+                           <li>
+                              /showid : View your wallet and/or present your ID cards to
+                              the closest player.
+                           </li>
+                           <li>
+                              /lastid : Display the last ID given to you from someone's
+                              wallet.
+                           </li>
+                           <li>
+                              /changeclothes : Change Clothes when inside certain vehicles
+                              such as Campers
+                           </li>
+                           <li>
+                              /backup : Request backup from other players with the same
+                              job.
+                           </li>
+                           <li>/bag (Variants)</li>
+                           <li>/bracelet (Toggle)</li>
+                           <li>/ear (Toggle)</li>
+                           <li>/glasses (Toggle)</li>
+                           <li>/gloves (Variants)</li>
+                           <li>/hair (Variants)</li>
+                           <li>/hat (Toggle)</li>
+                           <li>/mask (Toggle)</li>
+                           <li>/neck (Toggle)</li>
+                           <li>/pants (Toggle)</li>
+                           <li>/shirt (Toggle) (Also takes off gloves)</li>
+                           <li>/shoes (Toggle)</li>
+                           <li>/top (Variants)</li>
+                           <li>/visor (Variants)</li>
+                           <li>/watch (Toggle)</li>
+                           <li>
+                              /revertclothing (Simply puts every toggled item back on)
+                           </li>
+                           <li>/bagoff (Toggle)</li>
+                           <li>
+                              /sellcar [PRICE] : List a car for sale anywhere in the city
+                              (Up to 5 cars; Used Car Dealer up to 8 cars)
+                           </li>
+                           <li>
+                              /park : Park your vehicle anywhere in the city, have it
+                              frozen in place, and persist across server restarts (Up to 3
+                              cars)
+                           </li>
+                           <li>/ragdoll : Toggle ragdoll on and off</li>
+                           <li>
+                              /hud : Hide/Show the HUD elements for screenshot purposes
+                           </li>
+                           <li>
+                              /hudleft : Set the HUD to show on the left side of the
+                              screen.
+                           </li>
+                           <li>
+                              /hudbottom : Set the HUD to show on the bottom center of the
+                              screen.
+                           </li>
+                           <li>
+                              /hidemapblip : Hide yourself on the map for other players
+                              with the same profession.
+                           </li>
+                           <li>
+                              /vehiclesparked : Show parked vehicles on the map (Mechanics
+                              and Police Only)
+                           </li>
+                           <li>
+                              /vehiclesforsale : Show for sale vehicles on the map
+                              (Mechanics and Police Only)
+                           </li>
+                           <li>/putinvehicle : Put a player into a nearby vehicle</li>
+                           <li>
+                              /pullfromvehicle : Pull a player from a nearby vehicle
+                           </li>
+                           <li>
+                              /pn or /phonenumber : Send your phone number to nearby
+                              players
+                           </li>
+                           <li>
+                              /resethud or /resetui : Reset the UI elements whenever they
+                              get stuck or you cant move (can type in F8 without the slash
+                              as well)
+                           </li>
+                           <li>
+                              /scene [TEXT] : Create or update a scene on an object.
+                           </li>
+                           <li>/scenehide : Toggles hiding scenes.</li>
+                           <li>
+                              /sceneremove : Remove a nearby scene, if you own the scene
+                              or you are a Police officer.
+                           </li>
+                           <li>
+                              /steal : Steal from a downed player or a player with their
+                              hands up (You must be armed)
+                           </li>
+                           <li>/phonepower : Power your phone on and off.</li>
+                           <li>/mutealerts : Mute/un-mute alert sounds</li>
+                           <li>
+                              /lifer : Used by lifers to teleport back to prison and heal
+                              up.
+                           </li>
+                           <li>/badge : Show LEO badge</li>
+                           <li>/takepooltable : Pick up a pool table</li>
+                           <li>/takepoolrack : Pick up a pool cue rack</li>
+                           <li>/takeprojector : Pick up a projector</li>
+                           <li>/focuspoints : Use focus points when crafting</li>
+                           <li>
+                              /seat [ID] : Change to a specific seat in the vehicle (1-4).
+                              - Ex: /seat 1
+                           </li>
+                           <li>
+                              /stickers : Add stickers to your vehicle (Request your own
+                              with
+                              <a
+                                 href="https://store.kfcrp.com/package/4865015"
+                                 class="highlighted_link"
+                                 >this Tebex package!</a
+                                 >)
+                           </li>
+                           <li>/carradio : Play audio inside a vehicle</li>
+                           <li>
+                              /referralcode [CODE] : Set your referral code for a new
+                              player to use.
+                           </li>
+                           <li>
+                              /usecode [CODE] : Use a referral code as a new player and
+                              earn money for you and the code creator
+                           </li>
+                           <li>/mycode : Check your referral code</li>
+                           <li>
+                              /characterage : Get the days your character has been in the
+                              city
+                           </li>
+                           <li>/airbag : Manually deploy vehicle airbags</li>
+                           <li>
+                              /recentalerts : Play back the last 10 notifications you have
+                              received.
+                           </li>
+                           <li>
+                              /convertvin : Those who possess the knowledge can convert
+                              VIN scratched vehicles to legal vehicles using this command.
+                           </li>
+                           <li>
+                              /fixmycharacter : Run this command to fix your character if
+                              it does not render as expected.
+                           </li>
+                        </ul>
+                        <h2 class="section_heading__ common_blog_heading_">Racing</h2>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>
+                              /vehicleclass - Check the class for the vehicle you're
+                              driving or standing next to.
+                           </li>
+                        </ul>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>
+                              /vehicleclass - Check the class for the vehicle you're
+                              driving or standing next to.
+                           </li>
+                        </ul>
+                        <h2 class="section_heading__ common_blog_heading_">NOS</h2>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>/purgefront : Toggle the front Nitrous purge nozzles</li>
+                           <li>/purgetop : Toggle the top Nitrous purge nozzles</li>
+                        </ul>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           POLICE & EMS: Vehicle Sirens/Lights
+                        </h2>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>Toggle emergency lights: CAPSLOCK</li>
+                           <li>Airhorn: E</li>
+                           <li>Toggle siren: ALT</li>
+                           <li>Browse sirens: R</li>
+                           <li>Take-down Light: Shift-H</li>
+                           <li>Control Panel: O</li>
+                           <li>Lock Lights/Sirens: I</li>
+                           <li>Helicopter Sirens: Q, R, and both at the same time</li>
+                        </ul>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           POLICE DRONE
+                        </h2>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>
+                              /drone : Spawn the drone on the floor in front of you. Run
+                              it again to remove it.
+                           </li>
+                           <li>
+                              <strong class="fw-bold">Forward Arrow</strong> - Move the
+                              drone forward
+                           </li>
+                           <li>
+                              <strong class="fw-bold">Backward Arrow </strong>- Move the
+                              drown backward
+                           </li>
+                           <li>
+                              <strong class="fw-bold">Left Arrow</strong> - Tilt the drone
+                              left
+                           </li>
+                           <li>
+                              <strong class="fw-bold">Right Arrow</strong> - Tilt the
+                              drone right
+                           </li>
+                           <li>
+                              <strong class="fw-bold">Enter</strong> - Toggle live camera
+                              stream
+                           </li>
+                           <li>
+                              <strong class="fw-bold">Home</strong> - Toggle night vision
+                           </li>
+                           <li>
+                              <strong class="fw-bold">Delete</strong> - Toggle thermal
+                              imaging
+                           </li>
+                           <li>
+                              <strong class="fw-bold">Page Up</strong> - Move the drone
+                              up, increasing the altitude
+                           </li>
+                           <li>
+                              <strong class="fw-bold"> Page Down</strong> - Move the drone
+                              down, decreasing the altitude
+                           </li>
+                           <li>
+                              <strong class="fw-bold">Insert</strong> - Automatically land
+                              the drone
+                           </li>
+                        </ul>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           POLICE GRAPPLER
+                        </h2>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li><strong class="fw-bold">/grappler install</strong></li>
+                           <li><strong class="fw-bold">/grappler deploy</strong></li>
+                           <li><strong class="fw-bold">/grappler remove</strong></li>
+                        </ul>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           POLICE: In-car Radar
+                        </h2>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>
+                              Press G to open the radar menu while in a police vehicle.
+                              Then, click “Toggle Radar” to enable the radar.
+                           </li>
+                           <li>Button Meanings:</li>
+                           <ul class="fancy_list ml-0 mt-4 mb-5">
+                              <li>XMIT - Turns on/off the antenna.</li>
+                              <li>
+                                 OPP - Makes the antenna scan traffic in the opposite lane.
+                              </li>
+                              <li>
+                                 SAME - Makes the antenna scan traffic in the same lane of
+                                 travel.
+                              </li>
+                              <li>
+                                 Set Fast Limit - Set the speed a car must be travelling to
+                                 be detected.
+                              </li>
+                              <li>Toggle Speed Type - Switch between MPH and KPH.</li>
+                           </ul>
+                           <li>
+                              A beep will sound when a car is detected above the limit.
+                              Their top speed will stay in the box.
+                           </li>
+                           <li>
+                              Remove previous vehicles saved speed and reset by pressing
+                              G.
+                           </li>
+                        </ul>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           POLICE: Night Vision and Thermal Vision
+                        </h2>
+                        <ul class="fancy_list mt-4 mb-5">
+                           Press E while in the Police helicopters Right-click to cycle
+                           between modes
+                        </ul>
+                        <h2 class="section_heading__ common_blog_heading_">
+                           Animation Commands
+                        </h2>
+                        <ul class="fancy_list mt-4 mb-5">
+                           <li>F3 : Display emotes menu</li>
+                           <li>/e c : Cancel animation</li>
+                           <li>/emotemenu : Display emotes menu</li>
+                           <li>/emotes : Display all emotes in chat</li>
+                           <li>CAPS LOCK : Favorite Emote (bindable in F3)</li>
+                           <li>/walks : Display all walking styles</li>
+                           <li>/walk WALKNAME : Change walk style</li>
+                           <li>/e EMOTENAME</li>
+                           <ul class="fancy_list ml-0 mt-4 mb-5">
+                              <li>See F3 menu for emote command names.</li>
+                           </ul>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </article>
+         </section>
+      </main>
+      <!-- The main content section of the webpage -->
+      <!-- Footer -->
+      <footer>
+         <div class="container-fluid">
+            <div class="row gy-4">
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
                   >
-                </p>
-              </div>
+                  <div>
+                     <img
+                        src="./assets/img/2222.png"
+                        alt="footer logo"
+                        class="img-fluid"
+                        />
+                     <p class="about_description">
+                        A one-of-a-kind FiveM roleplay server offering an immersive and
+                        engaging experience with unique features that set us apart from
+                        other roleplay servers.
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+                  >
+                  <div>
+                     <h5>Contact Us</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <i class="fas fa-phone-alt"></i>&nbsp;&nbsp; +447769759211
+                        </li>
+                        <li>
+                           <i class="fas fa-envelope"></i>&nbsp;&nbsp;
+                           eastd1@hphasesw.com
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+                  >
+                  <div>
+                     <h5>Our Services</h5>
+                     <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+                  >
+                  <div>
+                     <h5>Quick Links</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <a href="https://discord.com/invite/kfcrp" target="_blank"
+                              >
+                              <span>Discord</span>&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://store.kfcrp.com/" target="_blank"
+                              >
+                              <span>Ban Appeal</span>&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://store.kfcrp.com/" target="_blank"
+                              >
+                              <span>Store</span>&nbsp;&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Header-->
-      <section class="common_content keybinds_commands_content_container">
-        <article class="mb-4">
-          <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-              <div class="col-md-10 col-lg-8 col-xl-7">
-                <h2 class="section_heading__ common_blog_heading_">
-                  How to create a custom keybind:
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>Press F8</li>
-                  <li>
-                    Type:
-                    <strong class="fw-bold">bind KEYBOARD F3 "e dance"</strong>
-                  </li>
-                </ol>
-                <h2 class="section_heading__ common_blog_heading_">
-                  How to remove a custom keybind:
-                </h2>
-                <ol class="fancy_list mt-4 mb-5">
-                  <li>Press F8</li>
-                  <li>
-                    Type: <strong class="fw-bold">unbind keyboard f3</strong>
-                  </li>
-                </ol>
-
-                <h2 class="section_heading__ common_blog_heading_">
-                  Main Interaction Keys
-                </h2>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>Z : Quick Menu</li>
-                  <li>
-                    ALT : Third Eye: Hover over items then left click to
-                    interact.
-                  </li>
-                </ul>
-                <h2 class="section_heading__ common_blog_heading_">
-                  Key binds
-                </h2>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>
-                    1-5: Hotkey Assignments (Press F2 and drag items to set)
-                  </li>
-                  <li>Tab: Inventory</li>
-                  <li>B: Point / Speed Limiter</li>
-                  <li>X: Hands Up</li>
-                  <li>Z: Quick Action Menu (Stop button inside)</li>
-                  <li>H: Hotwire a car while inside</li>
-                  <li>7: Set GPS to active alert (Police, EMS, etc.)</li>
-                  <li>ALT-7: Remove active waypoint from map.</li>
-                  <li>
-                    ALT-8: Send GPS ping for backup request to those on duty.
-                    (Police & EMS)
-                  </li>
-                  <li>
-                    U: Lock / unlock vehicle (Inside or next to vehicle; must be
-                    owner)
-                  </li>
-                  <li>K: Open clothing radial menu and use seatbelt</li>
-                  <li>
-                    J: Browse Trunk when outside of vehicle or Glovebox when
-                    inside vehicle
-                  </li>
-                  <li>LEFT CONTROL-C: Crouch</li>
-                  <li>SHIFT-C: Crawl</li>
-                  <li>Z: Stop Animation / Abort</li>
-                  <li>F1: Phone</li>
-                  <li>F2: Inventory</li>
-                  <li>F3: Animations (Z to stop)</li>
-                  <li>F5: List Owned Vehicles</li>
-                  <li>
-                    F6: Job Menu (Visit ‘Job Center’ to obtain a job first)
-                  </li>
-                  <li>F7: Invoices</li>
-                  <li>F10: Scoreboard</li>
-                  <li>N: Push to Talk</li>
-                  <li>~: Toggle Player IDs</li>
-                  <li>G: Police Radar and Plate Reader and Seatbelt</li>
-                  <li>LEFT CTRL + ~: Toggle Minimap on Foot</li>
-                  <li>LEFT ALT + ~: Toggle Voice Tags</li>
-                  <li>Hold LEFT CTRL: Vehicle HUD</li>
-                  <li>
-                    LEFT CTRL + LEFT ARROW: Open/Close Driver or Left Passenger
-                    Door
-                  </li>
-                  <li>
-                    LEFT CTRL + RIGHT ARROW: Open/Close Right Passenger Door
-                  </li>
-                  <li>LEFT CTRL + UP ARROW: Roll Up Window</li>
-                  <li>LEFT CTRL + DOWN ARROW: Roll Down Window</li>
-                  <li>LEFT CTRL + BACKSPACE: Seat Shuffle</li>
-                  <li>LEFT CTRL + H: Open/Close Hood (inside vehicle)</li>
-                  <li>LEFT CTRL + E: Toggle Engine or Sit</li>
-                  <li>LEFT ARROW: Toggle Left Indicator</li>
-                  <li>RIGHT ARROW: Toggle Right Indicator</li>
-                  <li>Engine Always On: Hold F when exiting vehicle</li>
-                  <li>Leave Door Open: Hold Shift+F when exiting vehicle</li>
-                  <li>LEFT SHIFT + E: Tackle nearby player</li>
-                </ul>
-                <h2 class="section_heading__ common_blog_heading_">
-                  Chat Commands (Press T)
-                </h2>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>
-                    /drag [ID] : Start/Stop dragging a player, specified by
-                    their ID
-                  </li>
-                  <li>/hood : Open hood while in a vehicle</li>
-                  <li>
-                    /trunk : Open trunk (and view contents if outside vehicle)
-                  </li>
-                  <li>
-                    /glovebox : Open glovebox and view contents if inside
-                    vehicle
-                  </li>
-                  <li>
-                    /gb : Open glovebox and view contents if inside vehicle
-                  </li>
-                  <li>/engine : Toggle engine</li>
-                  <li>/do [Message] : RP Information</li>
-                  <li>/me [Message] : Personal action</li>
-                  <li>/setgps [X] [Y] : Set GPS Waypoint</li>
-                  <li>/getpos : Get World Coordinates</li>
-                  <li>/id : Returns your server ID</li>
-                  <li>
-                    /onduty: Show the amount of players on duty for your job.
-                  </li>
-                  <li>/seatshuffle : Move to drivers seat if passenger</li>
-                  <li>/mic : Microphone (E to activate, Backspace to exit)</li>
-                  <li>/cam : News Camera</li>
-                  <li>/bmic : Mic Boom</li>
-                  <li>/pet: Pet Menu</li>
-                  <li>/win or /window : Roll windows up or down</li>
-                  <ul class="fancy_list ml-0 mt-4 mb-5">
-                    <li>/window all up</li>
-                    <li>/window 1 up</li>
-                    <li>/window up</li>
-                  </ul>
-                  <li>/door : Open or close doors</li>
-                  <ul class="fancy_list ml-0 mt-4 mb-5">
-                    <li>0 is hood, 1-4 passenger doors, 5 is trunk</li>
-                    <li>/door all open</li>
-                    <li>/door 1 open</li>
-                    <li>/door open</li>
-                  </ul>
-                  <li>/rollup : Rolls up the closest window.</li>
-                  <li>/rolldown : Rolls down the closest window.</li>
-                  <li>/cuff : Cuffs the closest player (Police Only)</li>
-                  <li>/escort : Escorts the closest player (Police Only)</li>
-                  <li>
-                    /gsr : Check suspect for Gunshot Residue (Police Only)
-                  </li>
-                  <li>/givekey [ID] [PLATE] : Give keys for vehicle</li>
-                  <li>
-                    /givecash [ID] [AMOUNT] : Give cash to player from pockets
-                  </li>
-                  <li>
-                    /rack : Rack/unrack large weapons from a vehicle trunk
-                  </li>
-                  <li>
-                    /checkloan: While seated in vehicle, this will tell you how
-                    money you owe on your vehicle (if any), and how much time
-                    you have to repay it
-                  </li>
-                  <li>/payloan [AMOUNT] : Repays x amount off car loan</li>
-                  <li>/mcard : Miranda Rights</li>
-                  <li>/vcard : Vital Signs Cards</li>
-                  <li>/health : Check your injuries</li>
-                  <li>/healthother : Check the closest players health</li>
-                  <li>
-                    /mendother : Use a medical brace on the closest player
-                  </li>
-                  <li>/ems, /medic : Send your GPS coordinates to all EMS</li>
-                  <li>
-                    /911 : Send your GPS coordinates to all EMS and Police
-                  </li>
-                  <li>
-                    /mechanic : Send your GPS coordinates to all Mechanics
-                  </li>
-                  <li>/taxi : Send your GPS coordinates to all Taxi drivers</li>
-                  <li>
-                    /ping [ID] : Send your GPS coordinates to another player
-                  </li>
-                  <li>
-                    /roster : View the a roster list for your current job.
-                    (Police, EMS, and Mechanic only)
-                  </li>
-                  <li>/helmet [on or off] : Take helmet off or put back on.</li>
-                  <li>/hat [on or off] : Take hat off or put back on.</li>
-                  <li>/lighteffects : Change the color of your headlights.</li>
-                  <li>
-                    /selldrugs or /sd : Initiate drug deal with the closest NPC.
-                  </li>
-                  <li>/report [ID] [REASON] : Report a player for abuse</li>
-                  <li>
-                    /idcards : View your wallet and/or present your ID cards to
-                    the closest player.
-                  </li>
-                  <li>
-                    /wallet : View your wallet and/or present your ID cards to
-                    the closest player.
-                  </li>
-                  <li>
-                    /showid : View your wallet and/or present your ID cards to
-                    the closest player.
-                  </li>
-                  <li>
-                    /lastid : Display the last ID given to you from someone's
-                    wallet.
-                  </li>
-                  <li>
-                    /changeclothes : Change Clothes when inside certain vehicles
-                    such as Campers
-                  </li>
-                  <li>
-                    /backup : Request backup from other players with the same
-                    job.
-                  </li>
-                  <li>/bag (Variants)</li>
-                  <li>/bracelet (Toggle)</li>
-                  <li>/ear (Toggle)</li>
-                  <li>/glasses (Toggle)</li>
-                  <li>/gloves (Variants)</li>
-                  <li>/hair (Variants)</li>
-                  <li>/hat (Toggle)</li>
-                  <li>/mask (Toggle)</li>
-                  <li>/neck (Toggle)</li>
-                  <li>/pants (Toggle)</li>
-                  <li>/shirt (Toggle) (Also takes off gloves)</li>
-                  <li>/shoes (Toggle)</li>
-                  <li>/top (Variants)</li>
-                  <li>/visor (Variants)</li>
-                  <li>/watch (Toggle)</li>
-                  <li>
-                    /revertclothing (Simply puts every toggled item back on)
-                  </li>
-                  <li>/bagoff (Toggle)</li>
-                  <li>
-                    /sellcar [PRICE] : List a car for sale anywhere in the city
-                    (Up to 5 cars; Used Car Dealer up to 8 cars)
-                  </li>
-                  <li>
-                    /park : Park your vehicle anywhere in the city, have it
-                    frozen in place, and persist across server restarts (Up to 3
-                    cars)
-                  </li>
-                  <li>/ragdoll : Toggle ragdoll on and off</li>
-                  <li>
-                    /hud : Hide/Show the HUD elements for screenshot purposes
-                  </li>
-                  <li>
-                    /hudleft : Set the HUD to show on the left side of the
-                    screen.
-                  </li>
-                  <li>
-                    /hudbottom : Set the HUD to show on the bottom center of the
-                    screen.
-                  </li>
-                  <li>
-                    /hidemapblip : Hide yourself on the map for other players
-                    with the same profession.
-                  </li>
-                  <li>
-                    /vehiclesparked : Show parked vehicles on the map (Mechanics
-                    and Police Only)
-                  </li>
-                  <li>
-                    /vehiclesforsale : Show for sale vehicles on the map
-                    (Mechanics and Police Only)
-                  </li>
-                  <li>/putinvehicle : Put a player into a nearby vehicle</li>
-                  <li>
-                    /pullfromvehicle : Pull a player from a nearby vehicle
-                  </li>
-                  <li>
-                    /pn or /phonenumber : Send your phone number to nearby
-                    players
-                  </li>
-                  <li>
-                    /resethud or /resetui : Reset the UI elements whenever they
-                    get stuck or you cant move (can type in F8 without the slash
-                    as well)
-                  </li>
-                  <li>
-                    /scene [TEXT] : Create or update a scene on an object.
-                  </li>
-                  <li>/scenehide : Toggles hiding scenes.</li>
-                  <li>
-                    /sceneremove : Remove a nearby scene, if you own the scene
-                    or you are a Police officer.
-                  </li>
-                  <li>
-                    /steal : Steal from a downed player or a player with their
-                    hands up (You must be armed)
-                  </li>
-                  <li>/phonepower : Power your phone on and off.</li>
-                  <li>/mutealerts : Mute/un-mute alert sounds</li>
-                  <li>
-                    /lifer : Used by lifers to teleport back to prison and heal
-                    up.
-                  </li>
-                  <li>/badge : Show LEO badge</li>
-                  <li>/takepooltable : Pick up a pool table</li>
-                  <li>/takepoolrack : Pick up a pool cue rack</li>
-                  <li>/takeprojector : Pick up a projector</li>
-                  <li>/focuspoints : Use focus points when crafting</li>
-                  <li>
-                    /seat [ID] : Change to a specific seat in the vehicle (1-4).
-                    - Ex: /seat 1
-                  </li>
-                  <li>
-                    /stickers : Add stickers to your vehicle (Request your own
-                    with
-                    <a
-                      href="https://store.kfcrp.com/package/4865015"
-                      class="highlighted_link"
-                      >this Tebex package!</a
-                    >)
-                  </li>
-                  <li>/carradio : Play audio inside a vehicle</li>
-                  <li>
-                    /referralcode [CODE] : Set your referral code for a new
-                    player to use.
-                  </li>
-                  <li>
-                    /usecode [CODE] : Use a referral code as a new player and
-                    earn money for you and the code creator
-                  </li>
-                  <li>/mycode : Check your referral code</li>
-                  <li>
-                    /characterage : Get the days your character has been in the
-                    city
-                  </li>
-                  <li>/airbag : Manually deploy vehicle airbags</li>
-                  <li>
-                    /recentalerts : Play back the last 10 notifications you have
-                    received.
-                  </li>
-                  <li>
-                    /convertvin : Those who possess the knowledge can convert
-                    VIN scratched vehicles to legal vehicles using this command.
-                  </li>
-                  <li>
-                    /fixmycharacter : Run this command to fix your character if
-                    it does not render as expected.
-                  </li>
-                </ul>
-                <h2 class="section_heading__ common_blog_heading_">Racing</h2>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>
-                    /vehicleclass - Check the class for the vehicle you're
-                    driving or standing next to.
-                  </li>
-                </ul>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>
-                    /vehicleclass - Check the class for the vehicle you're
-                    driving or standing next to.
-                  </li>
-                </ul>
-                <h2 class="section_heading__ common_blog_heading_">NOS</h2>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>/purgefront : Toggle the front Nitrous purge nozzles</li>
-                  <li>/purgetop : Toggle the top Nitrous purge nozzles</li>
-                </ul>
-                <h2 class="section_heading__ common_blog_heading_">
-                  POLICE & EMS: Vehicle Sirens/Lights
-                </h2>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>Toggle emergency lights: CAPSLOCK</li>
-                  <li>Airhorn: E</li>
-                  <li>Toggle siren: ALT</li>
-                  <li>Browse sirens: R</li>
-                  <li>Take-down Light: Shift-H</li>
-                  <li>Control Panel: O</li>
-                  <li>Lock Lights/Sirens: I</li>
-                  <li>Helicopter Sirens: Q, R, and both at the same time</li>
-                </ul>
-                <h2 class="section_heading__ common_blog_heading_">
-                  POLICE DRONE
-                </h2>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>
-                    /drone : Spawn the drone on the floor in front of you. Run
-                    it again to remove it.
-                  </li>
-                  <li>
-                    <strong class="fw-bold">Forward Arrow</strong> - Move the
-                    drone forward
-                  </li>
-                  <li>
-                    <strong class="fw-bold">Backward Arrow </strong>- Move the
-                    drown backward
-                  </li>
-                  <li>
-                    <strong class="fw-bold">Left Arrow</strong> - Tilt the drone
-                    left
-                  </li>
-                  <li>
-                    <strong class="fw-bold">Right Arrow</strong> - Tilt the
-                    drone right
-                  </li>
-                  <li>
-                    <strong class="fw-bold">Enter</strong> - Toggle live camera
-                    stream
-                  </li>
-                  <li>
-                    <strong class="fw-bold">Home</strong> - Toggle night vision
-                  </li>
-                  <li>
-                    <strong class="fw-bold">Delete</strong> - Toggle thermal
-                    imaging
-                  </li>
-                  <li>
-                    <strong class="fw-bold">Page Up</strong> - Move the drone
-                    up, increasing the altitude
-                  </li>
-                  <li>
-                    <strong class="fw-bold"> Page Down</strong> - Move the drone
-                    down, decreasing the altitude
-                  </li>
-                  <li>
-                    <strong class="fw-bold">Insert</strong> - Automatically land
-                    the drone
-                  </li>
-                </ul>
-                <h2 class="section_heading__ common_blog_heading_">
-                  POLICE GRAPPLER
-                </h2>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li><strong class="fw-bold">/grappler install</strong></li>
-                  <li><strong class="fw-bold">/grappler deploy</strong></li>
-                  <li><strong class="fw-bold">/grappler remove</strong></li>
-                </ul>
-                <h2 class="section_heading__ common_blog_heading_">
-                  POLICE: In-car Radar
-                </h2>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>
-                    Press G to open the radar menu while in a police vehicle.
-                    Then, click “Toggle Radar” to enable the radar.
-                  </li>
-                  <li>Button Meanings:</li>
-                  <ul class="fancy_list ml-0 mt-4 mb-5">
-                    <li>XMIT - Turns on/off the antenna.</li>
-                    <li>
-                      OPP - Makes the antenna scan traffic in the opposite lane.
-                    </li>
-                    <li>
-                      SAME - Makes the antenna scan traffic in the same lane of
-                      travel.
-                    </li>
-                    <li>
-                      Set Fast Limit - Set the speed a car must be travelling to
-                      be detected.
-                    </li>
-                    <li>Toggle Speed Type - Switch between MPH and KPH.</li>
-                  </ul>
-                  <li>
-                    A beep will sound when a car is detected above the limit.
-                    Their top speed will stay in the box.
-                  </li>
-                  <li>
-                    Remove previous vehicles saved speed and reset by pressing
-                    G.
-                  </li>
-                </ul>
-                <h2 class="section_heading__ common_blog_heading_">
-                  POLICE: Night Vision and Thermal Vision
-                </h2>
-                <ul class="fancy_list mt-4 mb-5">
-                  Press E while in the Police helicopters Right-click to cycle
-                  between modes
-                </ul>
-                <h2 class="section_heading__ common_blog_heading_">
-                  Animation Commands
-                </h2>
-                <ul class="fancy_list mt-4 mb-5">
-                  <li>F3 : Display emotes menu</li>
-                  <li>/e c : Cancel animation</li>
-                  <li>/emotemenu : Display emotes menu</li>
-                  <li>/emotes : Display all emotes in chat</li>
-                  <li>CAPS LOCK : Favorite Emote (bindable in F3)</li>
-                  <li>/walks : Display all walking styles</li>
-                  <li>/walk WALKNAME : Change walk style</li>
-                  <li>/e EMOTENAME</li>
-                  <ul class="fancy_list ml-0 mt-4 mb-5">
-                    <li>See F3 menu for emote command names.</li>
-                  </ul>
-                </ul>
-              </div>
+            <div class="row text-center">
+               <div class="col-12 mt-3">
+                  <p class="common-description copyright__">
+                     Copyright © 2023 - KFCRP.com @ Cfx.re | FIVEM Community
+                  </p>
+               </div>
             </div>
-          </div>
-        </article>
-      </section>
-    </main>
-    <!-- The main content section of the webpage -->
-    <!-- Footer -->
-    <footer>
-      <div class="container-fluid">
-        <div class="row gy-4">
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <img
-                src="./assets/img/2222.png"
-                alt="footer logo"
-                class="img-fluid"
-              />
-              <p class="about_description">
-                A one-of-a-kind FiveM roleplay server offering an immersive and
-                engaging experience with unique features that set us apart from
-                other roleplay servers.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <h5>Contact Us</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fas fa-phone-alt"></i>&nbsp;&nbsp; +447769759211
-                </li>
-                <li>
-                  <i class="fas fa-envelope"></i>&nbsp;&nbsp;
-                  eastd1@hphasesw.com
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <h5>Our Services</h5>
-              <ul class="list-unstyled">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <h5>Quick Links</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://discord.com/invite/kfcrp" target="_blank"
-                    ><span>Discord</span>&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://store.kfcrp.com/" target="_blank"
-                    ><span>Ban Appeal</span>&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://store.kfcrp.com/" target="_blank"
-                    ><span>Store</span>&nbsp;&nbsp;<svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block fill-white mb-1 ml-1"
-                      width="10"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                      ></path></svg
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-12 mt-3">
-            <p class="common-description copyright__">
-              Copyright © 2023 - KFCRP.com @ Cfx.re | FIVEM Community
-            </p>
-          </div>
-        </div>
+         </div>
+      </footer>
+      <!-- Footer -->
+      <!-- fixed social buttons -->
+      <div id="fixed-social">
+         <div>
+            <a
+               href="https://discord.com/invite/kfcrp"
+               target="_blank"
+               class="fixed-facebook"
+               ><i class="fa-brands fa-discord"></i
+               ></a>
+         </div>
+         <div>
+            <a
+               href="https://www.instagram.com/kfcrp/"
+               target="_blank"
+               class="fixed-instagrem"
+               ><i class="fa-brands fa-instagram"></i>
+            </a>
+         </div>
       </div>
-    </footer>
-    <!-- Footer -->
-    <!-- fixed social buttons -->
-    <div id="fixed-social">
-      <div>
-        <a
-          href="https://discord.com/invite/kfcrp"
-          target="_blank"
-          class="fixed-facebook"
-          ><i class="fa-brands fa-discord"></i
-        ></a>
-      </div>
-      <div>
-        <a
-          href="https://www.instagram.com/kfcrp/"
-          target="_blank"
-          class="fixed-instagrem"
-          ><i class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-    <!-- fixed social buttons -->
-    <!-- Essential JavaScript Plugin scripts -->
-    <!-- Include jQuery from Google CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Include HTML5shiv to enable HTML5 elements in older browsers -->
-    <script src="assets/vendors/js/html5shiv.min.js"></script>
-    <!-- Include Respond.js to enable media query support in older IE versions -->
-    <script src="assets/vendors/js/respond.min.js"></script>
-    <!-- Include Modernizr for feature detection and browser capabilities -->
-    <script src="assets/vendors/js/modernizr.min.js"></script>
-    <!-- Include Selectivizr for CSS3 pseudo-class and attribute selector support in older IE versions -->
-    <script src="assets/vendors/js/selectivizr-min.js"></script>
-    <!-- Include Bootstrap JavaScript from your downloaded folder -->
-    <script src="assets/vendors/js/bootstrap.min.js"></script>
-    <!-- Include Pushbar.js for mobile menu functionality -->
-    <script src="assets/vendors/js/pushbar.js"></script>
-    <!-- Include app.js for custom JavaScript functionality -->
-    <script src="assets/resources/js/app.js"></script>
-  </body>
+      <!-- fixed social buttons -->
+      <!-- Essential JavaScript Plugin scripts -->
+      <!-- Include jQuery from Google CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Include HTML5shiv to enable HTML5 elements in older browsers -->
+      <script src="assets/vendors/js/html5shiv.min.js"></script>
+      <!-- Include Respond.js to enable media query support in older IE versions -->
+      <script src="assets/vendors/js/respond.min.js"></script>
+      <!-- Include Modernizr for feature detection and browser capabilities -->
+      <script src="assets/vendors/js/modernizr.min.js"></script>
+      <!-- Include Selectivizr for CSS3 pseudo-class and attribute selector support in older IE versions -->
+      <script src="assets/vendors/js/selectivizr-min.js"></script>
+      <!-- Include Bootstrap JavaScript from your downloaded folder -->
+      <script src="assets/vendors/js/bootstrap.min.js"></script>
+      <!-- Include Pushbar.js for mobile menu functionality -->
+      <script src="assets/vendors/js/pushbar.js"></script>
+      <!-- Include app.js for custom JavaScript functionality -->
+      <script src="assets/resources/js/app.js"></script>
+   </body>
 </html>

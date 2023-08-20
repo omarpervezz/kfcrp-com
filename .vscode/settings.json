@@ -4,13 +4,13 @@
   // "editor.hover.enabled": true,
   // "editor.parameterHints.enabled": true,
   // "editor.suggest.snippetsPreventQuickSuggestions": true,
-  "html.suggest.html5": false,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.tslint": true,
-    "source.organizeImports": true
-  },
+  // "html.suggest.html5": false,
+  // "editor.formatOnSave": true,
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true,
+  //   "source.fixAll.tslint": true,
+  //   "source.organizeImports": true
+  // },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
