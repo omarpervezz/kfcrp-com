@@ -287,9 +287,13 @@ section {
 .common_header {
   position: relative;
   padding: 150px 0px;
-  background: linear-gradient(rgba(9, 52, 78, 0.58), rgba(8, 40, 59, 0.57))
-      center center / cover no-repeat scroll,
-    url("../../img/backgroundImg/about-bg.jpg");
+  background: linear-gradient(rgb(9 52 78 / 58%), rgb(8 40 59 / 57%)),
+    url(../../img/backgroundImg/about-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
   z-index: 70;
 }
 
@@ -1504,7 +1508,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
-
+footer,
 .footer {
   background: linear-gradient(rgb(4, 4, 4) 0%, rgba(0, 0, 0, 0.98) 100%) 0% 0% /
     cover;
@@ -1512,7 +1516,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   padding-bottom: 3rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+footer h5,
 .footer h5 {
   color: rgb(255, 255, 255);
   font-size: 1.7rem;
@@ -1521,11 +1525,12 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   font-weight: 400;
   font-style: normal;
 }
-
+footer img,
 .footer img {
   width: 8rem;
 }
-
+footer p,
+footer ul,
 .footer p,
 .footer ul {
   color: rgb(173, 181, 189);
@@ -1535,17 +1540,17 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   font-style: normal;
   opacity: 0.7;
 }
-
+footer .about_description,
 .footer .about_description {
   margin-top: 1.3rem;
   transition: color 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s,
     opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
 }
-
+footer .about_description:hover,
 .footer .about_description:hover {
   color: var(--white-color);
 }
-
+footer a,
 .footer a {
   color: rgb(173, 181, 189);
   font-size: 1.4rem;
@@ -1556,28 +1561,28 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   transition: color 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s,
     opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
 }
-
+footer a svg,
 .footer a svg {
   fill: rgb(173, 181, 189);
   transition: color 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s,
     opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
 }
-
+footer a:hover,
 .footer a:hover {
   color: var(--white-color);
 }
-
+footer a:hover svg,
 .footer a:hover svg {
   fill: var(--white-color);
 }
-
+footer ul li,
 .footer ul li {
   padding-left: 1.5rem;
   position: relative;
   list-style-type: none;
   margin-bottom: 0.5rem;
 }
-
+footer ul li i,
 .footer ul li i {
   position: absolute;
   left: 0px;
@@ -1586,7 +1591,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   width: 20px;
   text-align: center;
 }
-
+footer .copyright__,
 .footer .copyright__ {
   font-size: 1.2rem;
   margin-top: 5rem;
