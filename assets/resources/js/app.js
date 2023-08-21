@@ -8,11 +8,11 @@ window.addEventListener("scroll", (event) => {
 
   // Check if the scroll position is greater than 20 pixels
   if (scroll > 20) {
-    // If the condition is true, add the "backDrop & animate__fadeInDownBig" class to the header element
-    header.classList.add("backDrop", "animate__fadeInDownBig");
+     // If the condition is true, add the "backDrop & animate__fadeInDownBig" class to the header element
+     header.classList.add("backDrop", "animate__fadeInDownBig");
   } else {
-    // If the condition is false, remove the "backDrop & animate__fadeInDownBig" class from the header element
-    header.classList.remove("backDrop", "animate__fadeInDownBig");
+     // If the condition is false, remove the "backDrop & animate__fadeInDownBig" class from the header element
+     header.classList.remove("backDrop", "animate__fadeInDownBig");
   }
 });
 
@@ -36,48 +36,103 @@ function removeAnimation() {
   // Remove the "animate__backInRight" class to ensure it's not active
   push__bar.classList.remove("animate__backInRight");
 }
+// Scroll animation
+(function ($) {
+  var uniqueCntr = 0;
+  $.fn.scrolled = function (waitTime, fn) {
+     if (typeof waitTime === "function") {
+        fn = waitTime;
+        waitTime = 200;
+     }
+     var tag = "scrollTimer" + uniqueCntr++;
+     this.scroll(function () {
+        var self = $(this);
+        clearTimeout(self.data(tag));
+        self.data(
+           tag,
+           setTimeout(function () {
+              self.removeData(tag);
+              fn.call(self[0]);
+           }, waitTime)
+        );
+     });
+  };
+
+  $.fn.AniView = function (options) {
+     //some default settings. animateThreshold controls the trigger point
+     //for animation and is subtracted from the bottom of the viewport.
+     var settings = $.extend({
+           animateClass: "animated",
+           animateThreshold: 0,
+           scrollPollInterval: 20,
+        },
+        options
+     );
+
+     //keep the matched elements in a variable for easy reference
+     var collection = this;
+
+     //cycle through each matched element and wrap it in a block/div
+     //and then proceed to fade out the inner contents of each matched element
+     $(collection).each(function (index, element) {
+        $(element).wrap('<div class="av-container"></div>');
+        $(element).css("opacity", 0);
+     });
+
+     /**
+      * returns boolean representing whether element's top is coming into bottom of viewport
+      *
+      * @param HTMLDOMElement element the current element to check
+      */
+     function EnteringViewport(element) {
+        var elementTop = $(element).offset().top;
+        var viewportBottom = $(window).scrollTop() + $(window).height();
+        return elementTop < viewportBottom - settings.animateThreshold ?
+           true :
+           false;
+     }
+
+     /**
+      * cycle through each element in the collection to make sure that any
+      * elements which should be animated into view, are...
+      *
+      * @param collection of elements to check
+      */
+     function RenderElementsCurrentlyInViewport(collection) {
+        $(collection).each(function (index, element) {
+           var elementParentContainer = $(element).parent(".av-container");
+           if (
+              $(element).is("[data-av-animation]") &&
+              !$(elementParentContainer).hasClass("av-visible") &&
+              EnteringViewport(elementParentContainer)
+           ) {
+              $(element).css("opacity", 1);
+              $(elementParentContainer).addClass("av-visible");
+              $(element).addClass(
+                 [settings.animateClass, $(element).attr("data-av-animation")].join(
+                    " "
+                 )
+              );
+           }
+        });
+     }
+
+     //on page load, render any elements that are currently/already in view
+     RenderElementsCurrentlyInViewport(collection);
+
+     //enable the scrolled event timer to watch for elements coming into the viewport
+     //from the bottom. default polling time is 20 ms. This can be changed using
+     //'scrollPollInterval' from the user visible options
+     $(window).scrolled(settings.scrollPollInterval, function () {
+        RenderElementsCurrentlyInViewport(collection);
+     });
+  };
+})(jQuery);
+
 $(document).ready(function () {
-  $("#homepage").fullpage({
-    scrollingSpeed: 1000,
-    autoScrolling: true,
-    fitToSection: true,
-    fitToSectionDelay: 2000,
-    anchors: [
-      "banner",
-      "about-us",
-      "stuff-team",
-      "join-our-server",
-      "community-feedback",
-      "join-us-today",
-      "sponsor-footer",
-    ],
-    verticalCentered: false,
-    navigation: true,
-    responsiveWidth: 500,
-    onLeave: function (index, nextIndex, direction) {
-      if (direction == "up") {
-        $(".section").removeClass("down");
-        $(".section").removeClass("next");
-        $(".section").removeClass("prev");
-        $("#homepage .section:nth-child(" + nextIndex + ")").addClass("up");
-        $("#homepage .section:nth-child(" + nextIndex + ")")
-          .next()
-          .addClass("next up");
-        $("#homepage .section:nth-child(" + nextIndex + ")")
-          .prev()
-          .addClass("prev up");
-      } else {
-        $(".section").removeClass("up");
-        $(".section").removeClass("next");
-        $(".section").removeClass("prev");
-        $("#homepage .section:nth-child(" + nextIndex + ")").addClass("down");
-        $("#homepage .section:nth-child(" + nextIndex + ")")
-          .next()
-          .addClass("next down");
-        $("#homepage .section:nth-child(" + nextIndex + ")")
-          .prev()
-          .addClass("prev down");
-      }
-    },
+  $(".aniview").AniView({
+     animateClass: "animate__animated",
+     animateThreshold: 100,
+     scrollPollInterval: 45,
   });
 });

@@ -20,17 +20,10 @@
       <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css" />
       <!-- Integrate custom CSS for personalized styling and UI enhancements -->
       <link rel="stylesheet" href="assets/resources/css/style.css" />
-      <!-- Responsive CSS -->
-      <link rel="stylesheet" href="assets/resources/css/responsive.css" />
-      <!-- Include the fullPage.js stylesheet for styling the interactive full-page sections -->
-      <link
-         rel="stylesheet"
-         href="assets/vendors/css/fullPage.js_2.9.2_jquery.fullPage.css"
-         />
    </head>
    <body>
       <!-- Start Header Section -->
-      <header class="">
+      <header class="animate__animated">
          <div class="container-fluid">
             <nav>
                <div class="row_">
@@ -142,7 +135,7 @@
       <div
          data-pushbar-id="mypushbar1"
          data-pushbar-direction="right"
-         class="push-container push__bar"
+         class="push-container push__bar animate__animated"
          >
          <div class="mobile_container">
             <div class="overlay__"></div>
@@ -241,15 +234,18 @@
       </div>
       <!-- Mobile Menu End -->
       <!-- The main content section of the webpage -->
-      <main id="homepage">
+      <main>
          <!-- Banner section -->
-         <section class="section banner_">
+         <section class="banner_">
             <div class="banner-overlay"></div>
             <!-- Content of the banner section -->
             <div class="container">
                <div class="row justify-content-center align-items-center">
                   <div class="col-lg-6 col-md-6">
-                     <div class="banner-content text-center content-wrapper">
+                     <div
+                        class="banner-content text-center aniview"
+                        data-av-animation="animate__fadeIn"
+                        >
                         <div class="image-container">
                            <img
                               src="./assets/img/512_2.png"
@@ -273,28 +269,32 @@
          </section>
          <!-- Banner section -->
          <!-- endless-adventures -->
-         <section class="section endless-adventures">
+         <section class="endless-adventures">
             <div class="container">
                <div class="row align-items-center">
-                  <div class="col-lg-6 mb-5 mb-lg-0 content-wrapper">
-                     <!-- Added mb-4 and mb-lg-0 -->
-                     <h2 class="section_heading__">
-                        The Best FiveM Server and Community
-                     </h2>
-                     <p class="common-description endless_description_text">
-                        Immerse yourself in a world of endless possibilities and
-                        realistic roleplaying adventures.
-                     </p>
-                     <a href="about.html" class="common-button read-more"
-                        >READ MORE ABOUT KFCRP!</a
-                        >
+                  <div class="col-lg-6 mb-5 mb-lg-0">
+                     <div class="aniview" data-av-animation="animate__slideInLeft">
+                        <!-- Added mb-4 and mb-lg-0 -->
+                        <h2 class="section_heading__">
+                           The Best FiveM Server and Community
+                        </h2>
+                        <p class="common-description endless_description_text">
+                           Immerse yourself in a world of endless possibilities and
+                           realistic roleplaying adventures.
+                        </p>
+                        <a href="about.html" class="common-button read-more"
+                           >READ MORE ABOUT KFCRP!</a
+                           >
+                     </div>
                   </div>
-                  <div class="col-lg-6 content-wrapper">
-                     <img
-                        src="./assets/img/backgroundImg/read-more-img.png"
-                        alt="Roleplaying Adventures"
-                        class="img-fluid"
-                        />
+                  <div class="col-lg-6">
+                     <div class="aniview" data-av-animation="animate__slideInRight">
+                        <img
+                           src="./assets/img/backgroundImg/read-more-img.png"
+                           alt="Roleplaying Adventures"
+                           class="img-fluid"
+                           />
+                     </div>
                   </div>
                </div>
             </div>
@@ -306,11 +306,11 @@
          </section>
          <!-- endless-adventures -->
          <!-- Section for Staff Team -->
-         <section class="section staff_team">
-            <div class="container pt-5">
+         <section class="staff_team">
+            <div class="container">
                <div class="row justify-content-center">
                   <div class="col-md-8 text-center">
-                     <div class="content-wrapper">
+                     <div class="aniview" data-av-animation="animate__slideInUp">
                         <!-- Section Heading -->
                         <h2 class="section_heading__ mb-2 mb-lg-3">THE STAFF TEAM</h2>
                         <!-- Subheading with Purple Color Word -->
@@ -330,160 +330,166 @@
             </div>
             <div class="container mt-3 mt-lg-4">
                <div class="row justify-content-center align-items-center">
-                  <div
-                     class="col-12 col-sm-12 col-md-3 col-lg-3 text-center content-wrapper"
-                     >
-                     <div class="image-container-hover">
-                        <div class="image-wrapper">
-                           <img
-                              src="http://therebellionforces.com/forums.uwsgaming.com/images/placeholders/GhostShell1.jpg"
-                              alt="staff members"
-                              class="hover-effect"
-                              />
-                           <div class="overlay__description">
-                              <p>
-                                 THE OWNER OF THE COMMUNITY FOR OVER 5 YEARS AND HAS BEEN
-                                 THE BIGGEST ASSEST IN MAKING THE COMMUNITY WHAT IT IS
-                                 TODAY BY MAKING HONESTY AND FAIRNESS A STAPLE IN HOW
-                                 ISSUES ARE DELT WITH.
-                              </p>
-                              <a
-                                 href="https://steamcommunity.com/id/TRF2014/"
-                                 target="_blank"
-                                 class="stream_profile"
-                                 data-steam="steam profile"
-                                 ><i class="fa-brands fa-steam"></i
-                                 ></a>
+                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+                     <!-- HTML structure with the image, overlay, and updated animated hover effect -->
+                     <div class="aniview" data-av-animation="animate__slideInUp">
+                        <div class="image-container-hover">
+                           <div class="image-wrapper">
+                              <img
+                                 src="http://therebellionforces.com/forums.uwsgaming.com/images/placeholders/GhostShell1.jpg"
+                                 alt="staff members"
+                                 class="hover-effect"
+                                 />
+                              <div class="overlay__description">
+                                 <p>
+                                    THE OWNER OF THE COMMUNITY FOR OVER 5 YEARS AND HAS BEEN
+                                    THE BIGGEST ASSEST IN MAKING THE COMMUNITY WHAT IT IS
+                                    TODAY BY MAKING HONESTY AND FAIRNESS A STAPLE IN HOW
+                                    ISSUES ARE DELT WITH.
+                                 </p>
+                                 <a
+                                    href="https://steamcommunity.com/id/TRF2014/"
+                                    target="_blank"
+                                    class="stream_profile"
+                                    data-steam="steam profile"
+                                    ><i class="fa-brands fa-steam"></i
+                                    ></a>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="img_information_container mt-2 mt-lg-4">
-                        <p class="name_text">[TRF]COL.TAYLOR</p>
-                        <p class="title_text">Community Founder</p>
+                        <div class="img_information_container mt-2 mt-lg-4">
+                           <p class="name_text">[TRF]COL.TAYLOR</p>
+                           <p class="title_text">Community Founder</p>
+                        </div>
                      </div>
                   </div>
-                  <div
-                     class="col-12 col-sm-12 col-md-3 col-lg-3 text-center content-wrapper"
-                     >
-                     <div class="image-container-hover">
-                        <div class="image-wrapper">
-                           <img
-                              src="http://therebellionforces.com/forums.uwsgaming.com/images/placeholders/T7NK1HoW1.jpg"
-                              alt="staff members"
-                              class="hover-effect"
-                              />
-                           <div class="overlay__description">
-                              <p>
-                                 A LOYAL MEMBER OF OVER 4 YEARS, HE IS VERY ELOQUENT IN
-                                 DEALING WITH MATTERS AND FOLLOWS OUR LEADERS PHILOSOPHY IN
-                                 PROVIDING AN EQUAL AND FAIR GAMING ENVIRONMENT FOR ALL.
-                              </p>
-                              <a
-                                 href="https://steamcommunity.com/id/DrillaEnglishMan/"
-                                 target="_blank"
-                                 class="stream_profile"
-                                 data-steam="steam profile"
-                                 ><i class="fa-brands fa-steam"></i
-                                 ></a>
+                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+                     <div class="aniview" data-av-animation="animate__slideInUp">
+                        <!-- HTML structure with the image, overlay, and updated animated hover effect -->
+                        <div class="image-container-hover">
+                           <div class="image-wrapper">
+                              <img
+                                 src="http://therebellionforces.com/forums.uwsgaming.com/images/placeholders/T7NK1HoW1.jpg"
+                                 alt="staff members"
+                                 class="hover-effect"
+                                 />
+                              <div class="overlay__description">
+                                 <p>
+                                    A LOYAL MEMBER OF OVER 4 YEARS, HE IS VERY ELOQUENT IN
+                                    DEALING WITH MATTERS AND FOLLOWS OUR LEADERS PHILOSOPHY
+                                    IN PROVIDING AN EQUAL AND FAIR GAMING ENVIRONMENT FOR
+                                    ALL.
+                                 </p>
+                                 <a
+                                    href="https://steamcommunity.com/id/DrillaEnglishMan/"
+                                    target="_blank"
+                                    class="stream_profile"
+                                    data-steam="steam profile"
+                                    ><i class="fa-brands fa-steam"></i
+                                    ></a>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="img_information_container mt-2 mt-lg-4">
-                        <p class="name_text">[TRF]ENGLISHMAN</p>
-                        <p class="title_text">Operations Lead</p>
+                        <div class="img_information_container mt-2 mt-lg-4">
+                           <p class="name_text">[TRF]ENGLISHMAN</p>
+                           <p class="title_text">Operations Lead</p>
+                        </div>
                      </div>
                   </div>
                </div>
                <div class="row justify-content-center align-items-center mt-4">
-                  <div
-                     class="col-12 col-sm-12 col-md-3 col-lg-3 text-center content-wrapper"
-                     >
-                     <div class="image-container-hover">
-                        <div class="image-wrapper">
-                           <img
-                              src="http://therebellionforces.com/forums.uwsgaming.com/images/placeholders/rifle350.jpg"
-                              alt="staff members"
-                              class="hover-effect"
-                              />
-                           <div class="overlay__description">
-                              <p>
-                                 A VERY LEVEL HEADED MANAGER THAT HELPS WITH THE ENFORMENTS
-                                 OF THE TRF RULES WITHOUT HAVING TO RAISE VOICE OR DISH
-                                 UNFAIR PUNISHMENTS
-                              </p>
-                              <a
-                                 href="https://steamcommunity.com/id/lefruit123/"
-                                 target="_blank"
-                                 class="stream_profile"
-                                 data-steam="steam profile"
-                                 ><i class="fa-brands fa-steam"></i
-                                 ></a>
+                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+                     <div class="aniview" data-av-animation="animate__slideInUp">
+                        <!-- HTML structure with the image, overlay, and updated animated hover effect -->
+                        <div class="image-container-hover">
+                           <div class="image-wrapper">
+                              <img
+                                 src="http://therebellionforces.com/forums.uwsgaming.com/images/placeholders/rifle350.jpg"
+                                 alt="staff members"
+                                 class="hover-effect"
+                                 />
+                              <div class="overlay__description">
+                                 <p>
+                                    A VERY LEVEL HEADED MANAGER THAT HELPS WITH THE
+                                    ENFORMENTS OF THE TRF RULES WITHOUT HAVING TO RAISE
+                                    VOICE OR DISH UNFAIR PUNISHMENTS
+                                 </p>
+                                 <a
+                                    href="https://steamcommunity.com/id/lefruit123/"
+                                    target="_blank"
+                                    class="stream_profile"
+                                    data-steam="steam profile"
+                                    ><i class="fa-brands fa-steam"></i
+                                    ></a>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="img_information_container mt-2 mt-lg-4">
-                        <p class="name_text">ERAY</p>
-                        <p class="title_text green_text">Community Manager</p>
+                        <div class="img_information_container mt-2 mt-lg-4">
+                           <p class="name_text">ERAY</p>
+                           <p class="title_text green_text">Community Manager</p>
+                        </div>
                      </div>
                   </div>
-                  <div
-                     class="col-12 col-sm-12 col-md-3 col-lg-3 text-center content-wrapper"
-                     >
-                     <div class="image-container-hover">
-                        <div class="image-wrapper">
-                           <img
-                              src="http://therebellionforces.com/forums.uwsgaming.com/images/placeholders/Wetredneck.jpg"
-                              alt="staff members"
-                              class="hover-effect"
-                              />
-                           <div class="overlay__description">
-                              <p>
-                                 THE COMMUNITY MANAGER THAT HELPS HANDLE OUR DONATIONS AND
-                                 RUNS OUR CHARITIES/EVENTS.
-                              </p>
-                              <a
-                                 href="https://steamcommunity.com/profiles/76561197971430492/"
-                                 target="_blank"
-                                 class="stream_profile"
-                                 data-steam="steam profile"
-                                 ><i class="fa-brands fa-steam"></i
-                                 ></a>
+                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+                     <div class="aniview" data-av-animation="animate__slideInUp">
+                        <!-- HTML structure with the image, overlay, and updated animated hover effect -->
+                        <div class="image-container-hover">
+                           <div class="image-wrapper">
+                              <img
+                                 src="http://therebellionforces.com/forums.uwsgaming.com/images/placeholders/Wetredneck.jpg"
+                                 alt="staff members"
+                                 class="hover-effect"
+                                 />
+                              <div class="overlay__description">
+                                 <p>
+                                    THE COMMUNITY MANAGER THAT HELPS HANDLE OUR DONATIONS
+                                    AND RUNS OUR CHARITIES/EVENTS.
+                                 </p>
+                                 <a
+                                    href="https://steamcommunity.com/profiles/76561197971430492/"
+                                    target="_blank"
+                                    class="stream_profile"
+                                    data-steam="steam profile"
+                                    ><i class="fa-brands fa-steam"></i
+                                    ></a>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="img_information_container mt-2 mt-lg-4">
-                        <p class="name_text">NITRO™</p>
-                        <p class="title_text green_text">Event/Financial Manager</p>
+                        <div class="img_information_container mt-2 mt-lg-4">
+                           <p class="name_text">NITRO™</p>
+                           <p class="title_text green_text">Event/Financial Manager</p>
+                        </div>
                      </div>
                   </div>
-                  <div
-                     class="col-12 col-sm-12 col-md-3 col-lg-3 text-center content-wrapper"
-                     >
-                     <div class="image-container-hover">
-                        <div class="image-wrapper">
-                           <img
-                              src="http://therebellionforces.com/forums.uwsgaming.com/images/placeholders/chopper350.jpg"
-                              alt="staff members"
-                              class="hover-effect"
-                              />
-                           <div class="overlay__description">
-                              <p>
-                                 RESPONSIBLE FOR HELPING BRING OUR COMPETITION DOWN AND
-                                 HELPING MAINTAIN ALL OUR ALGORITHMS.
-                              </p>
-                              <a
-                                 href="https://steamcommunity.com/id/TRF2014/"
-                                 target="_blank"
-                                 class="stream_profile"
-                                 data-steam="steam profile"
-                                 ><i class="fa-brands fa-steam"></i
-                                 ></a>
+                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+                     <div class="aniview" data-av-animation="animate__slideInUp">
+                        <!-- HTML structure with the image, overlay, and updated animated hover effect -->
+                        <div class="image-container-hover">
+                           <div class="image-wrapper">
+                              <img
+                                 src="http://therebellionforces.com/forums.uwsgaming.com/images/placeholders/chopper350.jpg"
+                                 alt="staff members"
+                                 class="hover-effect"
+                                 />
+                              <div class="overlay__description">
+                                 <p>
+                                    RESPONSIBLE FOR HELPING BRING OUR COMPETITION DOWN AND
+                                    HELPING MAINTAIN ALL OUR ALGORITHMS.
+                                 </p>
+                                 <a
+                                    href="https://steamcommunity.com/id/TRF2014/"
+                                    target="_blank"
+                                    class="stream_profile"
+                                    data-steam="steam profile"
+                                    ><i class="fa-brands fa-steam"></i
+                                    ></a>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="img_information_container mt-2 mt-lg-4">
-                        <p class="name_text">PROTOCOL.EXE</p>
-                        <p class="title_text green_text">Website Admin</p>
+                        <div class="img_information_container mt-2 mt-lg-4">
+                           <p class="name_text">PROTOCOL.EXE</p>
+                           <p class="title_text green_text">Website Admin</p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -491,30 +497,40 @@
          </section>
          <!-- Section for Staff Team -->
          <!-- endless-adventures -->
-         <section class="section endless-adventures">
+         <section class="endless-adventures">
             <div class="container">
                <div class="row align-items-center">
-                  <div class="col-lg-6 content-wrapper">
-                     <img
-                        src="./assets/img/backgroundImg/GTA5-3.jpg"
-                        alt="Roleplaying Adventures"
-                        class="img-fluid"
-                        />
+                  <div class="col-lg-6">
+                     <div
+                        class="aniview animate__animated"
+                        data-av-animation="animate__slideInLeft"
+                        >
+                        <img
+                           src="./assets/img/backgroundImg/GTA5-3.jpg"
+                           alt="Roleplaying Adventures"
+                           class="img-fluid"
+                           />
+                     </div>
                   </div>
                   <div
-                     class="col-lg-6 mb-5 mb-lg-0 d-flex flex-column justify-content-start align-items-center align-items-lg-end content-wrapper"
+                     class="col-lg-6 mb-5 mb-lg-0 d-flex flex-column justify-content-start align-items-center align-items-lg-end"
                      >
-                     <!-- Added mb-4 and mb-lg-0 -->
-                     <h2 class="section_heading__">Join the Server NOW</h2>
-                     <p class="common-description endless_description_text">
-                        Same Day acceptance for your next FiveM and GTA roleplaying
-                        adventure!
-                     </p>
-                     <a
-                        href="https://cfx.re/join/3k3g9b"
-                        class="common-button read-more"
-                        >JOIN KFCRP FIVEM SERVER</a
+                     <div
+                        class="aniview animate__animated"
+                        data-av-animation="animate__slideInRight"
                         >
+                        <!-- Added mb-4 and mb-lg-0 -->
+                        <h2 class="section_heading__">Join the Server NOW</h2>
+                        <p class="common-description endless_description_text">
+                           Same Day acceptance for your next FiveM and GTA roleplaying
+                           adventure!
+                        </p>
+                        <a
+                           href="https://cfx.re/join/3k3g9b"
+                           class="common-button read-more"
+                           >JOIN KFCRP FIVEM SERVER</a
+                           >
+                     </div>
                   </div>
                </div>
             </div>
@@ -526,12 +542,12 @@
          </section>
          <!-- endless-adventures -->
          <!--testimonial start-->
-         <section class="section testimonial__sec">
+         <section class="testimonial__sec">
             <div class="container">
                <div class="row justify-content-center">
-                  <div class="col-md-8 text-center content-wrapper">
+                  <div class="col-md-8 text-center">
                      <!-- Section Heading -->
-                     <div>
+                     <div class="aniview" data-av-animation="animate__slideInUp">
                         <h2 class="section_heading__ mb-2 mb-lg-3">
                            Community Feedback
                         </h2>
@@ -541,8 +557,11 @@
             </div>
             <div class="container">
                <div class="row mt-5 mb-5">
-                  <div class="col-md-12">
-                     <div id="testimonial-slider" class="owl-carousel content-wrapper">
+                  <div
+                     class="col-md-12 aniview"
+                     data-av-animation="animate__slideInUp"
+                     >
+                     <div id="testimonial-slider" class="owl-carousel">
                         <div class="testimonial">
                            <p class="common-description">
                               "KFCRP! :D i’ve enjoyed every minute of it! Through my 3
@@ -967,25 +986,30 @@
          </section>
          <!--testimonial end-->
          <!-- endless-adventures -->
-         <section class="section endless-adventures">
+         <section class="endless-adventures">
             <div class="container">
                <div class="row align-items-center">
-                  <div class="col-lg-6 mb-5 mb-lg-0 content-wrapper">
-                     <!-- Added mb-4 and mb-lg-0 -->
-                     <h2 class="section_heading__">Weekly Updates</h2>
-                     <p class="common-description endless_description_text">
-                        We stay ahead of the game with weekly updates and new features.
-                     </p>
-                     <a href="getting-started.html" class="common-button read-more"
-                        >JOIN US TODAY</a
-                        >
+                  <div class="col-lg-6 mb-5 mb-lg-0">
+                     <div class="aniview" data-av-animation="animate__slideInLeft">
+                        <!-- Added mb-4 and mb-lg-0 -->
+                        <h2 class="section_heading__">Weekly Updates</h2>
+                        <p class="common-description endless_description_text">
+                           We stay ahead of the game with weekly updates and new
+                           features.
+                        </p>
+                        <a href="getting-started.html" class="common-button read-more"
+                           >JOIN US TODAY</a
+                           >
+                     </div>
                   </div>
-                  <div class="col-lg-6 content-wrapper">
-                     <img
-                        src="./assets/img/backgroundImg/GTA5-4.jpg"
-                        alt="Roleplaying Adventures"
-                        class="img-fluid"
-                        />
+                  <div class="col-lg-6">
+                     <div class="aniview" data-av-animation="animate__slideInRight">
+                        <img
+                           src="./assets/img/backgroundImg/GTA5-4.jpg"
+                           alt="Roleplaying Adventures"
+                           class="img-fluid"
+                           />
+                     </div>
                   </div>
                </div>
             </div>
@@ -997,10 +1021,10 @@
          </section>
          <!-- endless-adventures -->
          <!-- sponser -->
-         <section class="section sponser">
-            <div class="container">
+         <section class="sponser">
+            <div class="container aniview" data-av-animation="animate__slideInUp">
                <div class="row justify-content-center align-items-center">
-                  <div class="col-lg-6 col-md-6 content-wrapper">
+                  <div class="col-lg-6 col-md-6">
                      <div class="text-center">
                         <div class="image-container">
                            <img
@@ -1022,128 +1046,128 @@
                   </div>
                </div>
             </div>
-            <!-- Footer -->
-            <section class="footer">
-               <div class="container-fluid content-wrapper">
-                  <div class="row gy-4">
-                     <div
-                        class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-                        >
-                        <div>
-                           <img
-                              src="./assets/img/2222.png"
-                              alt="footer logo"
-                              class="img-fluid"
-                              />
-                           <p class="about_description">
-                              A one-of-a-kind FiveM roleplay server offering an immersive
-                              and engaging experience with unique features that set us
-                              apart from other roleplay servers.
-                           </p>
-                        </div>
-                     </div>
-                     <div
-                        class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-                        >
-                        <div>
-                           <h5>Contact Us</h5>
-                           <ul class="list-unstyled">
-                              <li>
-                                 <i class="fas fa-phone-alt"></i>&nbsp;&nbsp; +447769759211
-                              </li>
-                              <li>
-                                 <i class="fas fa-envelope"></i>&nbsp;&nbsp;
-                                 eastd1@hphasesw.com
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div
-                        class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-                        >
-                        <div>
-                           <h5>Our Services</h5>
-                           <ul class="list-unstyled">
-                              <li><a href="index.html">Home</a></li>
-                              <li><a href="about.html">About</a></li>
-                              <li><a href="blogs.html">Blogs</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div
-                        class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
-                        >
-                        <div>
-                           <h5>Quick Links</h5>
-                           <ul class="list-unstyled">
-                              <li>
-                                 <a href="https://discord.com/invite/kfcrp" target="_blank"
-                                    >
-                                    <span>Discord</span>&nbsp;
-                                    <svg
-                                       xmlns="http://www.w3.org/2000/svg"
-                                       class="inline-block fill-white mb-1 ml-1"
-                                       width="10"
-                                       viewBox="0 0 512 512"
-                                       >
-                                       <path
-                                          d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                                          ></path>
-                                    </svg
-                                       >
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://store.kfcrp.com/" target="_blank"
-                                    >
-                                    <span>Ban Appeal</span>&nbsp;
-                                    <svg
-                                       xmlns="http://www.w3.org/2000/svg"
-                                       class="inline-block fill-white mb-1 ml-1"
-                                       width="10"
-                                       viewBox="0 0 512 512"
-                                       >
-                                       <path
-                                          d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                                          ></path>
-                                    </svg
-                                       >
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://store.kfcrp.com/" target="_blank"
-                                    >
-                                    <span>Store</span>&nbsp;&nbsp;
-                                    <svg
-                                       xmlns="http://www.w3.org/2000/svg"
-                                       class="inline-block fill-white mb-1 ml-1"
-                                       width="10"
-                                       viewBox="0 0 512 512"
-                                       >
-                                       <path
-                                          d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                                          ></path>
-                                    </svg
-                                       >
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row text-center">
-                     <div class="col-12 mt-3">
-                        <p class="common-description copyright__">
-                           Copyright © 2023 - KFCRP.com @ Cfx.re | FIVEM Community
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- Footer -->
          </section>
       </main>
       <!-- The main content section of the webpage -->
+      <!-- Footer -->
+      <footer>
+         <div class="container-fluid">
+            <div class="row gy-4">
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+                  >
+                  <div>
+                     <img
+                        src="./assets/img/2222.png"
+                        alt="footer logo"
+                        class="img-fluid"
+                        />
+                     <p class="about_description">
+                        A one-of-a-kind FiveM roleplay server offering an immersive and
+                        engaging experience with unique features that set us apart from
+                        other roleplay servers.
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+                  >
+                  <div>
+                     <h5>Contact Us</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <i class="fas fa-phone-alt"></i>&nbsp;&nbsp; +447769759211
+                        </li>
+                        <li>
+                           <i class="fas fa-envelope"></i>&nbsp;&nbsp;
+                           eastd1@hphasesw.com
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+                  >
+                  <div>
+                     <h5>Our Services</h5>
+                     <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div
+                  class="col-12 col-sm-12 col-md-3 d-flex justify-content-center align-items-center"
+                  >
+                  <div>
+                     <h5>Quick Links</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <a href="https://discord.com/invite/kfcrp" target="_blank"
+                              >
+                              <span>Discord</span>&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://store.kfcrp.com/" target="_blank"
+                              >
+                              <span>Ban Appeal</span>&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://store.kfcrp.com/" target="_blank"
+                              >
+                              <span>Store</span>&nbsp;&nbsp;
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="inline-block fill-white mb-1 ml-1"
+                                 width="10"
+                                 viewBox="0 0 512 512"
+                                 >
+                                 <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                              </svg
+                                 >
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="row text-center">
+               <div class="col-12 mt-3">
+                  <p class="common-description copyright__">
+                     Copyright © 2023 - KFCRP.com @ Cfx.re | FIVEM Community
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer -->
       <!-- fixed social buttons -->
       <div id="fixed-social">
          <div>
@@ -1166,13 +1190,7 @@
       <!-- fixed social buttons -->
       <!-- Essential JavaScript Plugin scripts -->
       <!-- Include jQuery from Google CDN -->
-      <script src="assets/vendors/js/jquery_3.5.1_jquery.min.js"></script>
-      <!-- Include the easing functions library for smooth animations -->
-      <script src="assets/vendors/js/jquery.easings.min.js"></script>
-      <!-- Include the scrolloverflow plugin to enable scrolling within fullPage.js sections -->
-      <script src="assets/vendors/js/scrolloverflow.js"></script>
-      <!-- Include the main fullPage.js library for creating interactive and responsive full-page sections -->
-      <script src="assets/vendors/js/jquery.fullPage.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <!-- Include HTML5shiv to enable HTML5 elements in older browsers -->
       <script src="assets/vendors/js/html5shiv.min.js"></script>
       <!-- Include Respond.js to enable media query support in older IE versions -->
