@@ -253,10 +253,10 @@ section {
 }
 
 .common-description {
-  color: rgba(199, 199, 199, 0.89);
+  color: rgb(255 254 254);
   font-family: var(--manrope-font);
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   line-height: 2.8rem;
 }
 
@@ -304,7 +304,7 @@ section {
 .common_header {
   position: relative;
   padding: 15rem 0rem;
-  background: linear-gradient(rgb(9 52 78 / 58%), rgb(8 40 59 / 57%)),
+  background: linear-gradient(rgb(0 0 0 / 42%), rgb(0 0 0 / 44%)),
     url(../../img/backgroundImg/about-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -573,12 +573,12 @@ ol.fancy_list li::before {
 
 .push__bar .mobile__navigation__ ul li a {
   color: var(--custom-purple-color);
-  opacity: 0.7;
   transition: color 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s,
     opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
   font-family: var(--manrope-font);
   font-weight: 500;
   font-style: var(--font-style);
+  font-size: 1.7rem;
 }
 
 .push__bar .mobile__navigation__ ul li:hover a {
@@ -1062,8 +1062,8 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   background: linear-gradient(rgb(4, 4, 4) 0%, rgba(0, 0, 0, 0.98) 100%) 0% 0% /
     cover;
   position: relative;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  padding-top: 18rem;
+  padding-bottom: 18rem;
   overflow: hidden;
 }
 
@@ -1089,13 +1089,17 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 .staff_team {
   background-color: rgb(11, 3, 38);
   background-image: linear-gradient(
-    rgb(24, 4, 61),
-    rgb(11, 3, 38) 11%,
-    rgb(11, 3, 38) 67%,
-    rgb(0, 0, 0)
-  );
+    rgb(24 4 61 / 40%),
+    rgb(11 3 38 / 43%) 11%,
+    rgb(11 3 38 / 35%) 67%,
+    rgb(0 0 0 / 52%)
+  ), url(../../img/backgroundImg/wp5334219-gta-5-4k-wallpapers.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
   padding-top: 9.5rem;
   padding-bottom: 9.5rem;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .staff_team .section-subheading {
@@ -1104,7 +1108,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 }
 
 .staff_team .highlight {
-  color: rgb(158, 11, 158);
+  color: rgb(247 10 247);
   font-family: var(--manrope-font);
   font-weight: 500;
 }
@@ -1232,14 +1236,16 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 }
 /* Testimonial CSS */
 .testimonial__sec {
-  background-color: rgb(11, 3, 38);
+  background-color: rgb(4 4 4);
   background-image: linear-gradient(
-    rgb(24, 4, 61),
-    rgb(11, 3, 38) 11%,
-    rgb(11, 3, 38) 67%,
-    rgb(0, 0, 0)
-  );
+    rgb(0 0 0 / 26%),
+    rgb(6 6 6 / 28%) 11%,
+    rgb(15 15 16 / 14%) 67%,
+    rgb(10 10 10 / 25%)
+  ), url(../../img/backgroundImg/testimonial.jpg);
   background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
@@ -1254,7 +1260,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   margin: auto;
 }
 .testimonial__sec .testimonial .common-description {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .owl-carousel {
@@ -1271,41 +1277,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.owl-carousel::before,
-.owl-carousel::after {
-  content: "";
-  width: 0.2rem;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  background: hsla(221, 45%, 73%, 1);
 
-  background: linear-gradient(
-    90deg,
-    hsla(221, 45%, 73%, 1) 0%,
-    hsla(220, 78%, 29%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(221, 45%, 73%, 1) 0%,
-    hsla(220, 78%, 29%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(221, 45%, 73%, 1) 0%,
-    hsla(220, 78%, 29%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
-}
-.owl-carousel::before {
-  left: 0;
-}
-.owl-carousel::after {
-  right: 0;
-}
 
 .owl-carousel:hover {
   transform: scale(1.05);
