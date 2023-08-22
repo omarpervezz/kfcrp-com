@@ -1,0 +1,50 @@
+.warning {
+  background-color: rgba(171, 0, 0, 0.85);
+  color: rgb(1, 1, 1);
+  padding: 11px 22px;
+  border-radius: 4px;
+  width: 45%;
+  margin: auto;
+  font-family: var(--manrope-font);
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.warning p {
+  color: #ffffffbf;
+}
+.server_content .fancy_list li {
+  margin-bottom: 1.4rem;
+}
+.server_content ul.fancy_list li::before {
+  content: "\2022";
+}
+.server_content .commom-description {
+  color: var(--custom-purple-color);
+}
+.ww_22 {
+  margin: initial;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.text-underlined {
+  text-decoration: underline;
+}
+.server_content .anticheat_text {
+  color: #38ffbbe6;
+}
+.server_content .highlighted__box {
+  background-color: var(--white-color);
+  color: red;
+  padding: 0.1rem 1.1rem;
+  display: inline-block;
+}
+.server_content .gang__text {
+  color: #cc33cc;
+}
+.server_content .warning___d {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: bold;
+}

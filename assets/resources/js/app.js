@@ -1,21 +1,3 @@
-// Add an event listener to the window that listens for the "scroll" event
-window.addEventListener("scroll", (event) => {
-  // Get the current vertical scroll position using window.scrollY
-  const scroll = window.scrollY;
-
-  // Select the header element using its "header" tag name
-  const header = document.querySelector("header");
-
-  // Check if the scroll position is greater than 20 pixels
-  if (scroll > 20) {
-     // If the condition is true, add the "backDrop & animate__fadeInDownBig" class to the header element
-     header.classList.add("backDrop", "animate__fadeInDownBig");
-  } else {
-     // If the condition is false, remove the "backDrop & animate__fadeInDownBig" class from the header element
-     header.classList.remove("backDrop", "animate__fadeInDownBig");
-  }
-});
-
 // Get the DOM element with the class "push__bar"
 const push__bar = document.querySelector(".push__bar");
 
@@ -36,103 +18,96 @@ function removeAnimation() {
   // Remove the "animate__backInRight" class to ensure it's not active
   push__bar.classList.remove("animate__backInRight");
 }
-// Scroll animation
-(function ($) {
-  var uniqueCntr = 0;
-  $.fn.scrolled = function (waitTime, fn) {
-     if (typeof waitTime === "function") {
-        fn = waitTime;
-        waitTime = 200;
-     }
-     var tag = "scrollTimer" + uniqueCntr++;
-     this.scroll(function () {
-        var self = $(this);
-        clearTimeout(self.data(tag));
-        self.data(
-           tag,
-           setTimeout(function () {
-              self.removeData(tag);
-              fn.call(self[0]);
-           }, waitTime)
-        );
-     });
-  };
-
-  $.fn.AniView = function (options) {
-     //some default settings. animateThreshold controls the trigger point
-     //for animation and is subtracted from the bottom of the viewport.
-     var settings = $.extend({
-           animateClass: "animated",
-           animateThreshold: 0,
-           scrollPollInterval: 20,
-        },
-        options
-     );
-
-     //keep the matched elements in a variable for easy reference
-     var collection = this;
-
-     //cycle through each matched element and wrap it in a block/div
-     //and then proceed to fade out the inner contents of each matched element
-     $(collection).each(function (index, element) {
-        $(element).wrap('<div class="av-container"></div>');
-        $(element).css("opacity", 0);
-     });
-
-     /**
-      * returns boolean representing whether element's top is coming into bottom of viewport
-      *
-      * @param HTMLDOMElement element the current element to check
-      */
-     function EnteringViewport(element) {
-        var elementTop = $(element).offset().top;
-        var viewportBottom = $(window).scrollTop() + $(window).height();
-        return elementTop < viewportBottom - settings.animateThreshold ?
-           true :
-           false;
-     }
-
-     /**
-      * cycle through each element in the collection to make sure that any
-      * elements which should be animated into view, are...
-      *
-      * @param collection of elements to check
-      */
-     function RenderElementsCurrentlyInViewport(collection) {
-        $(collection).each(function (index, element) {
-           var elementParentContainer = $(element).parent(".av-container");
-           if (
-              $(element).is("[data-av-animation]") &&
-              !$(elementParentContainer).hasClass("av-visible") &&
-              EnteringViewport(elementParentContainer)
-           ) {
-              $(element).css("opacity", 1);
-              $(elementParentContainer).addClass("av-visible");
-              $(element).addClass(
-                 [settings.animateClass, $(element).attr("data-av-animation")].join(
-                    " "
-                 )
-              );
-           }
-        });
-     }
-
-     //on page load, render any elements that are currently/already in view
-     RenderElementsCurrentlyInViewport(collection);
-
-     //enable the scrolled event timer to watch for elements coming into the viewport
-     //from the bottom. default polling time is 20 ms. This can be changed using
-     //'scrollPollInterval' from the user visible options
-     $(window).scrolled(settings.scrollPollInterval, function () {
-        RenderElementsCurrentlyInViewport(collection);
-     });
-  };
-})(jQuery);
-
 $(document).ready(function () {
-  $(".aniview").AniView({
-     animateClass: "animate__animated",
-     animateThreshold: 100,
-     scrollPollInterval: 45,
-  });
+  function initializeSlider() {
+    $("#homepage").fullpage({
+      scrollingSpeed: 700, // Faster scrolling speed
+      autoScrolling: true,
+      fitToSection: true,
+      fitToSectionDelay: 2000,
+      anchors: [
+        "banner",
+        "about-us",
+        "stuff-team",
+        "join-our-server",
+        "community-feedback",
+        "join-us-today",
+        "sponsor-footer",
+      ],
+      verticalCentered: false,
+      navigation: true,
+      responsiveWidth: 768, // Adjust to your desired breakpoint
+      easingcss3: "cubic-bezier(0.645, 0.045, 0.355, 1.000)", // Smooth scrolling
+      onLeave: function (index, nextIndex, direction) {
+        // Your section transition logic
+      },
+    });
+  }
+
+  function destroySlider() {
+    $.fn.fullpage.destroy("all");
+  }
+
+  function handleSliderBasedOnScreenSize() {
+    if (window.innerWidth > 768) {
+      // Adjust the breakpoint as needed
+      initializeSlider();
+    } else {
+      destroySlider();
+    }
+  }
+
+  handleSliderBasedOnScreenSize();
+  $(window).resize(handleSliderBasedOnScreenSize);
 });
+
+// Create an Intersection Observer instance
+const observer = new IntersectionObserver(handleIntersection, {
+  threshold: 0.5,
+});
+
+// Function to handle intersection changes
+function handleIntersection(entries, observer) {
+  entries.forEach((entry) => {
+    const sectionId = entry.target.getAttribute("id");
+    console.log(sectionId);
+    const header = document.querySelector("header");
+
+    if (sectionId === "first-section") {
+      // Always show header in the first section
+      if (entry.isIntersecting) {
+        header.style.display = "block";
+      } else {
+        header.style.display = "none";
+      }
+    } else {
+      if (entry.isIntersecting) {
+        // Hide header in other sections when they're in the viewport
+        header.style.display = "none";
+      }
+    }
+  });
+}
+
+function selectSectionsExceptFirst() {
+  // Select the main element
+  const mainElement = document.querySelector("main");
+
+  // Select all section elements inside the main element
+  const sectionElements = mainElement.querySelectorAll("section");
+
+  // Convert NodeList to an array for easier manipulation
+  const sectionArray = Array.from(sectionElements);
+
+  // You can manipulate or use the remaining section elements here
+  sectionArray.forEach((section) => {
+    observer.observe(section);
+  });
+
+  // Always show the header for the first section
+  const header = document.querySelector("header");
+  header.style.display = "block";
+}
+
+// Call the function to execute
+selectSectionsExceptFirst();

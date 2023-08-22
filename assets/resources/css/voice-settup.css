@@ -1,0 +1,22 @@
+.voice_setup_content_container .card {
+  background-color: rgb(11, 3, 38);
+  background-image: linear-gradient(
+    rgb(24, 4, 61),
+    rgb(11, 3, 38) 11%,
+    rgb(11, 3, 38) 67%,
+    rgb(0, 0, 0)
+  );
+  color: var(--custom-purple-color);
+  padding: 1rem 3rem;
+}
+.voice_setup_content_container .card li {
+  background-color: transparent;
+  border: none;
+  color: var(--white-color);
+  opacity: 0.8;
+}
+
+.voice_setup_content_container .list-group-item strong {
+  color: #01d192;
+  font-weight: bold;
+}

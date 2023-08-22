@@ -1,0 +1,9 @@
+.keybinds_header_container__ .common_blog_heading_ {
+  font-size: 4rem;
+}
+.keybinds_commands_content_container ul.fancy_list {
+  list-style-type: circle;
+}
+.keybinds_commands_content_container ul.fancy_list li::before {
+  content: "\2022";
+}

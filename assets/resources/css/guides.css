@@ -1,0 +1,8 @@
+.guide_content_container {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.guide_header_container .section_heading__::before,
+.common__blogs_container .section_heading__::before {
+  content: initial;
+}
